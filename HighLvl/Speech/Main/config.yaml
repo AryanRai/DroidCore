@@ -1,0 +1,81 @@
+# System Optimization Configuration
+
+# Model Selection
+models:
+  # Select smallest efficient models for best performance
+  whisper: "base"      # Options: tiny, base, small, medium, large
+  reflex: "llama3.2"  # Fast model for initial responses
+  reasoning: "phi3:mini"    # Smaller model for reasoning
+  conversation: "phi3:mini" # Smaller model for final response
+  
+  # Fallback to larger models for complex queries when needed
+  complex_reasoning: "deepseek-r1:7b"
+  complex_conversation: "llama3.2"
+
+# Processing Optimization
+optimization:
+  parallel_inference: true      # Run models in parallel where possible
+  skip_reasoning_simple: true   # Skip reasoning for simple queries
+  use_cache: true               # Cache responses for repeated queries
+  max_cache_entries: 100        # Maximum number of cached responses
+  
+  # Performance tuning
+  chunk_delay_ms: 50            # Delay between audio chunks (milliseconds)
+  silence_threshold: 3          # Reduced for faster response time
+  
+  # Audio processing
+  vad_mode: 1                   # Voice activity detection sensitivity (0-3)
+  min_speech_chunks: 3          # Minimum chunks to trigger processing
+
+# TTS Settings
+tts:
+  model: "tts_models/en/jenny/jenny"
+  use_gpu: true
+  max_sentence_length: 100      # Break long responses into sentences
+
+# Speech Processing
+speech:
+  min_confidence: 0.6
+  max_input_wait_ms: 1000
+  input_debounce_ms: 300
+  max_silence_ms: 1000
+  min_words: 3
+  complete_thought_patterns:
+    - '\b(can|could|would|will|should)\b.*\?'
+    - '\b(what|who|where|when|why|how)\b.*\?'
+    - '\b(yes|no|maybe|sure|okay)\b'
+    - '\b(hello|hi|hey|bye|goodbye)\b'
+
+# Audio Processing
+audio:
+  sample_width: 2  # 16-bit audio = 2 bytes
+  channels: 1
+  rate: 16000
+  sample_rate: 48000
+  chunk_size: 1024
+  input_format: "int16"
+  normalize: true
+
+# Debug Settings
+debug:
+  enabled: true
+  log_level: DEBUG
+  memory_tracking: true
+  memory_log_interval: 5  # seconds
+  cuda_debug: true
+  profile_code: true
+  
+  # Model debugging
+  model_traceback: true
+  model_timeout: 30
+  model_retries: 3
+  
+  # Speech processing debug
+  vad_debug: true
+  whisper_debug: true
+  tts_debug: true
+  
+  # Memory limits
+  max_gpu_memory: "4GiB"
+  max_system_memory: "8GiB"
+  clear_cache_threshold: 0.8  # Clear model cache when memory usage exceeds 80%

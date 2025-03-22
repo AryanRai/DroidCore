@@ -1,0 +1,929 @@
+2025-03-23 01:42:47,206 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 01:42:47,208 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 01:42:47,209 - CombinedSystem - INFO - Loading Whisper model...
+2025-03-23 01:42:49,149 - CombinedSystem - INFO - Loading TTS model...
+2025-03-23 01:42:51,044 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'small', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:7b', 'conversational_model': 'llama3.2', 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': True, 'perf_interval': 10}
+2025-03-23 01:42:51,044 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 01:42:51,048 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 01:42:51,049 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 01:42:51,049 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 01:42:51,050 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 01:42:51,050 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 01:42:51,051 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 01:42:51,051 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 01:42:51,051 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 01:42:51,053 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 01:42:51,171 - PerformanceMetrics - INFO - SYSTEM: CPU: 34.0%, RAM: 55.4%, GPU: N/A
+2025-03-23 01:42:51,172 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:00,975 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 01:43:00,975 - CombinedSystem - INFO - Processing text: Hello.
+2025-03-23 01:43:00,976 - PerformanceMetrics - WARNING - speech_recognition took 1.14s
+2025-03-23 01:43:01,064 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:01,357 - PerformanceMetrics - INFO - SYSTEM: CPU: 50.0%, RAM: 59.5%, GPU: N/A
+2025-03-23 01:43:01,357 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 1.142s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:04,368 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:43:04,369 - PerformanceMetrics - INFO - Reflex model took 3.39s
+2025-03-23 01:43:11,084 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:11,537 - PerformanceMetrics - INFO - SYSTEM: CPU: 38.5%, RAM: 77.8%, GPU: N/A
+2025-03-23 01:43:11,538 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:17,886 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:43:17,886 - PerformanceMetrics - INFO - Reasoning model took 13.52s
+2025-03-23 01:43:21,110 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:21,711 - PerformanceMetrics - INFO - SYSTEM: CPU: 15.0%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:43:21,712 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:29,868 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:43:29,868 - PerformanceMetrics - INFO - Conversational model took 11.98s
+2025-03-23 01:43:29,869 - CombinedSystem - INFO - Response generated: It's nice to meet you. Is there something on your ...
+2025-03-23 01:43:29,869 - CombinedSystem - ERROR - Error in TTS generation: 'TTS' object has no attribute 'model_config'
+2025-03-23 01:43:29,869 - PerformanceMetrics - WARNING - language_processing took 28.89s
+2025-03-23 01:43:29,869 - CombinedSystem - INFO - Falling back to droid output
+2025-03-23 01:43:31,123 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:31,908 - PerformanceMetrics - INFO - SYSTEM: CPU: 14.0%, RAM: 67.6%, GPU: N/A
+2025-03-23 01:43:31,909 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.031s, speech_recognition: 0.000s, language_processing: 28.893s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:36,731 - PerformanceMetrics - INFO - Droid output took 6.86s for 2 chunks
+2025-03-23 01:43:41,145 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:42,104 - PerformanceMetrics - INFO - SYSTEM: CPU: 22.6%, RAM: 67.8%, GPU: N/A
+2025-03-23 01:43:42,104 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 6.862s
+2025-03-23 01:43:51,159 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:52,295 - PerformanceMetrics - INFO - SYSTEM: CPU: 11.2%, RAM: 67.7%, GPU: N/A
+2025-03-23 01:43:52,295 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:59,670 - CombinedSystem - INFO - Recognized: Nothing major, what about you?
+2025-03-23 01:43:59,670 - CombinedSystem - INFO - Processing text: Nothing major, what about you?
+2025-03-23 01:44:01,184 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:02,469 - PerformanceMetrics - INFO - SYSTEM: CPU: 19.4%, RAM: 57.1%, GPU: N/A
+2025-03-23 01:44:02,470 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.436s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:10,731 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:44:10,732 - PerformanceMetrics - INFO - Reflex model took 11.06s
+2025-03-23 01:44:11,203 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:12,674 - PerformanceMetrics - INFO - SYSTEM: CPU: 15.7%, RAM: 57.0%, GPU: N/A
+2025-03-23 01:44:12,675 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:21,224 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:22,884 - PerformanceMetrics - INFO - SYSTEM: CPU: 51.8%, RAM: 76.1%, GPU: N/A
+2025-03-23 01:44:22,884 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:27,804 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:44:27,804 - PerformanceMetrics - INFO - Reasoning model took 17.07s
+2025-03-23 01:44:31,240 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:33,087 - PerformanceMetrics - INFO - SYSTEM: CPU: 25.7%, RAM: 55.6%, GPU: N/A
+2025-03-23 01:44:33,087 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:41,266 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:43,285 - PerformanceMetrics - INFO - SYSTEM: CPU: 52.2%, RAM: 66.4%, GPU: N/A
+2025-03-23 01:44:43,286 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:45,073 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:44:45,073 - PerformanceMetrics - INFO - Conversational model took 17.27s
+2025-03-23 01:44:45,073 - CombinedSystem - INFO - Response generated: I don't have feelings or personal experiences like...
+2025-03-23 01:44:45,073 - CombinedSystem - ERROR - Error in TTS generation: 'TTS' object has no attribute 'model_config'
+2025-03-23 01:44:45,073 - PerformanceMetrics - WARNING - language_processing took 45.40s
+2025-03-23 01:44:45,073 - CombinedSystem - INFO - Falling back to droid output
+2025-03-23 01:44:51,284 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:53,462 - PerformanceMetrics - INFO - SYSTEM: CPU: 19.8%, RAM: 66.1%, GPU: N/A
+2025-03-23 01:44:53,463 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 45.403s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:59,198 - PerformanceMetrics - INFO - Droid output took 14.12s for 3 chunks
+2025-03-23 01:45:01,303 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:03,641 - PerformanceMetrics - INFO - SYSTEM: CPU: 16.8%, RAM: 65.7%, GPU: N/A
+2025-03-23 01:45:03,641 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 14.125s
+2025-03-23 01:45:11,320 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:13,838 - PerformanceMetrics - INFO - SYSTEM: CPU: 19.1%, RAM: 65.7%, GPU: N/A
+2025-03-23 01:45:13,839 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:45:21,344 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:24,042 - PerformanceMetrics - INFO - SYSTEM: CPU: 23.3%, RAM: 65.7%, GPU: N/A
+2025-03-23 01:45:24,043 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:45:31,364 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:34,210 - PerformanceMetrics - INFO - SYSTEM: CPU: 32.7%, RAM: 65.7%, GPU: N/A
+2025-03-23 01:45:34,211 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:45:41,384 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:44,425 - PerformanceMetrics - INFO - SYSTEM: CPU: 33.3%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:45:44,425 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:45:51,400 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:54,649 - PerformanceMetrics - INFO - SYSTEM: CPU: 12.5%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:45:54,649 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:01,424 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:04,874 - PerformanceMetrics - INFO - SYSTEM: CPU: 19.3%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:46:04,874 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:11,444 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:15,075 - PerformanceMetrics - INFO - SYSTEM: CPU: 20.2%, RAM: 64.6%, GPU: N/A
+2025-03-23 01:46:15,077 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:21,463 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:25,295 - PerformanceMetrics - INFO - SYSTEM: CPU: 15.4%, RAM: 65.0%, GPU: N/A
+2025-03-23 01:46:25,296 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:31,480 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:35,493 - PerformanceMetrics - INFO - SYSTEM: CPU: 27.1%, RAM: 64.8%, GPU: N/A
+2025-03-23 01:46:35,494 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:37,131 - CombinedSystem - INFO - Recognized: you
+2025-03-23 01:46:37,131 - CombinedSystem - INFO - Processing text: you
+2025-03-23 01:46:41,503 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:45,713 - PerformanceMetrics - INFO - SYSTEM: CPU: 57.9%, RAM: 60.6%, GPU: N/A
+2025-03-23 01:46:45,714 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.556s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:47,386 - CombinedSystem - INFO - Recognized: I can't, that's not the way it's like that.
+2025-03-23 01:46:49,609 - CombinedSystem - INFO - Recognized: Thank you.
+2025-03-23 01:46:50,721 - CombinedSystem - INFO - Recognized: Thank you.
+2025-03-23 01:46:51,530 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 3, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:51,724 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:46:51,725 - PerformanceMetrics - INFO - Reflex model took 14.59s
+2025-03-23 01:46:55,929 - PerformanceMetrics - INFO - SYSTEM: CPU: 13.3%, RAM: 54.5%, GPU: N/A
+2025-03-23 01:46:55,929 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.359s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:01,545 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 3, response_queue: 0, tts_queue: 0
+2025-03-23 01:47:05,220 - CombinedSystem - INFO - Recognized: They're unemployed, doing a master's, but learning Japan. It's always Japan.
+2025-03-23 01:47:05,221 - PerformanceMetrics - WARNING - speech_recognition took 1.13s
+2025-03-23 01:47:06,154 - PerformanceMetrics - INFO - SYSTEM: CPU: 70.2%, RAM: 74.5%, GPU: N/A
+2025-03-23 01:47:06,155 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.402s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:06,650 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:47:06,651 - PerformanceMetrics - INFO - Reasoning model took 14.93s
+2025-03-23 01:47:11,559 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 4, response_queue: 0, tts_queue: 0
+2025-03-23 01:47:11,961 - CombinedSystem - INFO - Recognized: Just me. Like everyone in the 26th year, I'm employed during a master's with a dorm in Japan. It's always Japan.
+2025-03-23 01:47:11,961 - PerformanceMetrics - WARNING - speech_recognition took 1.09s
+2025-03-23 01:47:16,368 - PerformanceMetrics - INFO - SYSTEM: CPU: 57.1%, RAM: 65.2%, GPU: N/A
+2025-03-23 01:47:16,370 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.889s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:20,389 - CombinedSystem - INFO - Recognized: What's up man? Don't forget to click on the bell.
+2025-03-23 01:47:20,389 - PerformanceMetrics - WARNING - speech_recognition took 2.59s
+2025-03-23 01:47:21,588 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 6, response_queue: 0, tts_queue: 0
+2025-03-23 01:47:26,547 - PerformanceMetrics - INFO - SYSTEM: CPU: 43.8%, RAM: 66.0%, GPU: N/A
+2025-03-23 01:47:26,548 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 1.576s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:27,963 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:47:27,964 - PerformanceMetrics - INFO - Conversational model took 21.31s
+2025-03-23 01:47:27,964 - CombinedSystem - INFO - Response generated: It seems like you're looking for something, but yo...
+2025-03-23 01:47:27,964 - CombinedSystem - ERROR - Error in TTS generation: 'TTS' object has no attribute 'model_config'
+2025-03-23 01:47:27,964 - PerformanceMetrics - WARNING - language_processing took 50.83s
+2025-03-23 01:47:27,965 - CombinedSystem - INFO - Falling back to droid output
+2025-03-23 01:47:27,965 - CombinedSystem - INFO - Processing text: I can't, that's not the way it's like that.
+2025-03-23 01:47:31,609 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 5, response_queue: 0, tts_queue: 0
+2025-03-23 01:47:36,799 - PerformanceMetrics - INFO - SYSTEM: CPU: 49.1%, RAM: 61.0%, GPU: N/A
+2025-03-23 01:47:36,800 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 50.833s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:40,256 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 01:47:40,256 - CombinedSystem - INFO - Shutting down...
+2025-03-23 01:47:41,291 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 01:49:32,909 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 01:49:32,910 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 01:49:32,911 - CombinedSystem - INFO - Loading Whisper model...
+2025-03-23 01:49:34,890 - CombinedSystem - INFO - Loading TTS model...
+2025-03-23 01:49:36,815 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'small', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:7b', 'conversational_model': 'llama3.2', 'skip_reasoning': False, 'parallel_inference': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': True, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache'}
+2025-03-23 01:49:36,815 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 01:49:36,819 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 01:49:36,820 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 01:49:36,820 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 01:49:36,821 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 01:49:36,822 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 01:49:36,822 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 01:49:36,823 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 01:49:36,823 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 01:49:36,823 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 01:49:36,932 - PerformanceMetrics - INFO - SYSTEM: CPU: 23.4%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:49:36,933 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:49:41,665 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 01:49:41,665 - CombinedSystem - INFO - Processing text: Hello.
+2025-03-23 01:49:41,665 - PerformanceMetrics - WARNING - speech_recognition took 1.09s
+2025-03-23 01:49:42,959 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:49:42,959 - PerformanceMetrics - INFO - Reflex model took 1.29s
+2025-03-23 01:49:46,841 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:49:47,117 - PerformanceMetrics - INFO - SYSTEM: CPU: 11.6%, RAM: 54.4%, GPU: N/A
+2025-03-23 01:49:47,118 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 1.094s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:49:56,629 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:49:56,629 - PerformanceMetrics - INFO - Parallel reasoning model took 13.67s
+2025-03-23 01:49:56,861 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:49:57,319 - PerformanceMetrics - INFO - SYSTEM: CPU: 22.3%, RAM: 53.9%, GPU: N/A
+2025-03-23 01:49:57,320 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:06,878 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:07,583 - PerformanceMetrics - INFO - SYSTEM: CPU: 52.3%, RAM: 65.2%, GPU: N/A
+2025-03-23 01:50:07,584 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:08,198 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:50:08,199 - PerformanceMetrics - INFO - Conversational model took 11.57s
+2025-03-23 01:50:08,199 - CombinedSystem - INFO - Response generated: It's nice to meet you. Is there something on your ...
+2025-03-23 01:50:08,199 - PerformanceMetrics - WARNING - language_processing took 26.53s
+2025-03-23 01:50:16,898 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:17,788 - PerformanceMetrics - INFO - SYSTEM: CPU: 8.6%, RAM: 66.5%, GPU: N/A
+2025-03-23 01:50:17,789 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 26.534s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:22,381 - PerformanceMetrics - INFO - TTS generation took 14.18s
+2025-03-23 01:50:26,911 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:27,983 - PerformanceMetrics - INFO - SYSTEM: CPU: 10.2%, RAM: 66.7%, GPU: N/A
+2025-03-23 01:50:27,983 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.271s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:28,400 - PerformanceMetrics - INFO - Droid output took 6.02s for 2 chunks
+2025-03-23 01:50:36,927 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:38,189 - PerformanceMetrics - INFO - SYSTEM: CPU: 13.1%, RAM: 66.6%, GPU: N/A
+2025-03-23 01:50:38,189 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.422s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 20.202s
+2025-03-23 01:50:41,731 - CombinedSystem - INFO - Recognized: Hmm, yes, to random convolution.
+2025-03-23 01:50:41,731 - CombinedSystem - INFO - Processing text: Hmm, yes, to random convolution.
+2025-03-23 01:50:42,263 - CombinedSystem - INFO - Recognized: What's up?
+2025-03-23 01:50:46,952 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:48,421 - PerformanceMetrics - INFO - SYSTEM: CPU: 25.7%, RAM: 59.2%, GPU: N/A
+2025-03-23 01:50:48,422 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.386s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:56,971 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:58,638 - PerformanceMetrics - INFO - SYSTEM: CPU: 34.8%, RAM: 61.0%, GPU: N/A
+2025-03-23 01:50:58,639 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:06,995 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:08,893 - PerformanceMetrics - INFO - SYSTEM: CPU: 41.7%, RAM: 60.9%, GPU: N/A
+2025-03-23 01:51:08,894 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:17,008 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:19,099 - PerformanceMetrics - INFO - SYSTEM: CPU: 46.1%, RAM: 61.4%, GPU: N/A
+2025-03-23 01:51:19,099 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:27,037 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:29,329 - PerformanceMetrics - INFO - SYSTEM: CPU: 40.9%, RAM: 61.8%, GPU: N/A
+2025-03-23 01:51:29,329 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:31,504 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:51:31,505 - PerformanceMetrics - INFO - Reflex model took 49.77s
+2025-03-23 01:51:37,051 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:39,553 - PerformanceMetrics - INFO - SYSTEM: CPU: 33.3%, RAM: 73.8%, GPU: N/A
+2025-03-23 01:51:39,554 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:47,075 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:49,772 - PerformanceMetrics - INFO - SYSTEM: CPU: 56.6%, RAM: 74.9%, GPU: N/A
+2025-03-23 01:51:49,773 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:57,088 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:59,959 - PerformanceMetrics - INFO - SYSTEM: CPU: 53.6%, RAM: 74.9%, GPU: N/A
+2025-03-23 01:51:59,960 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:02,765 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:52:02,767 - PerformanceMetrics - INFO - Parallel reasoning model took 31.26s
+2025-03-23 01:52:07,112 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:10,155 - PerformanceMetrics - INFO - SYSTEM: CPU: 38.6%, RAM: 63.3%, GPU: N/A
+2025-03-23 01:52:10,156 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:17,134 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:20,349 - PerformanceMetrics - INFO - SYSTEM: CPU: 52.6%, RAM: 64.7%, GPU: N/A
+2025-03-23 01:52:20,350 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:27,151 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:30,568 - PerformanceMetrics - INFO - SYSTEM: CPU: 45.4%, RAM: 64.6%, GPU: N/A
+2025-03-23 01:52:30,569 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:37,168 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:40,779 - PerformanceMetrics - INFO - SYSTEM: CPU: 41.6%, RAM: 64.6%, GPU: N/A
+2025-03-23 01:52:40,780 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:47,191 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:50,983 - PerformanceMetrics - INFO - SYSTEM: CPU: 39.8%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:52:50,984 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:57,214 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:00,929 - CombinedSystem - INFO - Recognized: What is up?
+2025-03-23 01:53:01,167 - PerformanceMetrics - INFO - SYSTEM: CPU: 44.7%, RAM: 64.4%, GPU: N/A
+2025-03-23 01:53:01,167 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.625s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:07,234 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 2, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:11,369 - PerformanceMetrics - INFO - SYSTEM: CPU: 31.2%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:53:11,370 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:17,247 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 2, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:21,557 - PerformanceMetrics - INFO - SYSTEM: CPU: 39.3%, RAM: 64.4%, GPU: N/A
+2025-03-23 01:53:21,558 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:24,455 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:53:24,455 - PerformanceMetrics - INFO - Conversational model took 81.69s
+2025-03-23 01:53:24,456 - CombinedSystem - INFO - Response generated: **Random Convolution: A Primer**
+
+In the context o...
+2025-03-23 01:53:24,456 - PerformanceMetrics - WARNING - language_processing took 162.72s
+2025-03-23 01:53:24,456 - CombinedSystem - INFO - Processing text: What's up?
+2025-03-23 01:53:27,271 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:31,755 - PerformanceMetrics - INFO - SYSTEM: CPU: 31.6%, RAM: 60.6%, GPU: N/A
+2025-03-23 01:53:31,756 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 162.725s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:33,811 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:53:33,817 - PerformanceMetrics - INFO - Reflex model took 9.35s
+2025-03-23 01:53:37,291 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:41,935 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:53:41,935 - PerformanceMetrics - INFO - Parallel reasoning model took 8.12s
+2025-03-23 01:53:41,959 - PerformanceMetrics - INFO - SYSTEM: CPU: 43.5%, RAM: 65.9%, GPU: N/A
+2025-03-23 01:53:41,960 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:42,813 - CombinedSystem - INFO - Recognized: Hello, hello.
+2025-03-23 01:53:47,316 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 2, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:52,169 - PerformanceMetrics - INFO - SYSTEM: CPU: 55.9%, RAM: 55.3%, GPU: N/A
+2025-03-23 01:53:52,170 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.272s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:52,322 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:53:52,323 - PerformanceMetrics - INFO - Conversational model took 10.39s
+2025-03-23 01:53:52,323 - CombinedSystem - INFO - Response generated: Not much. Just a computer program designed to simu...
+2025-03-23 01:53:52,324 - PerformanceMetrics - WARNING - language_processing took 27.85s
+2025-03-23 01:53:52,324 - CombinedSystem - INFO - Processing text: What is up?
+2025-03-23 01:53:57,327 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 1, tts_queue: 0
+2025-03-23 01:54:00,492 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:54:00,493 - PerformanceMetrics - INFO - Reflex model took 8.17s
+2025-03-23 01:54:02,387 - PerformanceMetrics - INFO - SYSTEM: CPU: 24.2%, RAM: 51.9%, GPU: N/A
+2025-03-23 01:54:02,387 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 27.852s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:07,099 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:54:07,100 - PerformanceMetrics - INFO - Parallel reasoning model took 6.61s
+2025-03-23 01:54:07,351 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 1, tts_queue: 0
+2025-03-23 01:54:12,583 - PerformanceMetrics - INFO - SYSTEM: CPU: 48.2%, RAM: 53.8%, GPU: N/A
+2025-03-23 01:54:12,584 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:17,375 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 1, tts_queue: 0
+2025-03-23 01:54:20,793 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:54:20,794 - PerformanceMetrics - INFO - Conversational model took 13.69s
+2025-03-23 01:54:20,794 - CombinedSystem - INFO - Response generated: Not much is happening here, but I'm always ready t...
+2025-03-23 01:54:20,794 - PerformanceMetrics - WARNING - language_processing took 28.47s
+2025-03-23 01:54:20,794 - CombinedSystem - INFO - Processing text: Hello, hello.
+2025-03-23 01:54:22,790 - PerformanceMetrics - INFO - SYSTEM: CPU: 32.4%, RAM: 49.8%, GPU: N/A
+2025-03-23 01:54:22,791 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 28.470s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:25,089 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:54:25,090 - PerformanceMetrics - INFO - Reflex model took 4.30s
+2025-03-23 01:54:27,391 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 2, tts_queue: 0
+2025-03-23 01:54:33,001 - PerformanceMetrics - INFO - SYSTEM: CPU: 11.9%, RAM: 65.6%, GPU: N/A
+2025-03-23 01:54:33,001 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:36,578 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:54:36,579 - PerformanceMetrics - INFO - Parallel reasoning model took 11.49s
+2025-03-23 01:54:37,407 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 2, tts_queue: 0
+2025-03-23 01:54:42,728 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:54:42,729 - PerformanceMetrics - INFO - Conversational model took 6.15s
+2025-03-23 01:54:42,729 - CombinedSystem - INFO - Response generated: It seems like you're a bit excited or playful toda...
+2025-03-23 01:54:42,730 - PerformanceMetrics - WARNING - language_processing took 21.94s
+2025-03-23 01:54:43,192 - PerformanceMetrics - INFO - SYSTEM: CPU: 7.6%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:54:43,193 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 21.935s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:47,431 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:54:53,363 - PerformanceMetrics - INFO - SYSTEM: CPU: 14.4%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:54:53,364 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:57,451 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:03,575 - PerformanceMetrics - INFO - SYSTEM: CPU: 7.6%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:55:03,576 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:07,471 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:13,744 - PerformanceMetrics - INFO - SYSTEM: CPU: 7.5%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:55:13,744 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:17,487 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:23,962 - PerformanceMetrics - INFO - SYSTEM: CPU: 17.6%, RAM: 57.0%, GPU: N/A
+2025-03-23 01:55:23,962 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:27,512 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:34,157 - PerformanceMetrics - INFO - SYSTEM: CPU: 9.0%, RAM: 57.3%, GPU: N/A
+2025-03-23 01:55:34,157 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:37,531 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:44,366 - PerformanceMetrics - INFO - SYSTEM: CPU: 21.1%, RAM: 54.6%, GPU: N/A
+2025-03-23 01:55:44,366 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:47,551 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:54,567 - PerformanceMetrics - INFO - SYSTEM: CPU: 19.5%, RAM: 54.1%, GPU: N/A
+2025-03-23 01:55:54,568 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:57,568 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:56:04,762 - PerformanceMetrics - INFO - SYSTEM: CPU: 18.1%, RAM: 54.3%, GPU: N/A
+2025-03-23 01:56:04,762 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:56:07,504 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 01:56:07,504 - CombinedSystem - INFO - Shutting down...
+2025-03-23 01:56:08,637 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:02:08,649 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:02:08,650 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:02:08,651 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:02:09,391 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:02:11,281 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'tinyllama', 'reasoning_model': 'phi3:mini', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'buffer_response': True, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache'}
+2025-03-23 02:02:11,281 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:02:11,286 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:02:11,286 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:02:11,286 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:02:11,288 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:02:11,288 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:02:11,289 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:02:11,290 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:02:11,290 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:02:11,290 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:02:21,296 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:02:22,468 - CombinedSystem - INFO - Recognized: sehen
+2025-03-23 02:02:22,469 - CombinedSystem - INFO - Processing text: sehen
+2025-03-23 02:02:22,469 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:02:24,836 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:02:24,837 - PerformanceMetrics - INFO - Reflex model took 2.37s
+2025-03-23 02:02:24,837 - CombinedSystem - INFO - Response generated: Yes, absolutely! I can certainly confirm that the ...
+2025-03-23 02:02:24,839 - CombinedSystem - INFO - Text split into 3 sentences for TTS
+2025-03-23 02:02:31,316 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:02:35,042 - PerformanceMetrics - INFO - TTS generation took 10.20s
+2025-03-23 02:02:41,316 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:02:41,485 - PerformanceMetrics - INFO - Droid output took 6.44s for 2 chunks
+2025-03-23 02:02:51,337 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:02:52,331 - CombinedSystem - INFO - Recognized: Okay, that would start.
+2025-03-23 02:02:52,333 - CombinedSystem - INFO - Processing text: Okay, that would start.
+2025-03-23 02:02:52,333 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:02:54,098 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:02:54,099 - PerformanceMetrics - INFO - Reflex model took 1.77s
+2025-03-23 02:02:54,099 - CombinedSystem - INFO - Response generated: AI Assistant: Hello, I'm glad to serve as your hel...
+2025-03-23 02:02:54,099 - CombinedSystem - INFO - Text split into 4 sentences for TTS
+2025-03-23 02:02:56,343 - CombinedSystem - INFO - Recognized: Again, hello, how are you doing?
+2025-03-23 02:02:56,346 - CombinedSystem - INFO - Processing text: Again, hello, how are you doing?
+2025-03-23 02:02:56,347 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:03:01,353 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:11,377 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:13,286 - PerformanceMetrics - INFO - TTS generation took 19.19s
+2025-03-23 02:03:16,155 - CombinedSystem - INFO - Recognized: I hope you do What you did To set aside your memory And all
+2025-03-23 02:03:21,398 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:25,088 - PerformanceMetrics - INFO - Droid output took 11.80s for 3 chunks
+2025-03-23 02:03:26,359 - CombinedSystem - WARNING - Language processing timeout after 30s
+2025-03-23 02:03:26,359 - CombinedSystem - INFO - Response generated: I'm still thinking about that. Let me get back to ...
+2025-03-23 02:03:26,360 - CombinedSystem - INFO - Processing text: I hope you do What you did To set aside your memory And all
+2025-03-23 02:03:26,361 - CombinedSystem - INFO - Text split into 2 sentences for TTS
+2025-03-23 02:03:26,361 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 02:03:31,416 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:33,938 - PerformanceMetrics - INFO - TTS generation took 7.58s
+2025-03-23 02:03:34,014 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:03:34,015 - PerformanceMetrics - INFO - Reflex model took 7.65s
+2025-03-23 02:03:34,020 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2025-03-23 02:03:34,020 - CombinedSystem - ERROR - Error in language model processing: model "phi3:mini" not found, try pulling it first (status code: 404)
+2025-03-23 02:03:34,021 - CombinedSystem - INFO - Response generated: I'm sorry, I couldn't process that properly. Could...
+2025-03-23 02:03:36,229 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:03:36,230 - PerformanceMetrics - INFO - Reflex model took 39.88s
+2025-03-23 02:03:36,238 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2025-03-23 02:03:36,238 - CombinedSystem - ERROR - Error in language model processing: model "phi3:mini" not found, try pulling it first (status code: 404)
+2025-03-23 02:03:36,526 - CombinedSystem - INFO - Recognized: I'm still looking at you, guys.
+2025-03-23 02:03:36,530 - CombinedSystem - INFO - Processing text: I'm still looking at you, guys.
+2025-03-23 02:03:36,530 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 02:03:36,788 - PerformanceMetrics - INFO - Droid output took 2.85s for 1 chunks
+2025-03-23 02:03:36,789 - CombinedSystem - INFO - Text split into 2 sentences for TTS
+2025-03-23 02:03:41,418 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:44,701 - PerformanceMetrics - INFO - TTS generation took 7.91s
+2025-03-23 02:03:46,947 - CombinedSystem - INFO - Recognized: That's how we do it.
+2025-03-23 02:03:47,539 - PerformanceMetrics - INFO - Droid output took 2.84s for 1 chunks
+2025-03-23 02:03:51,427 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 02:04:01,450 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 02:04:06,547 - CombinedSystem - WARNING - Language processing timeout after 30s
+2025-03-23 02:04:06,548 - CombinedSystem - INFO - Response generated: I'm still thinking about that. Let me get back to ...
+2025-03-23 02:04:06,548 - CombinedSystem - INFO - Processing text: That's how we do it.
+2025-03-23 02:04:06,549 - CombinedSystem - INFO - Text split into 2 sentences for TTS
+2025-03-23 02:04:06,549 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 02:04:11,156 - PerformanceMetrics - INFO - TTS generation took 4.61s
+2025-03-23 02:04:11,462 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:04:13,875 - CombinedSystem - INFO - Recognized: But still, everything about it now.
+2025-03-23 02:04:13,985 - PerformanceMetrics - INFO - Droid output took 2.83s for 1 chunks
+2025-03-23 02:04:16,445 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:04:16,446 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:04:17,581 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:11:50,442 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:11:50,444 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:11:50,444 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:11:51,131 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:11:52,786 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'tinyllama', 'reasoning_model': 'phi3:mini', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'buffer_response': True, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache'}
+2025-03-23 02:11:52,787 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:11:52,790 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:11:52,791 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:11:52,791 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:11:52,792 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:11:52,793 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:11:52,794 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:11:52,794 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:11:52,795 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:11:52,795 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:11:55,829 - CombinedSystem - INFO - Recognized: You can help.
+2025-03-23 02:11:55,830 - CombinedSystem - INFO - Processing text: You can help.
+2025-03-23 02:11:55,830 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:12:02,809 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:12:04,437 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 02:12:05,926 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:12:05,926 - PerformanceMetrics - INFO - Reflex model took 10.09s
+2025-03-23 02:12:05,926 - CombinedSystem - INFO - Response generated: Certainly! Here's an example of how to help someon...
+2025-03-23 02:12:05,927 - CombinedSystem - INFO - Processing text: Hello.
+2025-03-23 02:12:05,927 - CombinedSystem - INFO - Text split into 5 sentences for TTS
+2025-03-23 02:12:05,927 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:12:09,973 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:12:09,973 - PerformanceMetrics - INFO - Reflex model took 4.04s
+2025-03-23 02:12:09,974 - CombinedSystem - INFO - Response generated: I'm glad I could help! Here's an example of how yo...
+2025-03-23 02:12:12,827 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:12:22,847 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:12:29,082 - PerformanceMetrics - INFO - TTS generation took 23.15s
+2025-03-23 02:12:32,862 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:12:42,887 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:12:52,908 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:13:02,927 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:13:12,943 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:13:16,810 - PerformanceMetrics - INFO - Droid output took 47.73s for 10 chunks
+2025-03-23 02:13:16,810 - CombinedSystem - INFO - Text split into 5 sentences for TTS
+2025-03-23 02:13:22,967 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:13:32,987 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:13:34,132 - PerformanceMetrics - INFO - TTS generation took 17.32s
+2025-03-23 02:13:41,950 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:13:41,951 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:13:42,965 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:23:38,447 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:23:38,449 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:23:38,449 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:23:39,131 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:23:40,678 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'tinyllama', 'reasoning_model': 'phi3:mini', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'buffer_response': True, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 02:23:40,678 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:23:40,682 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:23:40,683 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:23:40,683 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:23:40,685 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:23:40,686 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:23:40,686 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:23:40,687 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:23:40,687 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:23:40,687 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:23:50,707 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:23:52,235 - CombinedSystem - INFO - Recognized: Hello, water
+2025-03-23 02:23:52,236 - CombinedSystem - INFO - Processing text: Hello, water
+2025-03-23 02:23:52,236 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:23:54,400 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:23:54,400 - PerformanceMetrics - INFO - Reflex model took 2.16s
+2025-03-23 02:23:54,400 - CombinedSystem - INFO - Response generated: Yes, I'm glad to hear that! Here's the text revise...
+2025-03-23 02:23:54,401 - CombinedSystem - INFO - Text split into 2 sentences for TTS
+2025-03-23 02:24:00,727 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:04,609 - PerformanceMetrics - INFO - TTS generation took 10.21s
+2025-03-23 02:24:09,267 - PerformanceMetrics - INFO - Droid output took 4.66s for 1 chunks
+2025-03-23 02:24:10,742 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:20,757 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:26,951 - CombinedSystem - INFO - Recognized: do your back music.
+2025-03-23 02:24:26,952 - CombinedSystem - INFO - Processing text: do your back music.
+2025-03-23 02:24:26,953 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:24:30,781 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:40,805 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:42,466 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:24:42,466 - PerformanceMetrics - INFO - Reflex model took 15.51s
+2025-03-23 02:24:42,467 - CombinedSystem - INFO - Response generated: Absolutely! Here's the back music for you:
+
+Backin...
+2025-03-23 02:24:42,467 - CombinedSystem - INFO - Text split into 3 sentences for TTS
+2025-03-23 02:24:50,820 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:00,837 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:03,834 - PerformanceMetrics - INFO - TTS generation took 21.37s
+2025-03-23 02:25:10,868 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:20,888 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:30,911 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:40,931 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:50,948 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:53,529 - PerformanceMetrics - INFO - Droid output took 49.69s for 10 chunks
+2025-03-23 02:26:00,967 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:26:10,992 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:26:21,011 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:26:21,826 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:26:21,826 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:26:21,827 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 02:26:22,955 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:26:57,523 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:26:57,524 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:26:57,524 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:26:58,244 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:26:59,791 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'tinyllama', 'reasoning_model': 'phi3:mini', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'buffer_response': True, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': True, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'my_memory.json', 'max_memory_entries': 150, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 02:26:59,791 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:26:59,795 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:26:59,795 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:26:59,796 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:26:59,797 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:26:59,799 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:26:59,799 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:26:59,800 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:26:59,800 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:26:59,800 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:26:59,913 - PerformanceMetrics - INFO - SYSTEM: CPU: 17.3%, RAM: 55.4%, GPU: N/A
+2025-03-23 02:26:59,914 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:03,783 - CombinedSystem - INFO - Recognized: Hello, hello
+2025-03-23 02:27:03,784 - CombinedSystem - INFO - Processing text: Hello, hello
+2025-03-23 02:27:03,784 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:27:09,793 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:10,132 - PerformanceMetrics - INFO - SYSTEM: CPU: 35.8%, RAM: 58.9%, GPU: N/A
+2025-03-23 02:27:10,133 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.616s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:19,818 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:20,346 - PerformanceMetrics - INFO - SYSTEM: CPU: 35.8%, RAM: 58.8%, GPU: N/A
+2025-03-23 02:27:20,347 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:22,181 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:27:22,182 - PerformanceMetrics - INFO - Reflex model took 18.40s
+2025-03-23 02:27:22,182 - CombinedSystem - INFO - Response generated: Hi there! It's great to hear from you again today....
+2025-03-23 02:27:22,187 - CombinedSystem - INFO - Text split into 5 sentences for TTS
+2025-03-23 02:27:22,182 - PerformanceMetrics - WARNING - language_processing took 18.40s
+2025-03-23 02:27:29,837 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:30,506 - PerformanceMetrics - INFO - SYSTEM: CPU: 6.9%, RAM: 60.9%, GPU: N/A
+2025-03-23 02:27:30,507 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 18.398s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:39,856 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:40,719 - PerformanceMetrics - INFO - SYSTEM: CPU: 15.4%, RAM: 57.8%, GPU: N/A
+2025-03-23 02:27:40,720 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:40,978 - PerformanceMetrics - INFO - TTS generation took 18.80s
+2025-03-23 02:27:49,856 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:50,911 - PerformanceMetrics - INFO - SYSTEM: CPU: 1.7%, RAM: 57.8%, GPU: N/A
+2025-03-23 02:27:50,912 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:59,873 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:01,095 - PerformanceMetrics - INFO - SYSTEM: CPU: 0.9%, RAM: 57.7%, GPU: N/A
+2025-03-23 02:28:01,096 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:09,898 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:11,283 - PerformanceMetrics - INFO - SYSTEM: CPU: 1.9%, RAM: 57.6%, GPU: N/A
+2025-03-23 02:28:11,284 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:19,917 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:21,455 - PerformanceMetrics - INFO - SYSTEM: CPU: 5.0%, RAM: 57.5%, GPU: N/A
+2025-03-23 02:28:21,456 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:29,936 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:31,666 - PerformanceMetrics - INFO - SYSTEM: CPU: 2.6%, RAM: 57.5%, GPU: N/A
+2025-03-23 02:28:31,666 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:39,953 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:41,837 - PerformanceMetrics - INFO - SYSTEM: CPU: 4.6%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:28:41,838 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:49,977 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:51,842 - PerformanceMetrics - INFO - Droid output took 70.86s for 15 chunks
+2025-03-23 02:28:52,018 - PerformanceMetrics - INFO - SYSTEM: CPU: 14.5%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:28:52,019 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 89.660s
+2025-03-23 02:28:59,996 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:02,219 - PerformanceMetrics - INFO - SYSTEM: CPU: 1.7%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:29:02,219 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:10,016 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:12,435 - PerformanceMetrics - INFO - SYSTEM: CPU: 6.4%, RAM: 57.6%, GPU: N/A
+2025-03-23 02:29:12,436 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:20,033 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:22,648 - PerformanceMetrics - INFO - SYSTEM: CPU: 11.9%, RAM: 57.5%, GPU: N/A
+2025-03-23 02:29:22,649 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:30,056 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:32,853 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.6%, RAM: 57.5%, GPU: N/A
+2025-03-23 02:29:32,853 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:40,077 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:43,038 - PerformanceMetrics - INFO - SYSTEM: CPU: 0.0%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:29:43,038 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:50,096 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:53,230 - PerformanceMetrics - INFO - SYSTEM: CPU: 5.2%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:29:53,231 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:58,054 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:29:58,054 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:29:58,055 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 02:29:59,176 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:31:25,213 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:31:25,215 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:31:25,215 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:31:25,908 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:31:27,368 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'tinyllama', 'reasoning_model': 'phi3:mini', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'buffer_response': True, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': True, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'memorymap.json', 'max_memory_entries': 150, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 02:31:27,369 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:31:27,373 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:31:27,373 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:31:27,373 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:31:27,374 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:31:27,375 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:31:27,375 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:31:27,376 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:31:27,377 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:31:27,377 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:31:27,481 - PerformanceMetrics - INFO - SYSTEM: CPU: 11.3%, RAM: 56.1%, GPU: N/A
+2025-03-23 02:31:27,481 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:31:32,914 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:31:32,914 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:31:32,919 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 02:31:34,035 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:31:56,932 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:31:56,933 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:31:56,934 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:31:57,641 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:31:59,218 - CombinedSystem - INFO - Loaded 0 episodic and 0 semantic memories
+2025-03-23 02:31:59,219 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'tinyllama', 'reasoning_model': 'phi3:mini', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'buffer_response': True, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': True, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'memorymap.json', 'max_memory_entries': 150, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 02:31:59,219 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:31:59,223 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:31:59,224 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:31:59,224 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:31:59,226 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:31:59,227 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:31:59,228 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:31:59,228 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:31:59,228 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:31:59,228 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:31:59,332 - PerformanceMetrics - INFO - SYSTEM: CPU: 10.4%, RAM: 57.0%, GPU: N/A
+2025-03-23 02:31:59,332 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:04,908 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 02:32:04,910 - CombinedSystem - INFO - Processing text: Hello.
+2025-03-23 02:32:04,910 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:32:08,048 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:32:08,048 - PerformanceMetrics - INFO - Reflex model took 3.14s
+2025-03-23 02:32:08,049 - CombinedSystem - INFO - Response generated: Hi there! I'm glad you enjoyed the previous messag...
+2025-03-23 02:32:08,049 - CombinedSystem - INFO - Text split into 7 sentences for TTS
+2025-03-23 02:32:08,049 - PerformanceMetrics - WARNING - language_processing took 3.14s
+2025-03-23 02:32:09,237 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:09,552 - PerformanceMetrics - INFO - SYSTEM: CPU: 8.0%, RAM: 63.4%, GPU: N/A
+2025-03-23 02:32:09,553 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.835s, language_processing: 3.140s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:19,257 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:19,732 - PerformanceMetrics - INFO - SYSTEM: CPU: 11.4%, RAM: 63.7%, GPU: N/A
+2025-03-23 02:32:19,733 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:29,274 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:29,840 - PerformanceMetrics - INFO - TTS generation took 21.79s
+2025-03-23 02:32:29,944 - PerformanceMetrics - INFO - SYSTEM: CPU: 4.6%, RAM: 56.9%, GPU: N/A
+2025-03-23 02:32:29,944 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:39,288 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:40,154 - PerformanceMetrics - INFO - SYSTEM: CPU: 2.9%, RAM: 56.8%, GPU: N/A
+2025-03-23 02:32:40,154 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:42,985 - PerformanceMetrics - INFO - Droid output took 13.14s for 3 chunks
+2025-03-23 02:32:49,308 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:50,351 - PerformanceMetrics - INFO - SYSTEM: CPU: 2.3%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:32:50,352 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 34.936s
+2025-03-23 02:32:59,323 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:00,549 - PerformanceMetrics - INFO - SYSTEM: CPU: 1.5%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:33:00,549 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:09,348 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:10,766 - PerformanceMetrics - INFO - SYSTEM: CPU: 5.0%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:33:10,767 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:19,368 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:20,979 - PerformanceMetrics - INFO - SYSTEM: CPU: 0.0%, RAM: 56.4%, GPU: N/A
+2025-03-23 02:33:20,979 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:29,388 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:31,149 - PerformanceMetrics - INFO - SYSTEM: CPU: 1.8%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:33:31,150 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:31,627 - CombinedSystem - INFO - Recognized: Tell me about wooden movies.
+2025-03-23 02:33:31,628 - CombinedSystem - INFO - Processing text: Tell me about wooden movies.
+2025-03-23 02:33:31,628 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 02:33:39,404 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:41,333 - PerformanceMetrics - INFO - SYSTEM: CPU: 43.9%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:33:41,334 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.289s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:43,677 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:33:43,678 - PerformanceMetrics - INFO - Reflex model took 12.05s
+2025-03-23 02:33:49,430 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:51,533 - PerformanceMetrics - INFO - SYSTEM: CPU: 65.8%, RAM: 83.7%, GPU: N/A
+2025-03-23 02:33:51,534 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:59,449 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:01,640 - CombinedSystem - WARNING - Language processing timeout after 30s
+2025-03-23 02:34:01,641 - CombinedSystem - INFO - Response generated: I'm still thinking about that. Let me get back to ...
+2025-03-23 02:34:01,641 - CombinedSystem - INFO - Text split into 2 sentences for TTS
+2025-03-23 02:34:01,641 - PerformanceMetrics - WARNING - language_processing took 30.01s
+2025-03-23 02:34:01,727 - PerformanceMetrics - INFO - SYSTEM: CPU: 63.7%, RAM: 84.4%, GPU: N/A
+2025-03-23 02:34:01,730 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 30.013s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:09,469 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:09,679 - PerformanceMetrics - INFO - TTS generation took 8.04s
+2025-03-23 02:34:11,934 - PerformanceMetrics - INFO - SYSTEM: CPU: 48.7%, RAM: 84.5%, GPU: N/A
+2025-03-23 02:34:11,934 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.033s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:12,614 - PerformanceMetrics - INFO - Droid output took 2.93s for 1 chunks
+2025-03-23 02:34:13,319 - CombinedSystem - INFO - Recognized: hahaha.
+2025-03-23 02:34:13,320 - CombinedSystem - INFO - Processing text: hahaha.
+2025-03-23 02:34:13,320 - PerformanceMetrics - WARNING - speech_recognition took 1.34s
+2025-03-23 02:34:13,320 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:34:19,484 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:22,179 - PerformanceMetrics - INFO - SYSTEM: CPU: 65.6%, RAM: 83.1%, GPU: N/A
+2025-03-23 02:34:22,180 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.546s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 10.974s
+2025-03-23 02:34:27,252 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:34:27,253 - PerformanceMetrics - INFO - Reflex model took 13.93s
+2025-03-23 02:34:27,254 - CombinedSystem - INFO - Response generated: No problem! Here's another silly example:
+
+Hey, yo...
+2025-03-23 02:34:27,254 - CombinedSystem - INFO - Text split into 4 sentences for TTS
+2025-03-23 02:34:27,254 - PerformanceMetrics - WARNING - language_processing took 13.93s
+2025-03-23 02:34:29,501 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:32,364 - PerformanceMetrics - INFO - SYSTEM: CPU: 44.7%, RAM: 79.8%, GPU: N/A
+2025-03-23 02:34:32,365 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 13.933s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:39,513 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:42,543 - PerformanceMetrics - INFO - SYSTEM: CPU: 46.9%, RAM: 79.9%, GPU: N/A
+2025-03-23 02:34:42,545 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:48,595 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:34:48,596 - PerformanceMetrics - INFO - Reasoning model took 64.92s
+2025-03-23 02:34:49,482 - PerformanceMetrics - INFO - TTS generation took 22.23s
+2025-03-23 02:34:49,758 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:52,715 - PerformanceMetrics - INFO - SYSTEM: CPU: 17.5%, RAM: 71.0%, GPU: N/A
+2025-03-23 02:34:52,716 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.032s, speech_recognition: 0.043s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:59,791 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:02,924 - PerformanceMetrics - INFO - SYSTEM: CPU: 35.5%, RAM: 72.1%, GPU: N/A
+2025-03-23 02:35:02,925 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:03,739 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:35:03,740 - PerformanceMetrics - INFO - Conversational model took 15.14s
+2025-03-23 02:35:09,804 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:13,114 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.1%, RAM: 71.9%, GPU: N/A
+2025-03-23 02:35:13,115 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:19,105 - PerformanceMetrics - INFO - Droid output took 29.62s for 6 chunks
+2025-03-23 02:35:19,827 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:23,283 - PerformanceMetrics - INFO - SYSTEM: CPU: 2.8%, RAM: 71.8%, GPU: N/A
+2025-03-23 02:35:23,283 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 51.851s
+2025-03-23 02:35:29,847 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:33,489 - PerformanceMetrics - INFO - SYSTEM: CPU: 1.7%, RAM: 71.5%, GPU: N/A
+2025-03-23 02:35:33,489 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:39,867 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:43,687 - PerformanceMetrics - INFO - SYSTEM: CPU: 4.5%, RAM: 71.4%, GPU: N/A
+2025-03-23 02:35:43,688 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:49,884 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:53,869 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.7%, RAM: 69.3%, GPU: N/A
+2025-03-23 02:35:53,869 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:59,908 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:04,063 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.6%, RAM: 69.4%, GPU: N/A
+2025-03-23 02:36:04,064 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:09,928 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:14,246 - PerformanceMetrics - INFO - SYSTEM: CPU: 7.9%, RAM: 69.5%, GPU: N/A
+2025-03-23 02:36:14,247 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:19,948 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:24,470 - PerformanceMetrics - INFO - SYSTEM: CPU: 5.5%, RAM: 70.0%, GPU: N/A
+2025-03-23 02:36:24,470 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:29,964 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:34,675 - PerformanceMetrics - INFO - SYSTEM: CPU: 5.1%, RAM: 70.0%, GPU: N/A
+2025-03-23 02:36:34,676 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:39,987 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:44,887 - PerformanceMetrics - INFO - SYSTEM: CPU: 9.2%, RAM: 70.1%, GPU: N/A
+2025-03-23 02:36:44,887 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:50,007 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:55,109 - PerformanceMetrics - INFO - SYSTEM: CPU: 8.8%, RAM: 70.1%, GPU: N/A
+2025-03-23 02:36:55,109 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:00,027 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:05,347 - PerformanceMetrics - INFO - SYSTEM: CPU: 8.7%, RAM: 70.2%, GPU: N/A
+2025-03-23 02:37:05,348 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:10,044 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:15,561 - PerformanceMetrics - INFO - SYSTEM: CPU: 8.5%, RAM: 70.2%, GPU: N/A
+2025-03-23 02:37:15,562 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:20,068 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:25,750 - PerformanceMetrics - INFO - SYSTEM: CPU: 22.9%, RAM: 70.3%, GPU: N/A
+2025-03-23 02:37:25,751 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:30,087 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:35,952 - PerformanceMetrics - INFO - SYSTEM: CPU: 6.3%, RAM: 70.7%, GPU: N/A
+2025-03-23 02:37:35,953 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:40,107 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:46,159 - PerformanceMetrics - INFO - SYSTEM: CPU: 12.5%, RAM: 71.2%, GPU: N/A
+2025-03-23 02:37:46,160 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:50,123 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:56,397 - PerformanceMetrics - INFO - SYSTEM: CPU: 6.5%, RAM: 71.2%, GPU: N/A
+2025-03-23 02:37:56,398 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:38:00,148 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:38:06,585 - PerformanceMetrics - INFO - SYSTEM: CPU: 31.5%, RAM: 71.4%, GPU: N/A
+2025-03-23 02:38:06,586 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:38:10,168 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:38:16,822 - PerformanceMetrics - INFO - SYSTEM: CPU: 13.7%, RAM: 71.5%, GPU: N/A
+2025-03-23 02:38:16,823 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:38:20,188 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:38:27,018 - PerformanceMetrics - INFO - SYSTEM: CPU: 6.7%, RAM: 71.1%, GPU: N/A
+2025-03-23 02:38:27,019 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:38:30,204 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:38:32,815 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:38:32,815 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:38:32,816 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 02:38:33,949 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:38:42,931 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:38:42,933 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:38:42,933 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:38:43,674 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:38:45,765 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'tinyllama', 'reasoning_model': 'phi3:mini', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 02:38:45,765 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:38:45,773 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:38:45,773 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:38:45,773 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:38:45,775 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:38:45,775 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:38:45,777 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:38:45,778 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:38:45,780 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:38:45,780 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:38:48,992 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:38:48,992 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:38:48,993 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 02:38:50,105 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:39:00,650 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:39:00,652 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:39:00,652 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:39:01,350 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:39:03,049 - CombinedSystem - INFO - Loaded 6 episodic and 0 semantic memories
+2025-03-23 02:39:03,054 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 5, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'tinyllama', 'reasoning_model': 'phi3:mini', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': True, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'memorymap.json', 'max_memory_entries': 150, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 02:39:03,055 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:39:03,061 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:39:03,063 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:39:03,064 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:39:03,067 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:39:03,068 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:39:03,068 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:39:03,070 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:39:03,071 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:39:03,071 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:39:03,185 - PerformanceMetrics - INFO - SYSTEM: CPU: 42.7%, RAM: 73.2%, GPU: N/A
+2025-03-23 02:39:03,187 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:06,761 - CombinedSystem - ERROR - TTS worker failed: task_done() called too many times
+2025-03-23 02:39:06,855 - CombinedSystem - ERROR - TTS worker failed: task_done() called too many times
+2025-03-23 02:39:13,062 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:13,427 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.1%, RAM: 75.1%, GPU: N/A
+2025-03-23 02:39:13,429 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:19,016 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 02:39:19,017 - CombinedSystem - INFO - Processing text: Hello.
+2025-03-23 02:39:19,017 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:39:21,194 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:39:21,195 - PerformanceMetrics - INFO - Reflex model took 2.18s
+2025-03-23 02:39:21,195 - CombinedSystem - INFO - Response generated: I'm sorry but I don't have the capability to hear ...
+2025-03-23 02:39:21,196 - PerformanceMetrics - WARNING - language_processing took 2.18s
+2025-03-23 02:39:23,081 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:23,656 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.9%, RAM: 77.7%, GPU: N/A
+2025-03-23 02:39:23,656 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.945s, language_processing: 2.178s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:33,102 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:33,815 - PerformanceMetrics - INFO - SYSTEM: CPU: 4.1%, RAM: 77.7%, GPU: N/A
+2025-03-23 02:39:33,815 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:36,210 - CombinedSystem - WARNING - TTS generation timed out
+2025-03-23 02:39:43,118 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:44,006 - PerformanceMetrics - INFO - SYSTEM: CPU: 12.0%, RAM: 77.7%, GPU: N/A
+2025-03-23 02:39:44,006 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:51,225 - CombinedSystem - WARNING - TTS generation timed out
+2025-03-23 02:39:53,131 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:54,210 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.5%, RAM: 77.7%, GPU: N/A
+2025-03-23 02:39:54,210 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.031s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:00,059 - PerformanceMetrics - INFO - Droid output took 8.83s for 2 chunks
+2025-03-23 02:40:03,148 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:04,382 - PerformanceMetrics - INFO - SYSTEM: CPU: 1.8%, RAM: 62.8%, GPU: N/A
+2025-03-23 02:40:04,383 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 38.863s
+2025-03-23 02:40:11,655 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 02:40:11,656 - CombinedSystem - INFO - Processing text: Hello.
+2025-03-23 02:40:11,656 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:40:11,657 - PerformanceMetrics - INFO - Reflex model took 0.00s
+2025-03-23 02:40:11,657 - CombinedSystem - INFO - Response generated: I'm sorry but I don't have the capability to hear ...
+2025-03-23 02:40:13,168 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:14,577 - PerformanceMetrics - INFO - SYSTEM: CPU: 1.5%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:40:14,577 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.223s, language_processing: 0.001s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:23,192 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:24,763 - PerformanceMetrics - INFO - SYSTEM: CPU: 10.9%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:40:24,764 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:26,666 - CombinedSystem - WARNING - TTS generation timed out
+2025-03-23 02:40:33,212 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:34,974 - PerformanceMetrics - INFO - SYSTEM: CPU: 2.9%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:40:34,974 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:41,674 - CombinedSystem - WARNING - TTS generation timed out
+2025-03-23 02:40:43,222 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:45,171 - PerformanceMetrics - INFO - SYSTEM: CPU: 4.1%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:40:45,172 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:50,510 - PerformanceMetrics - INFO - Droid output took 8.84s for 2 chunks
+2025-03-23 02:40:53,242 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:55,374 - PerformanceMetrics - INFO - SYSTEM: CPU: 5.3%, RAM: 62.5%, GPU: N/A
+2025-03-23 02:40:55,375 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 38.853s
+2025-03-23 02:41:03,262 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:05,586 - PerformanceMetrics - INFO - SYSTEM: CPU: 4.2%, RAM: 62.6%, GPU: N/A
+2025-03-23 02:41:05,587 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:13,278 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:15,796 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.9%, RAM: 62.7%, GPU: N/A
+2025-03-23 02:41:15,796 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:23,301 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:26,018 - PerformanceMetrics - INFO - SYSTEM: CPU: 5.2%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:41:26,020 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:33,321 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:36,228 - PerformanceMetrics - INFO - SYSTEM: CPU: 10.3%, RAM: 63.1%, GPU: N/A
+2025-03-23 02:41:36,228 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:43,342 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:46,454 - PerformanceMetrics - INFO - SYSTEM: CPU: 5.0%, RAM: 63.3%, GPU: N/A
+2025-03-23 02:41:46,454 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:53,357 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:56,671 - PerformanceMetrics - INFO - SYSTEM: CPU: 8.5%, RAM: 63.5%, GPU: N/A
+2025-03-23 02:41:56,671 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:03,381 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:06,864 - PerformanceMetrics - INFO - SYSTEM: CPU: 15.2%, RAM: 63.0%, GPU: N/A
+2025-03-23 02:42:06,865 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:13,401 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:17,063 - PerformanceMetrics - INFO - SYSTEM: CPU: 8.8%, RAM: 62.4%, GPU: N/A
+2025-03-23 02:42:17,065 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:23,421 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:27,256 - PerformanceMetrics - INFO - SYSTEM: CPU: 6.7%, RAM: 62.1%, GPU: N/A
+2025-03-23 02:42:27,257 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:33,437 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:37,465 - PerformanceMetrics - INFO - SYSTEM: CPU: 3.7%, RAM: 62.0%, GPU: N/A
+2025-03-23 02:42:37,466 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:43,461 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:47,678 - PerformanceMetrics - INFO - SYSTEM: CPU: 20.4%, RAM: 62.0%, GPU: N/A
+2025-03-23 02:42:47,678 - PerformanceMetrics - INFO - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:52,459 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:42:52,459 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:42:52,459 - CombinedSystem - INFO - Memories saved successfully

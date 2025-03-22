@@ -1,0 +1,570 @@
+2025-03-23 01:42:51,171 - SYSTEM: CPU: 34.0%, RAM: 55.4%, GPU: N/A
+2025-03-23 01:42:51,172 - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:00,976 - speech_recognition took 1.14s
+2025-03-23 01:43:01,064 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:01,357 - SYSTEM: CPU: 50.0%, RAM: 59.5%, GPU: N/A
+2025-03-23 01:43:01,357 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 1.142s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:04,369 - Reflex model took 3.39s
+2025-03-23 01:43:11,084 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:11,537 - SYSTEM: CPU: 38.5%, RAM: 77.8%, GPU: N/A
+2025-03-23 01:43:11,538 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:17,886 - Reasoning model took 13.52s
+2025-03-23 01:43:21,110 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:21,711 - SYSTEM: CPU: 15.0%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:43:21,712 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:29,868 - Conversational model took 11.98s
+2025-03-23 01:43:29,869 - language_processing took 28.89s
+2025-03-23 01:43:31,123 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:31,908 - SYSTEM: CPU: 14.0%, RAM: 67.6%, GPU: N/A
+2025-03-23 01:43:31,909 - AVG_TIMES: audio_capture: 0.031s, speech_recognition: 0.000s, language_processing: 28.893s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:43:36,731 - Droid output took 6.86s for 2 chunks
+2025-03-23 01:43:41,145 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:42,104 - SYSTEM: CPU: 22.6%, RAM: 67.8%, GPU: N/A
+2025-03-23 01:43:42,104 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 6.862s
+2025-03-23 01:43:51,159 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:43:52,295 - SYSTEM: CPU: 11.2%, RAM: 67.7%, GPU: N/A
+2025-03-23 01:43:52,295 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:01,184 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:02,469 - SYSTEM: CPU: 19.4%, RAM: 57.1%, GPU: N/A
+2025-03-23 01:44:02,470 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.436s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:10,732 - Reflex model took 11.06s
+2025-03-23 01:44:11,203 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:12,674 - SYSTEM: CPU: 15.7%, RAM: 57.0%, GPU: N/A
+2025-03-23 01:44:12,675 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:21,224 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:22,884 - SYSTEM: CPU: 51.8%, RAM: 76.1%, GPU: N/A
+2025-03-23 01:44:22,884 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:27,804 - Reasoning model took 17.07s
+2025-03-23 01:44:31,240 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:33,087 - SYSTEM: CPU: 25.7%, RAM: 55.6%, GPU: N/A
+2025-03-23 01:44:33,087 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:41,266 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:43,285 - SYSTEM: CPU: 52.2%, RAM: 66.4%, GPU: N/A
+2025-03-23 01:44:43,286 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:45,073 - Conversational model took 17.27s
+2025-03-23 01:44:45,073 - language_processing took 45.40s
+2025-03-23 01:44:51,284 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:44:53,462 - SYSTEM: CPU: 19.8%, RAM: 66.1%, GPU: N/A
+2025-03-23 01:44:53,463 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 45.403s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:44:59,198 - Droid output took 14.12s for 3 chunks
+2025-03-23 01:45:01,303 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:03,641 - SYSTEM: CPU: 16.8%, RAM: 65.7%, GPU: N/A
+2025-03-23 01:45:03,641 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 14.125s
+2025-03-23 01:45:11,320 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:13,838 - SYSTEM: CPU: 19.1%, RAM: 65.7%, GPU: N/A
+2025-03-23 01:45:13,839 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:45:21,344 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:24,042 - SYSTEM: CPU: 23.3%, RAM: 65.7%, GPU: N/A
+2025-03-23 01:45:24,043 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:45:31,364 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:34,210 - SYSTEM: CPU: 32.7%, RAM: 65.7%, GPU: N/A
+2025-03-23 01:45:34,211 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:45:41,384 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:44,425 - SYSTEM: CPU: 33.3%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:45:44,425 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:45:51,400 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:45:54,649 - SYSTEM: CPU: 12.5%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:45:54,649 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:01,424 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:04,874 - SYSTEM: CPU: 19.3%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:46:04,874 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:11,444 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:15,075 - SYSTEM: CPU: 20.2%, RAM: 64.6%, GPU: N/A
+2025-03-23 01:46:15,077 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:21,463 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:25,295 - SYSTEM: CPU: 15.4%, RAM: 65.0%, GPU: N/A
+2025-03-23 01:46:25,296 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:31,480 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:35,493 - SYSTEM: CPU: 27.1%, RAM: 64.8%, GPU: N/A
+2025-03-23 01:46:35,494 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:41,503 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:45,713 - SYSTEM: CPU: 57.9%, RAM: 60.6%, GPU: N/A
+2025-03-23 01:46:45,714 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.556s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:46:51,530 - QUEUE_SIZES: audio_queue: 0, text_queue: 3, response_queue: 0, tts_queue: 0
+2025-03-23 01:46:51,725 - Reflex model took 14.59s
+2025-03-23 01:46:55,929 - SYSTEM: CPU: 13.3%, RAM: 54.5%, GPU: N/A
+2025-03-23 01:46:55,929 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.359s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:01,545 - QUEUE_SIZES: audio_queue: 0, text_queue: 3, response_queue: 0, tts_queue: 0
+2025-03-23 01:47:05,221 - speech_recognition took 1.13s
+2025-03-23 01:47:06,154 - SYSTEM: CPU: 70.2%, RAM: 74.5%, GPU: N/A
+2025-03-23 01:47:06,155 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.402s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:06,651 - Reasoning model took 14.93s
+2025-03-23 01:47:11,559 - QUEUE_SIZES: audio_queue: 0, text_queue: 4, response_queue: 0, tts_queue: 0
+2025-03-23 01:47:11,961 - speech_recognition took 1.09s
+2025-03-23 01:47:16,368 - SYSTEM: CPU: 57.1%, RAM: 65.2%, GPU: N/A
+2025-03-23 01:47:16,370 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.889s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:20,389 - speech_recognition took 2.59s
+2025-03-23 01:47:21,588 - QUEUE_SIZES: audio_queue: 0, text_queue: 6, response_queue: 0, tts_queue: 0
+2025-03-23 01:47:26,547 - SYSTEM: CPU: 43.8%, RAM: 66.0%, GPU: N/A
+2025-03-23 01:47:26,548 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 1.576s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:47:27,964 - Conversational model took 21.31s
+2025-03-23 01:47:27,964 - language_processing took 50.83s
+2025-03-23 01:47:31,609 - QUEUE_SIZES: audio_queue: 0, text_queue: 5, response_queue: 0, tts_queue: 0
+2025-03-23 01:47:36,799 - SYSTEM: CPU: 49.1%, RAM: 61.0%, GPU: N/A
+2025-03-23 01:47:36,800 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 50.833s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:49:36,932 - SYSTEM: CPU: 23.4%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:49:36,933 - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:49:41,665 - speech_recognition took 1.09s
+2025-03-23 01:49:42,959 - Reflex model took 1.29s
+2025-03-23 01:49:46,841 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:49:47,117 - SYSTEM: CPU: 11.6%, RAM: 54.4%, GPU: N/A
+2025-03-23 01:49:47,118 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 1.094s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:49:56,629 - Parallel reasoning model took 13.67s
+2025-03-23 01:49:56,861 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:49:57,319 - SYSTEM: CPU: 22.3%, RAM: 53.9%, GPU: N/A
+2025-03-23 01:49:57,320 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:06,878 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:07,583 - SYSTEM: CPU: 52.3%, RAM: 65.2%, GPU: N/A
+2025-03-23 01:50:07,584 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:08,199 - Conversational model took 11.57s
+2025-03-23 01:50:08,199 - language_processing took 26.53s
+2025-03-23 01:50:16,898 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:17,788 - SYSTEM: CPU: 8.6%, RAM: 66.5%, GPU: N/A
+2025-03-23 01:50:17,789 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 26.534s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:22,381 - TTS generation took 14.18s
+2025-03-23 01:50:26,911 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:27,983 - SYSTEM: CPU: 10.2%, RAM: 66.7%, GPU: N/A
+2025-03-23 01:50:27,983 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.271s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:28,400 - Droid output took 6.02s for 2 chunks
+2025-03-23 01:50:36,927 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:38,189 - SYSTEM: CPU: 13.1%, RAM: 66.6%, GPU: N/A
+2025-03-23 01:50:38,189 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.422s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 20.202s
+2025-03-23 01:50:46,952 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:48,421 - SYSTEM: CPU: 25.7%, RAM: 59.2%, GPU: N/A
+2025-03-23 01:50:48,422 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.386s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:50:56,971 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:50:58,638 - SYSTEM: CPU: 34.8%, RAM: 61.0%, GPU: N/A
+2025-03-23 01:50:58,639 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:06,995 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:08,893 - SYSTEM: CPU: 41.7%, RAM: 60.9%, GPU: N/A
+2025-03-23 01:51:08,894 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:17,008 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:19,099 - SYSTEM: CPU: 46.1%, RAM: 61.4%, GPU: N/A
+2025-03-23 01:51:19,099 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:27,037 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:29,329 - SYSTEM: CPU: 40.9%, RAM: 61.8%, GPU: N/A
+2025-03-23 01:51:29,329 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:31,505 - Reflex model took 49.77s
+2025-03-23 01:51:37,051 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:39,553 - SYSTEM: CPU: 33.3%, RAM: 73.8%, GPU: N/A
+2025-03-23 01:51:39,554 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:47,075 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:49,772 - SYSTEM: CPU: 56.6%, RAM: 74.9%, GPU: N/A
+2025-03-23 01:51:49,773 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:51:57,088 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:51:59,959 - SYSTEM: CPU: 53.6%, RAM: 74.9%, GPU: N/A
+2025-03-23 01:51:59,960 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:02,767 - Parallel reasoning model took 31.26s
+2025-03-23 01:52:07,112 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:10,155 - SYSTEM: CPU: 38.6%, RAM: 63.3%, GPU: N/A
+2025-03-23 01:52:10,156 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:17,134 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:20,349 - SYSTEM: CPU: 52.6%, RAM: 64.7%, GPU: N/A
+2025-03-23 01:52:20,350 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:27,151 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:30,568 - SYSTEM: CPU: 45.4%, RAM: 64.6%, GPU: N/A
+2025-03-23 01:52:30,569 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:37,168 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:40,779 - SYSTEM: CPU: 41.6%, RAM: 64.6%, GPU: N/A
+2025-03-23 01:52:40,780 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:47,191 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:52:50,983 - SYSTEM: CPU: 39.8%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:52:50,984 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:52:57,214 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:01,167 - SYSTEM: CPU: 44.7%, RAM: 64.4%, GPU: N/A
+2025-03-23 01:53:01,167 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.625s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:07,234 - QUEUE_SIZES: audio_queue: 0, text_queue: 2, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:11,369 - SYSTEM: CPU: 31.2%, RAM: 64.5%, GPU: N/A
+2025-03-23 01:53:11,370 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:17,247 - QUEUE_SIZES: audio_queue: 0, text_queue: 2, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:21,557 - SYSTEM: CPU: 39.3%, RAM: 64.4%, GPU: N/A
+2025-03-23 01:53:21,558 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:24,455 - Conversational model took 81.69s
+2025-03-23 01:53:24,456 - language_processing took 162.72s
+2025-03-23 01:53:27,271 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:31,755 - SYSTEM: CPU: 31.6%, RAM: 60.6%, GPU: N/A
+2025-03-23 01:53:31,756 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 162.725s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:33,817 - Reflex model took 9.35s
+2025-03-23 01:53:37,291 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:41,935 - Parallel reasoning model took 8.12s
+2025-03-23 01:53:41,959 - SYSTEM: CPU: 43.5%, RAM: 65.9%, GPU: N/A
+2025-03-23 01:53:41,960 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:47,316 - QUEUE_SIZES: audio_queue: 0, text_queue: 2, response_queue: 0, tts_queue: 0
+2025-03-23 01:53:52,169 - SYSTEM: CPU: 55.9%, RAM: 55.3%, GPU: N/A
+2025-03-23 01:53:52,170 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.272s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:53:52,323 - Conversational model took 10.39s
+2025-03-23 01:53:52,324 - language_processing took 27.85s
+2025-03-23 01:53:57,327 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 1, tts_queue: 0
+2025-03-23 01:54:00,493 - Reflex model took 8.17s
+2025-03-23 01:54:02,387 - SYSTEM: CPU: 24.2%, RAM: 51.9%, GPU: N/A
+2025-03-23 01:54:02,387 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 27.852s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:07,100 - Parallel reasoning model took 6.61s
+2025-03-23 01:54:07,351 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 1, tts_queue: 0
+2025-03-23 01:54:12,583 - SYSTEM: CPU: 48.2%, RAM: 53.8%, GPU: N/A
+2025-03-23 01:54:12,584 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:17,375 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 1, tts_queue: 0
+2025-03-23 01:54:20,794 - Conversational model took 13.69s
+2025-03-23 01:54:20,794 - language_processing took 28.47s
+2025-03-23 01:54:22,790 - SYSTEM: CPU: 32.4%, RAM: 49.8%, GPU: N/A
+2025-03-23 01:54:22,791 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 28.470s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:25,090 - Reflex model took 4.30s
+2025-03-23 01:54:27,391 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 2, tts_queue: 0
+2025-03-23 01:54:33,001 - SYSTEM: CPU: 11.9%, RAM: 65.6%, GPU: N/A
+2025-03-23 01:54:33,001 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:36,579 - Parallel reasoning model took 11.49s
+2025-03-23 01:54:37,407 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 2, tts_queue: 0
+2025-03-23 01:54:42,729 - Conversational model took 6.15s
+2025-03-23 01:54:42,730 - language_processing took 21.94s
+2025-03-23 01:54:43,192 - SYSTEM: CPU: 7.6%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:54:43,193 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 21.935s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:47,431 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:54:53,363 - SYSTEM: CPU: 14.4%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:54:53,364 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:54:57,451 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:03,575 - SYSTEM: CPU: 7.6%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:55:03,576 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:07,471 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:13,744 - SYSTEM: CPU: 7.5%, RAM: 56.9%, GPU: N/A
+2025-03-23 01:55:13,744 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:17,487 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:23,962 - SYSTEM: CPU: 17.6%, RAM: 57.0%, GPU: N/A
+2025-03-23 01:55:23,962 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:27,512 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:34,157 - SYSTEM: CPU: 9.0%, RAM: 57.3%, GPU: N/A
+2025-03-23 01:55:34,157 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:37,531 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:44,366 - SYSTEM: CPU: 21.1%, RAM: 54.6%, GPU: N/A
+2025-03-23 01:55:44,366 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:47,551 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:55:54,567 - SYSTEM: CPU: 19.5%, RAM: 54.1%, GPU: N/A
+2025-03-23 01:55:54,568 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 01:55:57,568 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 3, tts_queue: 0
+2025-03-23 01:56:04,762 - SYSTEM: CPU: 18.1%, RAM: 54.3%, GPU: N/A
+2025-03-23 01:56:04,762 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:02:21,296 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:02:24,837 - Reflex model took 2.37s
+2025-03-23 02:02:31,316 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:02:35,042 - TTS generation took 10.20s
+2025-03-23 02:02:41,316 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:02:41,485 - Droid output took 6.44s for 2 chunks
+2025-03-23 02:02:51,337 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:02:54,099 - Reflex model took 1.77s
+2025-03-23 02:03:01,353 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:11,377 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:13,286 - TTS generation took 19.19s
+2025-03-23 02:03:21,398 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:25,088 - Droid output took 11.80s for 3 chunks
+2025-03-23 02:03:31,416 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:33,938 - TTS generation took 7.58s
+2025-03-23 02:03:34,015 - Reflex model took 7.65s
+2025-03-23 02:03:36,230 - Reflex model took 39.88s
+2025-03-23 02:03:36,788 - Droid output took 2.85s for 1 chunks
+2025-03-23 02:03:41,418 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:03:44,701 - TTS generation took 7.91s
+2025-03-23 02:03:47,539 - Droid output took 2.84s for 1 chunks
+2025-03-23 02:03:51,427 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 02:04:01,450 - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 02:04:11,156 - TTS generation took 4.61s
+2025-03-23 02:04:11,462 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:04:13,985 - Droid output took 2.83s for 1 chunks
+2025-03-23 02:12:02,809 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:12:05,926 - Reflex model took 10.09s
+2025-03-23 02:12:09,973 - Reflex model took 4.04s
+2025-03-23 02:12:12,827 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:12:22,847 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:12:29,082 - TTS generation took 23.15s
+2025-03-23 02:12:32,862 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:12:42,887 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:12:52,908 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:13:02,927 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:13:12,943 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:13:16,810 - Droid output took 47.73s for 10 chunks
+2025-03-23 02:13:22,967 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:13:32,987 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:13:34,132 - TTS generation took 17.32s
+2025-03-23 02:23:50,707 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:23:54,400 - Reflex model took 2.16s
+2025-03-23 02:24:00,727 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:04,609 - TTS generation took 10.21s
+2025-03-23 02:24:09,267 - Droid output took 4.66s for 1 chunks
+2025-03-23 02:24:10,742 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:20,757 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:30,781 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:40,805 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:24:42,466 - Reflex model took 15.51s
+2025-03-23 02:24:50,820 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:00,837 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:03,834 - TTS generation took 21.37s
+2025-03-23 02:25:10,868 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:20,888 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:30,911 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:40,931 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:50,948 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:25:53,529 - Droid output took 49.69s for 10 chunks
+2025-03-23 02:26:00,967 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:26:10,992 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:26:21,011 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:26:59,913 - SYSTEM: CPU: 17.3%, RAM: 55.4%, GPU: N/A
+2025-03-23 02:26:59,914 - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:09,793 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:10,132 - SYSTEM: CPU: 35.8%, RAM: 58.9%, GPU: N/A
+2025-03-23 02:27:10,133 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.616s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:19,818 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:20,346 - SYSTEM: CPU: 35.8%, RAM: 58.8%, GPU: N/A
+2025-03-23 02:27:20,347 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:22,182 - Reflex model took 18.40s
+2025-03-23 02:27:22,182 - language_processing took 18.40s
+2025-03-23 02:27:29,837 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:30,506 - SYSTEM: CPU: 6.9%, RAM: 60.9%, GPU: N/A
+2025-03-23 02:27:30,507 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 18.398s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:39,856 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:40,719 - SYSTEM: CPU: 15.4%, RAM: 57.8%, GPU: N/A
+2025-03-23 02:27:40,720 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:40,978 - TTS generation took 18.80s
+2025-03-23 02:27:49,856 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:27:50,911 - SYSTEM: CPU: 1.7%, RAM: 57.8%, GPU: N/A
+2025-03-23 02:27:50,912 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:27:59,873 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:01,095 - SYSTEM: CPU: 0.9%, RAM: 57.7%, GPU: N/A
+2025-03-23 02:28:01,096 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:09,898 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:11,283 - SYSTEM: CPU: 1.9%, RAM: 57.6%, GPU: N/A
+2025-03-23 02:28:11,284 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:19,917 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:21,455 - SYSTEM: CPU: 5.0%, RAM: 57.5%, GPU: N/A
+2025-03-23 02:28:21,456 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:29,936 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:31,666 - SYSTEM: CPU: 2.6%, RAM: 57.5%, GPU: N/A
+2025-03-23 02:28:31,666 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:39,953 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:41,837 - SYSTEM: CPU: 4.6%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:28:41,838 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:28:49,977 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:28:51,842 - Droid output took 70.86s for 15 chunks
+2025-03-23 02:28:52,018 - SYSTEM: CPU: 14.5%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:28:52,019 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 89.660s
+2025-03-23 02:28:59,996 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:02,219 - SYSTEM: CPU: 1.7%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:29:02,219 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:10,016 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:12,435 - SYSTEM: CPU: 6.4%, RAM: 57.6%, GPU: N/A
+2025-03-23 02:29:12,436 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:20,033 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:22,648 - SYSTEM: CPU: 11.9%, RAM: 57.5%, GPU: N/A
+2025-03-23 02:29:22,649 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:30,056 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:32,853 - SYSTEM: CPU: 3.6%, RAM: 57.5%, GPU: N/A
+2025-03-23 02:29:32,853 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:40,077 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:43,038 - SYSTEM: CPU: 0.0%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:29:43,038 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:29:50,096 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:29:53,230 - SYSTEM: CPU: 5.2%, RAM: 57.4%, GPU: N/A
+2025-03-23 02:29:53,231 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:31:27,481 - SYSTEM: CPU: 11.3%, RAM: 56.1%, GPU: N/A
+2025-03-23 02:31:27,481 - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:31:59,332 - SYSTEM: CPU: 10.4%, RAM: 57.0%, GPU: N/A
+2025-03-23 02:31:59,332 - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:08,048 - Reflex model took 3.14s
+2025-03-23 02:32:08,049 - language_processing took 3.14s
+2025-03-23 02:32:09,237 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:09,552 - SYSTEM: CPU: 8.0%, RAM: 63.4%, GPU: N/A
+2025-03-23 02:32:09,553 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.835s, language_processing: 3.140s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:19,257 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:19,732 - SYSTEM: CPU: 11.4%, RAM: 63.7%, GPU: N/A
+2025-03-23 02:32:19,733 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:29,274 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:29,840 - TTS generation took 21.79s
+2025-03-23 02:32:29,944 - SYSTEM: CPU: 4.6%, RAM: 56.9%, GPU: N/A
+2025-03-23 02:32:29,944 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:39,288 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:40,154 - SYSTEM: CPU: 2.9%, RAM: 56.8%, GPU: N/A
+2025-03-23 02:32:40,154 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:32:42,985 - Droid output took 13.14s for 3 chunks
+2025-03-23 02:32:49,308 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:32:50,351 - SYSTEM: CPU: 2.3%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:32:50,352 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 34.936s
+2025-03-23 02:32:59,323 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:00,549 - SYSTEM: CPU: 1.5%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:33:00,549 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:09,348 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:10,766 - SYSTEM: CPU: 5.0%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:33:10,767 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:19,368 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:20,979 - SYSTEM: CPU: 0.0%, RAM: 56.4%, GPU: N/A
+2025-03-23 02:33:20,979 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:29,388 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:31,149 - SYSTEM: CPU: 1.8%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:33:31,150 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:39,404 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:41,333 - SYSTEM: CPU: 43.9%, RAM: 56.5%, GPU: N/A
+2025-03-23 02:33:41,334 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.289s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:43,678 - Reflex model took 12.05s
+2025-03-23 02:33:49,430 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:33:51,533 - SYSTEM: CPU: 65.8%, RAM: 83.7%, GPU: N/A
+2025-03-23 02:33:51,534 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:33:59,449 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:01,641 - language_processing took 30.01s
+2025-03-23 02:34:01,727 - SYSTEM: CPU: 63.7%, RAM: 84.4%, GPU: N/A
+2025-03-23 02:34:01,730 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 30.013s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:09,469 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:09,679 - TTS generation took 8.04s
+2025-03-23 02:34:11,934 - SYSTEM: CPU: 48.7%, RAM: 84.5%, GPU: N/A
+2025-03-23 02:34:11,934 - AVG_TIMES: audio_capture: 0.033s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:12,614 - Droid output took 2.93s for 1 chunks
+2025-03-23 02:34:13,320 - speech_recognition took 1.34s
+2025-03-23 02:34:19,484 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:22,179 - SYSTEM: CPU: 65.6%, RAM: 83.1%, GPU: N/A
+2025-03-23 02:34:22,180 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.546s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 10.974s
+2025-03-23 02:34:27,253 - Reflex model took 13.93s
+2025-03-23 02:34:27,254 - language_processing took 13.93s
+2025-03-23 02:34:29,501 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:32,364 - SYSTEM: CPU: 44.7%, RAM: 79.8%, GPU: N/A
+2025-03-23 02:34:32,365 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 13.933s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:39,513 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:42,543 - SYSTEM: CPU: 46.9%, RAM: 79.9%, GPU: N/A
+2025-03-23 02:34:42,545 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:48,596 - Reasoning model took 64.92s
+2025-03-23 02:34:49,482 - TTS generation took 22.23s
+2025-03-23 02:34:49,758 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:34:52,715 - SYSTEM: CPU: 17.5%, RAM: 71.0%, GPU: N/A
+2025-03-23 02:34:52,716 - AVG_TIMES: audio_capture: 0.032s, speech_recognition: 0.043s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:34:59,791 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:02,924 - SYSTEM: CPU: 35.5%, RAM: 72.1%, GPU: N/A
+2025-03-23 02:35:02,925 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:03,740 - Conversational model took 15.14s
+2025-03-23 02:35:09,804 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:13,114 - SYSTEM: CPU: 3.1%, RAM: 71.9%, GPU: N/A
+2025-03-23 02:35:13,115 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:19,105 - Droid output took 29.62s for 6 chunks
+2025-03-23 02:35:19,827 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:23,283 - SYSTEM: CPU: 2.8%, RAM: 71.8%, GPU: N/A
+2025-03-23 02:35:23,283 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 51.851s
+2025-03-23 02:35:29,847 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:33,489 - SYSTEM: CPU: 1.7%, RAM: 71.5%, GPU: N/A
+2025-03-23 02:35:33,489 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:39,867 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:43,687 - SYSTEM: CPU: 4.5%, RAM: 71.4%, GPU: N/A
+2025-03-23 02:35:43,688 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:49,884 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:35:53,869 - SYSTEM: CPU: 3.7%, RAM: 69.3%, GPU: N/A
+2025-03-23 02:35:53,869 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:35:59,908 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:04,063 - SYSTEM: CPU: 3.6%, RAM: 69.4%, GPU: N/A
+2025-03-23 02:36:04,064 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:09,928 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:14,246 - SYSTEM: CPU: 7.9%, RAM: 69.5%, GPU: N/A
+2025-03-23 02:36:14,247 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:19,948 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:24,470 - SYSTEM: CPU: 5.5%, RAM: 70.0%, GPU: N/A
+2025-03-23 02:36:24,470 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:29,964 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:34,675 - SYSTEM: CPU: 5.1%, RAM: 70.0%, GPU: N/A
+2025-03-23 02:36:34,676 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:39,987 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:44,887 - SYSTEM: CPU: 9.2%, RAM: 70.1%, GPU: N/A
+2025-03-23 02:36:44,887 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:36:50,007 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:36:55,109 - SYSTEM: CPU: 8.8%, RAM: 70.1%, GPU: N/A
+2025-03-23 02:36:55,109 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:00,027 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:05,347 - SYSTEM: CPU: 8.7%, RAM: 70.2%, GPU: N/A
+2025-03-23 02:37:05,348 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:10,044 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:15,561 - SYSTEM: CPU: 8.5%, RAM: 70.2%, GPU: N/A
+2025-03-23 02:37:15,562 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:20,068 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:25,750 - SYSTEM: CPU: 22.9%, RAM: 70.3%, GPU: N/A
+2025-03-23 02:37:25,751 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:30,087 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:35,952 - SYSTEM: CPU: 6.3%, RAM: 70.7%, GPU: N/A
+2025-03-23 02:37:35,953 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:40,107 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:46,159 - SYSTEM: CPU: 12.5%, RAM: 71.2%, GPU: N/A
+2025-03-23 02:37:46,160 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:37:50,123 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:37:56,397 - SYSTEM: CPU: 6.5%, RAM: 71.2%, GPU: N/A
+2025-03-23 02:37:56,398 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:38:00,148 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:38:06,585 - SYSTEM: CPU: 31.5%, RAM: 71.4%, GPU: N/A
+2025-03-23 02:38:06,586 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:38:10,168 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:38:16,822 - SYSTEM: CPU: 13.7%, RAM: 71.5%, GPU: N/A
+2025-03-23 02:38:16,823 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:38:20,188 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:38:27,018 - SYSTEM: CPU: 6.7%, RAM: 71.1%, GPU: N/A
+2025-03-23 02:38:27,019 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:38:30,204 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:03,185 - SYSTEM: CPU: 42.7%, RAM: 73.2%, GPU: N/A
+2025-03-23 02:39:03,187 - AVG_TIMES: audio_capture: 0.000s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:13,062 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:13,427 - SYSTEM: CPU: 3.1%, RAM: 75.1%, GPU: N/A
+2025-03-23 02:39:13,429 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:21,195 - Reflex model took 2.18s
+2025-03-23 02:39:21,196 - language_processing took 2.18s
+2025-03-23 02:39:23,081 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:23,656 - SYSTEM: CPU: 3.9%, RAM: 77.7%, GPU: N/A
+2025-03-23 02:39:23,656 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.945s, language_processing: 2.178s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:33,102 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:33,815 - SYSTEM: CPU: 4.1%, RAM: 77.7%, GPU: N/A
+2025-03-23 02:39:33,815 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:43,118 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:44,006 - SYSTEM: CPU: 12.0%, RAM: 77.7%, GPU: N/A
+2025-03-23 02:39:44,006 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:39:53,131 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:39:54,210 - SYSTEM: CPU: 3.5%, RAM: 77.7%, GPU: N/A
+2025-03-23 02:39:54,210 - AVG_TIMES: audio_capture: 0.031s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:00,059 - Droid output took 8.83s for 2 chunks
+2025-03-23 02:40:03,148 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:04,382 - SYSTEM: CPU: 1.8%, RAM: 62.8%, GPU: N/A
+2025-03-23 02:40:04,383 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 38.863s
+2025-03-23 02:40:11,657 - Reflex model took 0.00s
+2025-03-23 02:40:13,168 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:14,577 - SYSTEM: CPU: 1.5%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:40:14,577 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.223s, language_processing: 0.001s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:23,192 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:24,763 - SYSTEM: CPU: 10.9%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:40:24,764 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:33,212 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:34,974 - SYSTEM: CPU: 2.9%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:40:34,974 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:43,222 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:45,171 - SYSTEM: CPU: 4.1%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:40:45,172 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:40:50,510 - Droid output took 8.84s for 2 chunks
+2025-03-23 02:40:53,242 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:40:55,374 - SYSTEM: CPU: 5.3%, RAM: 62.5%, GPU: N/A
+2025-03-23 02:40:55,375 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 38.853s
+2025-03-23 02:41:03,262 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:05,586 - SYSTEM: CPU: 4.2%, RAM: 62.6%, GPU: N/A
+2025-03-23 02:41:05,587 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:13,278 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:15,796 - SYSTEM: CPU: 3.9%, RAM: 62.7%, GPU: N/A
+2025-03-23 02:41:15,796 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:23,301 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:26,018 - SYSTEM: CPU: 5.2%, RAM: 62.9%, GPU: N/A
+2025-03-23 02:41:26,020 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:33,321 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:36,228 - SYSTEM: CPU: 10.3%, RAM: 63.1%, GPU: N/A
+2025-03-23 02:41:36,228 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:43,342 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:46,454 - SYSTEM: CPU: 5.0%, RAM: 63.3%, GPU: N/A
+2025-03-23 02:41:46,454 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:41:53,357 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:41:56,671 - SYSTEM: CPU: 8.5%, RAM: 63.5%, GPU: N/A
+2025-03-23 02:41:56,671 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:03,381 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:06,864 - SYSTEM: CPU: 15.2%, RAM: 63.0%, GPU: N/A
+2025-03-23 02:42:06,865 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:13,401 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:17,063 - SYSTEM: CPU: 8.8%, RAM: 62.4%, GPU: N/A
+2025-03-23 02:42:17,065 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:23,421 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:27,256 - SYSTEM: CPU: 6.7%, RAM: 62.1%, GPU: N/A
+2025-03-23 02:42:27,257 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:33,437 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:37,465 - SYSTEM: CPU: 3.7%, RAM: 62.0%, GPU: N/A
+2025-03-23 02:42:37,466 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s
+2025-03-23 02:42:43,461 - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:42:47,678 - SYSTEM: CPU: 20.4%, RAM: 62.0%, GPU: N/A
+2025-03-23 02:42:47,678 - AVG_TIMES: audio_capture: 0.030s, speech_recognition: 0.000s, language_processing: 0.000s, tts_generation: 0.000s, output_processing: 0.000s

@@ -39,7 +39,7 @@ class Config:
     max_payload_size: int = 140  # Match ggwave limit
     protocol_id: int = 2
     volume: int = 20
-    reflex_model: str = "tinyllama"
+    reflex_model: str = "gemma3:1b"
     reasoning_model: str = "deepseek-r1:7b"
     conversational_model: str = "llama3.2"
     history_file: str = "databank.json"

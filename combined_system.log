@@ -1,0 +1,624 @@
+2025-03-23 01:06:53,434 - CombinedSystem - INFO - Loading Whisper model...
+2025-03-23 01:06:56,898 - CombinedSystem - INFO - Loading TTS model...
+2025-03-23 01:06:59,618 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 01:06:59,619 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 01:06:59,620 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 01:06:59,621 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 01:06:59,622 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 01:06:59,622 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 01:25:25,077 - CombinedSystem - INFO - Loading Whisper model...
+2025-03-23 01:25:27,205 - CombinedSystem - INFO - Loading TTS model...
+2025-03-23 01:25:29,472 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 01:25:29,473 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 01:25:29,474 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 01:25:29,475 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 01:25:29,475 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 01:25:29,476 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 01:25:36,729 - CombinedSystem - ERROR - Error in language processing: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-03-23 01:25:38,763 - CombinedSystem - ERROR - Error in language processing: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-03-23 01:25:40,784 - CombinedSystem - ERROR - Error in language processing: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-03-23 01:25:42,828 - CombinedSystem - ERROR - Error in language processing: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-03-23 01:25:45,581 - CombinedSystem - ERROR - Error in language processing: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-03-23 01:25:47,817 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 01:25:47,817 - CombinedSystem - INFO - Shutting down...
+2025-03-23 01:25:48,925 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 01:26:03,392 - CombinedSystem - INFO - Loading Whisper model...
+2025-03-23 01:26:05,299 - CombinedSystem - INFO - Loading TTS model...
+2025-03-23 01:26:06,877 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 01:26:06,878 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 01:26:06,879 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 01:26:06,879 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 01:26:06,880 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 01:26:06,880 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 01:26:21,506 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:26:59,373 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 01:26:59,374 - CombinedSystem - INFO - Shutting down...
+2025-03-23 01:27:00,504 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 01:27:43,086 - CombinedSystem - INFO - Loading Whisper model...
+2025-03-23 01:27:45,173 - CombinedSystem - INFO - Loading TTS model...
+2025-03-23 01:27:46,968 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 01:27:46,969 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 01:27:46,970 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 01:27:46,970 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 01:27:46,971 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 01:27:46,971 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 01:28:01,478 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:28:14,630 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:28:25,918 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:28:25,918 - CombinedSystem - ERROR - Error in TTS generation: Model is not multi-speaker but `speaker` is provided.
+2025-03-23 01:29:30,279 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 01:29:30,279 - CombinedSystem - INFO - Shutting down...
+2025-03-23 01:29:31,415 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 01:30:39,558 - CombinedSystem - INFO - Loading Whisper model...
+2025-03-23 01:30:41,610 - CombinedSystem - INFO - Loading TTS model...
+2025-03-23 01:30:43,422 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 01:30:43,423 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 01:30:43,424 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 01:30:43,424 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 01:30:43,425 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 01:30:43,425 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 01:30:55,417 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:31:09,335 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:31:20,776 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:31:20,777 - CombinedSystem - ERROR - Error in TTS generation: 'TTS' object has no attribute 'model_config'
+2025-03-23 01:31:20,777 - CombinedSystem - INFO - Falling back to droid output
+2025-03-23 01:31:41,597 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:32:16,525 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:32:29,009 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:32:29,011 - CombinedSystem - ERROR - Error in TTS generation: 'TTS' object has no attribute 'model_config'
+2025-03-23 01:32:29,011 - CombinedSystem - INFO - Falling back to droid output
+2025-03-23 01:34:07,772 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 01:34:07,773 - CombinedSystem - INFO - Shutting down...
+2025-03-23 01:34:08,908 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 01:34:25,505 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 01:34:25,507 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 01:34:25,507 - CombinedSystem - INFO - Loading Whisper model...
+2025-03-23 01:34:27,471 - CombinedSystem - INFO - Loading TTS model...
+2025-03-23 01:34:29,404 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 01:34:29,405 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 01:34:29,405 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 01:34:29,406 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 01:34:29,407 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 01:34:29,407 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 01:34:58,814 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:35:14,273 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:35:30,108 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 01:35:30,108 - CombinedSystem - ERROR - Error in TTS generation: 'TTS' object has no attribute 'model_config'
+2025-03-23 01:35:30,108 - CombinedSystem - INFO - Falling back to droid output
+2025-03-23 01:38:57,203 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 01:38:57,203 - CombinedSystem - INFO - Shutting down...
+2025-03-23 01:38:58,367 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 02:49:41,205 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 02:49:41,209 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:49:41,209 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 02:49:41,932 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 02:49:43,554 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 02:49:44,931 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 02:49:44,931 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 02:49:44,936 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 02:49:44,937 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 02:49:44,937 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 02:49:44,938 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 02:49:44,939 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 02:49:44,939 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 02:49:44,940 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 02:49:44,940 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 02:49:44,940 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 02:49:50,959 - CombinedSystem - INFO - Recognized: Hello
+2025-03-23 02:49:50,960 - CombinedSystem - INFO - Processing text: Hello
+2025-03-23 02:49:50,960 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:49:53,562 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:49:54,216 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:49:54,216 - PerformanceMetrics - INFO - Reflex model took 3.25s
+2025-03-23 02:49:54,217 - CombinedSystem - INFO - Response generated: Hello there! How’s your day going so far? 😊 
+
+Is t...
+2025-03-23 02:49:58,629 - PerformanceMetrics - INFO - Droid output took 4.41s for 1 chunks
+2025-03-23 02:50:03,596 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:50:07,741 - CombinedSystem - INFO - Recognized: or anything you don't, you've got to go.
+2025-03-23 02:50:07,742 - CombinedSystem - INFO - Processing text: or anything you don't, you've got to go.
+2025-03-23 02:50:07,742 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:50:11,447 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:50:11,448 - PerformanceMetrics - INFO - Reflex model took 3.71s
+2025-03-23 02:50:11,448 - CombinedSystem - INFO - Response generated: I understand. Thank you for letting me know. I app...
+2025-03-23 02:50:13,605 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:50:14,145 - CombinedSystem - INFO - Recognized: I'm a major.
+2025-03-23 02:50:14,145 - CombinedSystem - INFO - Processing text: I'm a major.
+2025-03-23 02:50:14,145 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:50:21,777 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:50:21,777 - PerformanceMetrics - INFO - Reflex model took 7.63s
+2025-03-23 02:50:21,777 - CombinedSystem - INFO - Response generated: That’s fantastic! Major status is a really signifi...
+2025-03-23 02:50:23,189 - PerformanceMetrics - INFO - Droid output took 11.74s for 3 chunks
+2025-03-23 02:50:23,611 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:50:29,693 - CombinedSystem - INFO - Recognized: Is there anything I can help you with that?
+2025-03-23 02:50:29,694 - CombinedSystem - INFO - Processing text: Is there anything I can help you with that?
+2025-03-23 02:50:29,694 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:50:33,638 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:50:37,805 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:50:37,805 - PerformanceMetrics - INFO - Reflex model took 8.11s
+2025-03-23 02:50:37,805 - CombinedSystem - INFO - Response generated: That’s a great question! Right now, I’m just here ...
+2025-03-23 02:50:41,300 - CombinedSystem - INFO - Recognized: me
+2025-03-23 02:50:41,304 - CombinedSystem - INFO - Processing text: me
+2025-03-23 02:50:41,304 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:50:42,810 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:50:42,811 - PerformanceMetrics - INFO - Reflex model took 1.51s
+2025-03-23 02:50:42,812 - CombinedSystem - INFO - Response generated: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 02:50:43,642 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 2, tts_queue: 0
+2025-03-23 02:50:53,655 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 2, tts_queue: 0
+2025-03-23 02:51:02,128 - PerformanceMetrics - INFO - Droid output took 24.72s for 5 chunks
+2025-03-23 02:51:03,685 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:51:13,685 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 02:51:23,692 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 1
+2025-03-23 02:51:28,663 - PerformanceMetrics - INFO - Droid output took 26.53s for 6 chunks
+2025-03-23 02:51:33,078 - PerformanceMetrics - INFO - Droid output took 4.41s for 1 chunks
+2025-03-23 02:51:33,714 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:51:43,716 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:51:53,736 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:52:03,755 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:52:13,772 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:52:23,794 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:52:33,816 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:52:43,835 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:52:53,852 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:53:03,876 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:53:13,895 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:53:23,916 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:53:33,932 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:53:43,956 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:53:53,976 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:54:03,995 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:54:14,011 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:54:24,036 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:54:34,055 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:54:44,076 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:54:54,091 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:55:04,117 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:55:14,135 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:55:24,156 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:55:34,172 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:55:44,196 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:55:54,216 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:56:04,235 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:56:14,252 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:56:24,276 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:56:34,296 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:56:44,316 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:56:54,332 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:57:04,355 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:57:14,376 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:57:24,396 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 02:57:25,455 - CombinedSystem - INFO - Recognized: One sign right for while it's right on it.
+2025-03-23 02:57:25,456 - CombinedSystem - INFO - Processing text: One sign right for while it's right on it.
+2025-03-23 02:57:28,479 - CombinedSystem - INFO - Recognized: with complete silence..
+2025-03-23 02:57:31,162 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 02:57:31,163 - CombinedSystem - INFO - Memory consolidation complete. 5 concepts stored
+2025-03-23 02:57:31,164 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 02:57:31,164 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 02:57:31,465 - CombinedSystem - INFO - Recognized: No, this isn't just a computer design, but it's...
+2025-03-23 02:57:34,411 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 2, response_queue: 0, tts_queue: 0
+2025-03-23 02:57:35,620 - CombinedSystem - INFO - Recognized: Basic
+2025-03-23 02:57:36,635 - CombinedSystem - WARNING - Text queue was full - cleared older messages
+2025-03-23 02:57:36,818 - CombinedSystem - INFO - Recognized: that take the bus for almost a bus.
+2025-03-23 02:57:37,776 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 02:57:37,777 - CombinedSystem - INFO - Shutting down...
+2025-03-23 02:57:37,778 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 02:57:38,962 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:00:02,014 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:00:02,017 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:00:02,017 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:00:02,719 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:00:04,235 - CombinedSystem - INFO - Loaded 11 episodic and 5 semantic memories
+2025-03-23 03:00:04,235 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:00:05,492 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:00:05,492 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:00:05,496 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:00:05,497 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:00:05,497 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:00:05,498 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:00:05,498 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:00:05,499 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:00:05,499 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:00:05,500 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:00:05,500 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:00:09,803 - CombinedSystem - INFO - Recognized: and low
+2025-03-23 03:00:09,805 - CombinedSystem - INFO - Processing text [ID=1]: and low
+2025-03-23 03:00:09,805 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:00:14,244 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:00:24,265 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:00:24,785 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:00:24,786 - CombinedSystem - INFO - Reflex response [ID=1]: Okay, I understand you’re expressing a feeling or ...
+2025-03-23 03:00:24,786 - CombinedSystem - INFO - Final response [ID=1]: Okay, I understand you’re expressing a feeling or ...
+2025-03-23 03:00:34,279 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:00:44,295 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:00:54,319 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:01:04,338 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:01:14,359 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:01:18,364 - CombinedSystem - ERROR - Error in TTS processing: 'UnifiedAudioSystem' object has no attribute '_split_into_sentences'
+2025-03-23 03:01:23,288 - CombinedSystem - INFO - Recognized: I was saying hello.
+2025-03-23 03:01:23,289 - CombinedSystem - INFO - Processing text [ID=2]: I was saying hello.
+2025-03-23 03:01:23,289 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:01:23,684 - CombinedSystem - INFO - Recognized: Sorry.
+2025-03-23 03:01:24,341 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:01:24,342 - CombinedSystem - INFO - Reflex response [ID=2]: Hello there! It’s nice to hear from you. 😊 How’s y...
+2025-03-23 03:01:24,343 - CombinedSystem - INFO - Abandoning outdated processing [ID=2]
+2025-03-23 03:01:24,343 - CombinedSystem - INFO - Processing text [ID=3]: Sorry.
+2025-03-23 03:01:24,343 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:01:24,375 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:01:30,505 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:01:30,506 - CombinedSystem - INFO - Reflex response [ID=3]: It’s okay! Is there anything you’d like to talk ab...
+2025-03-23 03:01:30,506 - CombinedSystem - INFO - Final response [ID=3]: It’s okay! Is there anything you’d like to talk ab...
+2025-03-23 03:01:34,400 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:01:44,418 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:01:51,811 - CombinedSystem - ERROR - Error in TTS processing: 'UnifiedAudioSystem' object has no attribute '_split_into_sentences'
+2025-03-23 03:01:54,440 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:01:58,492 - CombinedSystem - INFO - Recognized: I was saying hello.
+2025-03-23 03:01:58,493 - CombinedSystem - INFO - Processing text [ID=4]: I was saying hello.
+2025-03-23 03:01:58,493 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:01:58,493 - CombinedSystem - INFO - Reflex response [ID=4]: Hello there! It’s nice to hear from you. 😊 How’s y...
+2025-03-23 03:02:03,575 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:02:03,576 - CombinedSystem - INFO - Final response [ID=4]: Hello! It's nice to hear from you too. How can I h...
+2025-03-23 03:02:04,449 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:02:06,004 - CombinedSystem - ERROR - Error in TTS processing: 'UnifiedAudioSystem' object has no attribute '_split_into_sentences'
+2025-03-23 03:02:14,470 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:02:24,484 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:02:34,505 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:02:44,529 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:02:54,548 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:03:04,565 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:03:06,245 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:03:06,553 - CombinedSystem - INFO - Recognized: Hmm, do you suggest I go sleep?
+2025-03-23 03:03:06,555 - CombinedSystem - INFO - Processing text [ID=5]: Hmm, do you suggest I go sleep?
+2025-03-23 03:03:06,555 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:03:14,585 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:03:18,319 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:03:18,320 - CombinedSystem - INFO - Reflex response [ID=5]: I understand you're feeling tired and want to rest...
+2025-03-23 03:03:18,328 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2025-03-23 03:03:18,328 - CombinedSystem - ERROR - Reasoning error: model "deepseek-r1:5b" not found, try pulling it first (status code: 404)
+2025-03-23 03:03:18,328 - CombinedSystem - INFO - Final response [ID=5]: I understand you're feeling tired and want to rest...
+2025-03-23 03:03:24,598 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:03:34,614 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:03:44,638 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:03:54,659 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:03:56,107 - CombinedSystem - ERROR - Error in TTS processing: 'UnifiedAudioSystem' object has no attribute '_split_into_sentences'
+2025-03-23 03:04:04,678 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:04:14,695 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:04:23,627 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:04:23,628 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:04:23,629 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:04:24,762 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:05:49,315 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:05:49,316 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:05:49,317 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:05:50,082 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:05:52,233 - CombinedSystem - INFO - Loaded 20 episodic and 5 semantic memories
+2025-03-23 03:05:52,234 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:05:53,626 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:05:53,627 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:05:53,631 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:05:53,631 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:05:53,631 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:05:53,633 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:05:53,633 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:05:53,634 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:05:53,634 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:05:53,635 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:05:53,635 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:06:02,247 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:06:05,163 - CombinedSystem - INFO - Recognized: Hello, how's it going?
+2025-03-23 03:06:05,164 - CombinedSystem - INFO - Processing text [ID=1]: Hello, how's it going?
+2025-03-23 03:06:05,164 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:06:07,386 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:06:07,387 - CombinedSystem - INFO - Reflex response [ID=1]: It’s going well, thanks for asking! 😊 Just here, r...
+2025-03-23 03:06:10,229 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:06:10,230 - CombinedSystem - INFO - Final response [ID=1]: I'm just a digital entity with no feelings or expe...
+2025-03-23 03:06:12,266 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:06:22,276 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:06:32,276 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:06:42,295 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:06:52,316 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:07:02,331 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:07:12,356 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:07:22,376 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:07:32,395 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:07:42,412 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:07:52,436 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:07:57,034 - CombinedSystem - INFO - Recognized: and you write a casculator app.
+2025-03-23 03:07:57,035 - CombinedSystem - INFO - Processing text [ID=2]: and you write a casculator app.
+2025-03-23 03:07:57,036 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:08:02,458 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:08:12,479 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:08:22,492 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:08:32,519 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:08:42,540 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:08:52,558 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:09:00,074 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:09:00,075 - CombinedSystem - INFO - Reflex response [ID=2]: Okay, let's outline a basic Casulator app. This wi...
+2025-03-23 03:09:00,084 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2025-03-23 03:09:00,084 - CombinedSystem - ERROR - Reasoning error: model "deepseek-r1:5b" not found, try pulling it first (status code: 404)
+2025-03-23 03:09:00,085 - CombinedSystem - INFO - Final response [ID=2]: Okay, let's outline a basic Casulator app. This wi...
+2025-03-23 03:09:02,585 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:09:12,602 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:09:22,622 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:09:32,646 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:09:42,665 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:09:52,682 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:10:02,702 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:10:12,726 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:10:22,746 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:10:32,762 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:10:42,782 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:10:52,806 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:11:02,825 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:11:12,842 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:11:22,862 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:11:32,886 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:11:42,906 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:11:52,922 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:12:02,030 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:12:02,031 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:12:02,032 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:12:03,064 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:12:22,404 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:12:22,406 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:12:22,406 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:12:23,111 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:12:25,083 - CombinedSystem - INFO - Loaded 24 episodic and 5 semantic memories
+2025-03-23 03:12:25,083 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:12:26,367 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:7b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:12:26,368 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:12:26,372 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:12:26,372 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:12:26,372 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:12:26,373 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:12:26,374 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:12:26,374 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:12:26,376 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:12:26,377 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:12:26,377 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:12:35,084 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:12:45,099 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:12:55,123 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:13:05,144 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:13:15,164 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:13:18,236 - CombinedSystem - INFO - Recognized: I tell me about Star Wars.
+2025-03-23 03:13:18,237 - CombinedSystem - INFO - Processing text [ID=1]: I tell me about Star Wars.
+2025-03-23 03:13:18,237 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:13:25,180 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:13:35,206 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:13:45,011 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:13:45,012 - CombinedSystem - INFO - Reflex response [ID=1]: Okay, let's dive into Star Wars! It's a massive un...
+2025-03-23 03:13:45,224 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:13:55,246 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:14:05,259 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:14:15,287 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:14:25,306 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:14:35,326 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:14:45,339 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:14:55,367 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:15:05,384 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:15:15,404 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:15:18,789 - CombinedSystem - INFO - Recognized: Felt me about Star Wars.
+2025-03-23 03:15:25,419 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:15:35,445 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:15:45,467 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:15:55,488 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:16:05,500 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:16:15,527 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:16:25,547 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:16:35,566 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:16:45,580 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:16:52,241 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:16:52,241 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:16:52,243 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:16:53,396 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:17:04,410 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:17:04,411 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:17:04,411 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:17:05,141 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:17:07,195 - CombinedSystem - INFO - Loaded 25 episodic and 5 semantic memories
+2025-03-23 03:17:07,196 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:17:08,532 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:17:08,533 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:17:08,537 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:17:08,538 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:17:08,538 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:17:08,539 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:17:08,540 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:17:08,541 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:17:08,541 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:17:08,541 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:17:08,541 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:17:12,509 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 03:17:12,510 - CombinedSystem - INFO - Processing text [ID=1]: Hello.
+2025-03-23 03:17:12,510 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:17:13,761 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:17:13,762 - CombinedSystem - INFO - Reflex response [ID=1]: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 03:17:13,763 - CombinedSystem - INFO - Final response [ID=1]: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 03:17:17,222 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:17:27,252 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:17:37,276 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:17:46,709 - CombinedSystem - INFO - Recognized: Do you know anything about
+2025-03-23 03:17:46,710 - CombinedSystem - INFO - Processing text [ID=6]: Do you know anything about
+2025-03-23 03:17:46,710 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:17:47,297 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:17:48,413 - CombinedSystem - INFO - Recognized: guitar.
+2025-03-23 03:17:55,927 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:17:55,928 - CombinedSystem - INFO - Reflex response [ID=6]: Please tell me what you'd like to know about! I ne...
+2025-03-23 03:17:55,928 - CombinedSystem - INFO - Abandoning outdated processing [ID=6]
+2025-03-23 03:17:55,928 - CombinedSystem - INFO - Processing text [ID=7]: guitar.
+2025-03-23 03:17:55,929 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:17:57,317 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:18:07,331 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:18:17,360 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:18:21,092 - CombinedSystem - INFO - Recognized: you know anything about guitar.
+2025-03-23 03:18:27,380 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:18:28,074 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:18:28,075 - CombinedSystem - INFO - Reflex response [ID=7]: Okay, let's talk about guitars! It's a huge topic,...
+2025-03-23 03:18:28,075 - CombinedSystem - INFO - Abandoning outdated processing [ID=7]
+2025-03-23 03:18:28,075 - CombinedSystem - INFO - Processing text [ID=8]: you know anything about guitar.
+2025-03-23 03:18:28,075 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:18:37,397 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:18:47,412 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:18:57,440 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:19:01,384 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:19:01,385 - CombinedSystem - INFO - Reflex response [ID=8]: Yes, absolutely! I know a *lot* about guitar. It’s...
+2025-03-23 03:19:07,457 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:19:17,478 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:19:21,113 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:19:21,113 - CombinedSystem - INFO - Final response [ID=8]: Yes, I'm familiar with the basics of playing the g...
+2025-03-23 03:19:27,487 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:19:37,491 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:19:40,329 - CombinedSystem - INFO - Recognized: Yes, I'm from Benjol and Mason County.
+2025-03-23 03:19:40,333 - CombinedSystem - INFO - Processing text [ID=9]: Yes, I'm from Benjol and Mason County.
+2025-03-23 03:19:40,334 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:19:45,657 - CombinedSystem - INFO - Recognized: Welcome to my humble wife Theorologist Id retired ....
+2025-03-23 03:19:47,508 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:19:49,409 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:19:49,410 - CombinedSystem - INFO - Reflex response [ID=9]: That’s fantastic! Benjol and Mason County are both...
+2025-03-23 03:19:49,411 - CombinedSystem - INFO - Abandoning outdated processing [ID=9]
+2025-03-23 03:19:49,411 - CombinedSystem - INFO - Processing text [ID=11]: Welcome to my humble wife Theorologist Id retired ....
+2025-03-23 03:19:49,411 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:19:57,521 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:20:07,542 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:20:13,564 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:20:13,565 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:20:13,567 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:20:14,710 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:28:40,960 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:28:40,962 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:28:40,963 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:28:41,655 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:28:43,142 - CombinedSystem - INFO - Loaded 33 episodic and 5 semantic memories
+2025-03-23 03:28:43,143 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:28:44,398 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300, 'min_confidence_threshold': 0.6, 'max_input_wait': 1.0, 'input_debounce_ms': 300, 'max_silence_ms': 1000, 'min_words': 3}
+2025-03-23 03:28:44,398 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:28:44,403 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:28:44,403 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:28:44,403 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:28:44,405 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:28:44,406 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:28:44,407 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:28:44,407 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:28:44,407 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:28:44,407 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:28:47,844 - CombinedSystem - ERROR - Error processing speech: expected np.ndarray (got bytes)
+2025-03-23 03:28:53,143 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:29:03,159 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:29:13,178 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:29:16,723 - CombinedSystem - ERROR - Error processing speech: expected np.ndarray (got bytes)
+2025-03-23 03:29:23,202 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:29:27,229 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:29:27,229 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:29:27,230 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:29:28,345 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:33:14,903 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:33:14,904 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:33:14,905 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:33:15,591 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:33:17,100 - CombinedSystem - INFO - Loaded 33 episodic and 5 semantic memories
+2025-03-23 03:33:17,100 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:33:18,371 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:33:18,371 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:33:18,375 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:33:18,375 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:33:18,375 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:33:18,376 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:33:18,377 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:33:18,377 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:33:18,378 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:33:18,378 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:33:18,378 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:33:22,804 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 03:33:22,806 - CombinedSystem - INFO - Processing text [ID=1]: Hello.
+2025-03-23 03:33:22,806 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:33:25,797 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:33:25,797 - CombinedSystem - INFO - Reflex response [ID=1]: Hello there! How's your day going so far? 😊 
+
+Is t...
+2025-03-23 03:33:25,797 - CombinedSystem - INFO - Final response [ID=1]: Hello there! How's your day going so far? 😊 
+
+Is t...
+2025-03-23 03:33:27,122 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:33:37,127 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:33:47,151 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:33:57,172 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:34:00,327 - CombinedSystem - INFO - Recognized: Let me about music.
+2025-03-23 03:34:00,328 - CombinedSystem - INFO - Processing text [ID=6]: Let me about music.
+2025-03-23 03:34:00,328 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:34:07,187 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:34:10,145 - CombinedSystem - INFO - Recognized: Bye.
+2025-03-23 03:34:14,934 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:34:16,645 - CombinedSystem - INFO - Recognized: Good morning. You're welcome. Always.
+2025-03-23 03:34:17,208 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:34:18,642 - CombinedSystem - INFO - Recognized: The barус.
+2025-03-23 03:34:18,813 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:34:18,813 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:34:18,816 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:34:19,952 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:36:06,088 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:36:06,091 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:36:06,091 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:36:06,782 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:36:08,343 - CombinedSystem - INFO - Loaded 36 episodic and 5 semantic memories
+2025-03-23 03:36:08,343 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:36:09,613 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:36:09,613 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:36:09,618 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:36:09,618 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:36:09,618 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:36:09,619 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:36:09,619 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:36:09,620 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:36:09,620 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:36:09,622 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:36:09,622 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:36:18,369 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:36:19,559 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 03:36:19,561 - CombinedSystem - INFO - Processing text [ID=1]: Hello.
+2025-03-23 03:36:19,561 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:36:20,999 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:36:20,999 - CombinedSystem - INFO - Reflex response [ID=1]: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 03:36:20,999 - CombinedSystem - INFO - Final response [ID=1]: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 03:36:28,382 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:36:38,399 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:36:48,424 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:36:51,486 - CombinedSystem - INFO - Recognized: Then you tell me about...
+2025-03-23 03:36:51,488 - CombinedSystem - INFO - Processing text [ID=6]: Then you tell me about...
+2025-03-23 03:36:51,488 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:36:52,738 - CombinedSystem - INFO - Recognized: ble attend
+2025-03-23 03:36:58,447 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:36:58,700 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:36:58,700 - CombinedSystem - INFO - Reflex response [ID=6]: Please tell me what you'd like me to tell you abou...
+2025-03-23 03:36:58,701 - CombinedSystem - INFO - Abandoning outdated processing [ID=6]
+2025-03-23 03:36:58,701 - CombinedSystem - INFO - Processing text [ID=7]: ble attend
+2025-03-23 03:36:58,701 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:37:08,466 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:37:18,480 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:37:28,505 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:37:34,864 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:37:34,865 - CombinedSystem - INFO - Reflex response [ID=7]: I understand you might be experiencing a difficult...
+2025-03-23 03:37:34,865 - CombinedSystem - INFO - Final response [ID=7]: I understand you might be experiencing a difficult...
+2025-03-23 03:37:38,510 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:37:48,529 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:37:58,554 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:38:08,573 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:38:18,589 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:38:28,609 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:38:38,633 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:38:48,652 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:38:58,669 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:39:08,689 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:39:09,942 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:39:09,942 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:39:09,943 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:39:10,975 - CombinedSystem - INFO - Shutdown complete
