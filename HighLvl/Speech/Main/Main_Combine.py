@@ -61,7 +61,7 @@ class SystemConfig:
     
     # Language model settings
     reflex_model: str = "gemma3:1b"        # Smaller, faster model for quick responses
-    reasoning_model: str = "deepseek-r1:1.5b"     # Medium-sized reasoning model
+    reasoning_model: str = "deepseek-r1:7b"     # Medium-sized reasoning model
     conversational_model: str = "phi3:mini" # Smaller model for standard responses
     complex_model: str = "llama3.2"        # Larger model for complex queries
     
@@ -110,6 +110,10 @@ class SystemConfig:
     episodic_memory: bool = True    # Enable episodic memory for better context
     semantic_memory: bool = True    # Enable semantic memory for concept understanding
     memory_refresh_interval: int = 300  # Seconds between memory consolidation
+    multi_input: bool = True       # Enable multi-input (ggwave + speech)
+    max_msg_length: int = 200       # Maximum message length for processing
+    filler_response: bool = True   # Enable filler responses
+    multi_response: bool = False    # Enable multi-response generation
 
 class PerformanceTracker:
     """Tracks performance metrics and processing times"""
@@ -381,6 +385,7 @@ class UnifiedAudioSystem:
         self.response_queue = queue.Queue(maxsize=2)
         self.droid_queue = queue.Queue(maxsize=2)
         self.tts_queue = queue.Queue(maxsize=3)
+        self.droid_input_queue = queue.Queue(maxsize=2)  # Queue for droid text input
         
         # Track active processing to allow cancellation
         self.processing_lock = threading.Lock()
@@ -393,7 +398,8 @@ class UnifiedAudioSystem:
             "text": threading.Lock(),
             "response": threading.Lock(),
             "droid": threading.Lock(),
-            "tts": threading.Lock()
+            "tts": threading.Lock(),
+            "droid_input": threading.Lock()
         }
 
     def setup_audio(self):
@@ -405,6 +411,9 @@ class UnifiedAudioSystem:
             self.ggwave_instance = ggwave.init()
         self.speech_buffer = collections.deque()
         self.silence_counter = 0
+        # Initialize ggwave for both input and output if multi-input is enabled
+        if self.config.multi_input or self.config.output_mode in ["droid", "both"]:
+            self.ggwave_instance = ggwave.init()
 
     def setup_models(self):
         # Check GPU availability
@@ -571,48 +580,37 @@ class UnifiedAudioSystem:
                 
                 start_time = self.perf_tracker.start_timer("speech_recognition")
                 
-                try:
-                    # Convert bytes to numpy array properly
-                    audio_np = np.frombuffer(audio_data, dtype=np.int16)
-                    # Normalize and convert to float32
-                    audio_np = audio_np.astype(np.float32) / 32768.0
-                    
-                    # Move audio data to GPU if available
-                    with torch.no_grad():
-                        if self.device == "cuda":
-                            audio_tensor = torch.from_numpy(audio_np).to(self.device)
-                        else:
-                            audio_tensor = torch.from_numpy(audio_np)
-                            
-                        # Set specific options to speed up transcription
-                        transcription_options = {
-                            "language": "en",
-                            "task": "transcribe",
-                            "fp16": self.device == "cuda",
-                            "beam_size": 3,
-                            "without_timestamps": True
-                        }
+                # Process audio in batches if multiple chunks available
+                audio_np = np.frombuffer(audio_data, dtype=np.int16).astype(np.float32) / 32768.0
+                
+                # Move audio data to GPU if available and use with torch.no_grad for faster inference
+                with torch.no_grad():
+                    if self.device == "cuda":
+                        audio_tensor = torch.from_numpy(audio_np).to(self.device)
+                    else:
+                        audio_tensor = audio_np
                         
-                        result = self.whisper_model.transcribe(
-                            audio_tensor,
-                            **transcription_options
-                        )
+                    # Set specific options to speed up transcription
+                    transcription_options = {
+                        "language": "en",
+                        "task": "transcribe",
+                        "fp16": self.device == "cuda",  # Use fp16 for faster GPU inference
+                        "beam_size": 3,  # Smaller beam size for faster results
+                        "without_timestamps": True  # Skip timestamp generation
+                    }
                     
-                    if result["text"].strip():
-                        text = result["text"].strip()
-                        logger.info(f"Recognized: {text}")
-                        
-                        # Only add to queue if not already processing the same text
-                        if not self.check_duplicate_text(text):
-                            try:
-                                self.text_queue.put_nowait(text)
-                            except queue.Full:
-                                logger.warning("Text queue full, dropping recognized text")
+                    result = self.whisper_model.transcribe(audio_tensor, **transcription_options)
+                
+                if result["text"].strip():
+                    text = result["text"].strip()
+                    logger.info(f"Recognized: {text}")
                     
-                except Exception as e:
-                    logger.error(f"Error in transcription: {e}")
-                    import traceback
-                    logger.error(traceback.format_exc())
+                    # Only add to queue if not already processing the same text
+                    if not self.check_duplicate_text(text):
+                        try:
+                            self.text_queue.put_nowait(text)
+                        except queue.Full:
+                            logger.warning("Text queue full, dropping recognized text")
                 
                 self.audio_queue.task_done()
                 self.perf_tracker.end_timer("speech_recognition", start_time)
@@ -675,6 +673,11 @@ class UnifiedAudioSystem:
             try:
                 text = self.text_queue.get(timeout=1.0)
                 
+                # Limit message length if configured
+                if len(text) > self.config.max_msg_length:
+                    text = text[:self.config.max_msg_length]
+                    logger.info(f"Input text truncated to max length ({self.config.max_msg_length})")
+                
                 # Assign a unique ID to this text processing
                 with self.processing_lock:
                     processing_id = self.current_text_id
@@ -686,92 +689,45 @@ class UnifiedAudioSystem:
                 self.memory_system.add_memory(text, "user", importance=0.6)
                 
                 # Check if this is a simple query
-                simple_query = self.is_simple_query(text)
-                logger.info(f"Query classified as {'simple' if simple_query else 'complex'}")
+                query_type = self._classify_query(text)
+                logger.info(f"Query classified as: {query_type}")
                 
-                # Set timeout and process with LLM
-                response_text = None
+                # Send filler response if enabled
+                if self.config.filler_response:
+                    filler_text = self._get_filler_response(query_type)
+                    filler_response = {
+                        "text": filler_text,
+                        "timestamp": time.time(),
+                        "complete": True
+                    }
+                    try:
+                        self.response_queue.put_nowait(filler_response)
+                    except queue.Full:
+                        logger.warning("Response queue full, dropping filler response")
                 
-                # First pass with reflex model
-                reflex_messages = [{"role": "user", "content": text}]
-                reflex_start = time.time()
+                # Get initial reflex response
+                reflex_text = self._get_reflex_response(text, processing_id)
+                if not reflex_text:  # If processing was cancelled
+                    self.text_queue.task_done()
+                    continue
                 
-                try:
-                    # Check cache first if enabled
-                    reflex_response = None
-                    if self.model_cache:
-                        reflex_response = self.model_cache.get(self.config.reflex_model, reflex_messages)
-                    
-                    if not reflex_response:
-                        reflex_response = ollama.chat(
-                            model=self.config.reflex_model,
-                            messages=reflex_messages,
-                            options={"num_gpu": 1, "timeout": 5}  # Shorter timeout for reflex
-                        )
-                        if self.model_cache:
-                            self.model_cache.put(self.config.reflex_model, reflex_messages, reflex_response)
-                    
-                    reflex_text = reflex_response["message"]["content"]
-                    logger.info(f"Reflex response [ID={processing_id}]: {reflex_text[:50]}...")
-                    
-                    # Check if this processing request is still valid
-                    with self.processing_lock:
-                        if processing_id != self.current_text_id:
-                            logger.info(f"Abandoning outdated processing [ID={processing_id}]")
-                            self.text_queue.task_done()
-                            continue
-                    
-                    # For very simple queries, use just the reflex model
-                    if len(text.split()) <= 3 and simple_query:
-                        response_text = reflex_text
-                    else:
-                        # For more complex queries, follow the proper layered approach
-                        model_name = self.config.conversational_model if simple_query else self.config.complex_model
-                        
-                        # Use appropriate context and prompt
-                        if simple_query and self.config.skip_reasoning:
-                            # Direct conversational response
-                            conv_messages = [
-                                {"role": "system", "content": "You are a helpful assistant. Keep responses concise and natural."},
-                                {"role": "user", "content": text}
-                            ]
-                            
-                            final_response = ollama.chat(
-                                model=model_name,
-                                messages=conv_messages,
-                                options={"num_gpu": 1}
-                            )
-                            response_text = final_response["message"]["content"]
+                # Select appropriate processing based on query type
+                if query_type == "simple":
+                    # For simple queries, just use the reflex response
+                    response_text = reflex_text
+                else:
+                    # For more complex queries, determine if reasoning is needed
+                    if query_type == "complex" and not self.config.skip_reasoning:
+                        # Get reasoning and then final response
+                        reasoning = self._get_reasoning(text, processing_id)
+                        if reasoning and processing_id == self.current_text_id:
+                            response_text = self._get_final_response(text, reasoning, processing_id)
                         else:
-                            # For complex queries, use reasoning layer
-                            reasoning = self._get_reasoning(text, processing_id)
-                            if reasoning:
-                                # Final conversational layer with reasoning context
-                                conv_messages = [
-                                    {"role": "system", "content": f"Use this reasoning as context: {reasoning}"},
-                                    {"role": "user", "content": text}
-                                ]
-                                
-                                # Check if request is still valid
-                                with self.processing_lock:
-                                    if processing_id != self.current_text_id:
-                                        logger.info(f"Abandoning outdated processing after reasoning [ID={processing_id}]")
-                                        self.text_queue.task_done()
-                                        continue
-                                
-                                final_response = ollama.chat(
-                                    model=model_name,
-                                    messages=conv_messages,
-                                    options={"num_gpu": 1}
-                                )
-                                response_text = final_response["message"]["content"]
-                            else:
-                                # Fallback to reflex if reasoning failed
-                                response_text = reflex_text
-                
-                except Exception as e:
-                    logger.error(f"Error in language model processing: {e}")
-                    response_text = "I'm sorry, I couldn't process that properly. Could you try again?"
+                            # Fallback to reflex if reasoning was interrupted or failed
+                            response_text = reflex_text
+                    else:
+                        # For conversational queries without reasoning
+                        response_text = self._get_conversational_response(text, reflex_text, processing_id)
                 
                 # Final check if this response is still relevant
                 with self.processing_lock:
@@ -795,6 +751,12 @@ class UnifiedAudioSystem:
                 # Add assistant response to memory
                 if response_text:
                     self.memory_system.add_memory(response_text, "assistant", importance=0.6)
+                    
+                    # Generate follow-up if multi-response is enabled and query is complex
+                    if self.config.multi_response and query_type == "complex":
+                        threading.Thread(target=self._generate_follow_up,
+                                        args=(text, response_text, processing_id),
+                                        daemon=True).start()
                 
                 self.text_queue.task_done()
                 
@@ -804,7 +766,7 @@ class UnifiedAudioSystem:
                 logger.error(f"Error in language processing: {e}")
                 import traceback
                 logger.error(traceback.format_exc())
-    
+
     def _prepare_complete_response(self, text):
         """Prepare a complete response object, ensuring it won't be split inappropriately"""
         # Clean up the text
@@ -884,26 +846,24 @@ class UnifiedAudioSystem:
                 logger.error(f"Error in output processing: {e}")
     
     def _process_complete_response(self, response_obj, output_stream):
-        """Process a complete response with parallel TTS and ggwave"""
+        """Process a complete response (both TTS and droid) in a synchronized way"""
         try:
             response = response_obj["text"]
             
-            # Start TTS generation in parallel thread
-            if self.config.output_mode in ["tts", "both"]:
-                tts_text = response_obj.get("tts_text", response)
-                tts_thread = threading.Thread(
-                    target=self._process_tts_response,
-                    args=(tts_text,),
-                    daemon=True
-                )
-                tts_thread.start()
-            
-            # Send droid response immediately without waiting for TTS
+            # First, send the entire text via droid for immediate feedback
             if self.config.output_mode in ["droid", "both"]:
                 try:
                     self._send_droid_response(response, output_stream)
                 except Exception as e:
                     logger.error(f"Error in droid output: {e}")
+            
+            # Then generate TTS (will be played when ready)
+            if self.config.output_mode in ["tts", "both"]:
+                tts_text = response_obj.get("tts_text", response)
+                try:
+                    self._process_tts_response(tts_text)
+                except Exception as e:
+                    logger.error(f"Error in TTS processing: {e}")
                     
         except Exception as e:
             logger.error(f"Error in complete response processing: {e}")
@@ -977,92 +937,45 @@ class UnifiedAudioSystem:
         return processed
 
     def _process_tts_response(self, text: str):
-        """Process TTS with caching and faster generation"""
+        """Process complete TTS response with proper sentence handling"""
         try:
-            # Check TTS cache first
-            cache_key = f"tts_{hash(text)}"
-            cached_file = os.path.join(self.config.cache_dir, f"{cache_key}.wav")
-            
-            if os.path.exists(cached_file):
-                logger.debug("Using cached TTS audio")
-                self.tts_queue.put(cached_file)
-                return
-            
-            # Split and batch process sentences
+            # Split into sentences
             sentences = self._split_into_sentences(text)
             if not sentences:
+                logger.warning("No valid sentences to process for TTS")
                 return
-                
-            # Group into optimal chunks
-            chunks = self._optimize_tts_chunks(sentences)
             
-            # Process chunks with worker pool
+            # Group sentences into chunks
+            chunks = []
+            current_chunk = []
+            current_length = 0
+            
+            for sentence in sentences:
+                sentence_length = len(sentence)
+                if current_length + sentence_length > self.config.max_sentence_length and current_chunk:
+                    chunks.append(" ".join(current_chunk))
+                    current_chunk = [sentence]
+                    current_length = sentence_length
+                else:
+                    current_chunk.append(sentence)
+                    current_length += sentence_length
+            
+            # Add remaining chunk
+            if current_chunk:
+                chunks.append(" ".join(current_chunk))
+            
+            # Process each chunk with TTS
             for chunk in chunks:
                 if chunk.strip():
-                    temp_file = self.tts_pool.generate_speech(
-                        chunk,
-                        cache_key=cache_key if len(chunks) == 1 else None
-                    )
-                    if temp_file:
-                        self.tts_queue.put(temp_file)
+                    wav_file = self.tts_pool.generate_speech(chunk)
+                    if wav_file:
+                        self.tts_queue.put(wav_file)
+                        logger.debug(f"TTS chunk queued: {chunk[:50]}...")
                         
         except Exception as e:
             logger.error(f"Error in TTS processing: {e}")
-            
-    def _optimize_tts_chunks(self, sentences: List[str]) -> List[str]:
-        """Optimize sentence grouping for TTS performance"""
-        chunks = []
-        current_chunk = []
-        current_length = 0
-        optimal_length = self.config.max_sentence_length // 2  # Target shorter chunks
-        
-        for sentence in sentences:
-            sentence_length = len(sentence)
-            
-            # Start new chunk if current would be too long
-            if current_length + sentence_length > self.config.max_sentence_length:
-                if current_chunk:
-                    chunks.append(" ".join(current_chunk))
-                current_chunk = [sentence]
-                current_length = sentence_length
-            # Split long sentences
-            elif sentence_length > optimal_length:
-                parts = self._split_long_sentence(sentence)
-                for part in parts:
-                    chunks.append(part)
-            # Add to current chunk
-            else:
-                current_chunk.append(sentence)
-                current_length += sentence_length
-        
-        if current_chunk:
-            chunks.append(" ".join(current_chunk))
-        
-        return chunks
-    
-    def _split_long_sentence(self, sentence: str) -> List[str]:
-        """Split long sentences at logical points"""
-        parts = []
-        words = sentence.split()
-        current_part = []
-        current_length = 0
-        optimal_length = self.config.max_sentence_length // 2
-        
-        for word in words:
-            word_len = len(word) + 1  # Add 1 for space
-            if current_length + word_len > optimal_length:
-                if current_part:
-                    parts.append(" ".join(current_part))
-                current_part = [word]
-                current_length = word_len
-            else:
-                current_part.append(word)
-                current_length += word_len
-        
-        if current_part:
-            parts.append(" ".join(current_part))
-            
-        return parts
+            import traceback
+            logger.error(traceback.format_exc())
 
     def tts_playback_thread(self):
         """Play TTS audio files"""
@@ -1126,6 +1039,12 @@ class UnifiedAudioSystem:
             threading.Thread(target=self.output_thread, daemon=True)
         ]
         
+        # Add droid input thread if multi_input is enabled
+        if self.config.multi_input:
+            threads.append(
+                threading.Thread(target=self.droid_input_thread, daemon=True)
+            )
+        
         if self.config.output_mode in ["tts", "both"]:
             threads.append(
                 threading.Thread(target=self.tts_playback_thread, daemon=True)
@@ -1163,6 +1082,244 @@ class UnifiedAudioSystem:
             ggwave.free(self.ggwave_instance)
         self.pyaudio_instance.terminate()
         logger.info("Shutdown complete")
+
+    def droid_input_thread(self):
+        """Process ggwave input signals as an alternative to voice"""
+        logger.info("Starting droid input thread...")
+        try:
+            # Create separate input stream for ggwave signals
+            input_stream = self.pyaudio_instance.open(
+                format=pyaudio.paFloat32,
+                channels=1,
+                rate=self.config.sample_rate,
+                input=True,
+                frames_per_buffer=4096
+            )
+            
+            while not self.shutdown_event.is_set():
+                try:
+                    data = input_stream.read(4096, exception_on_overflow=False)
+                    # Decode ggwave data
+                    decoded = ggwave.decode(self.ggwave_instance, data)
+                    
+                    if decoded is not None:
+                        # We received droid input
+                        droid_text = decoded.decode("utf-8")
+                        logger.info(f"Received droid text input: {droid_text}")
+                        
+                        # Process the droid text like we would process speech
+                        self._cancel_previous_processing()
+                        
+                        # Add the droid text directly to the text queue, bypassing STT
+                        try:
+                            self.text_queue.put_nowait(droid_text)
+                            logger.info(f"Added droid text to processing queue: {droid_text}")
+                        except queue.Full:
+                            logger.warning("Text queue full, dropping droid input")
+                except Exception as e:
+                    logger.error(f"Error in droid input processing: {e}")
+                    time.sleep(0.1)  # Avoid tight loop on error
+                    
+        except Exception as e:
+            logger.error(f"Critical error in droid input thread: {e}", exc_info=True)
+        finally:
+            if 'input_stream' in locals():
+                input_stream.stop_stream()
+                input_stream.close()
+            logger.info("Droid input thread stopped")
+
+    def _classify_query(self, text):
+        """Improved query classification for better model selection"""
+        text_lower = text.lower().strip()
+        words = text_lower.split()
+        word_count = len(words)
+        
+        # Simple greetings and common phrases
+        simple_phrases = ["hello", "hi", "hey", "thanks", "thank you", "goodbye", "bye", 
+                          "what's up", "whats up", "how are you", "what is up"]
+        
+        # Complex indicators (usually need reasoning)
+        complex_indicators = ["why", "how", "explain", "describe", "analyze", "compare", 
+                             "difference", "similarities", "pros and cons", "advantages", 
+                             "disadvantages", "code", "script", "program", "algorithm"]
+        
+        # Check for simple queries first
+        if any(phrase in text_lower for phrase in simple_phrases) and word_count < 5:
+            return "simple"
+            
+        # Check for complex queries
+        if any(indicator in text_lower for indicator in complex_indicators):
+            return "complex"
+            
+        # Check based on length and structure
+        if word_count <= 3:
+            return "simple"
+        elif word_count <= 8:
+            return "conversational"
+        else:
+            return "complex"
+    
+    def _get_filler_response(self, query_type):
+        """Get appropriate filler response based on query type"""
+        if query_type == "simple":
+            return "One moment..."
+        elif query_type == "complex":
+            return "Hmm, let me think about that..."
+        else:
+            return "Let me check that for you..."
+    
+    def _get_reflex_response(self, text, processing_id):
+        """Get quick initial response from reflex model"""
+        try:
+            # Check cache first if enabled
+            reflex_messages = [{"role": "user", "content": text}]
+            reflex_response = None
+            
+            if self.model_cache:
+                reflex_response = self.model_cache.get(self.config.reflex_model, reflex_messages)
+            
+            if not reflex_response:
+                reflex_response = ollama.chat(
+                    model=self.config.reflex_model,
+                    messages=reflex_messages,
+                    options={"num_gpu": 1, "timeout": 5}  # Shorter timeout for reflex
+                )
+                if self.model_cache:
+                    self.model_cache.put(self.config.reflex_model, reflex_messages, reflex_response)
+            
+            reflex_text = reflex_response["message"]["content"]
+            logger.info(f"Reflex response [ID={processing_id}]: {reflex_text[:50]}...")
+            
+            # Check if processing request is still valid
+            with self.processing_lock:
+                if processing_id != self.current_text_id:
+                    logger.info(f"Abandoning outdated reflex processing [ID={processing_id}]")
+                    return None
+                    
+            return reflex_text
+            
+        except Exception as e:
+            logger.error(f"Error in reflex response: {e}", exc_info=True)
+            return "I'm thinking about that."
+    
+    def _get_conversational_response(self, text, reflex_text, processing_id):
+        """Get conversational response using context from reflex"""
+        try:
+            # Prepare message history with reflex context
+            conv_messages = [
+                {"role": "system", "content": f"You are a helpful assistant. The quick response was: '{reflex_text}'. Build on this with a natural, complete response."},
+                {"role": "user", "content": text}
+            ]
+            
+            # Check if request is still valid
+            with self.processing_lock:
+                if processing_id != self.current_text_id:
+                    logger.info(f"Abandoning outdated conversational processing [ID={processing_id}]")
+                    return reflex_text  # Fall back to reflex response
+            
+            # Get response from conversational model
+            final_response = ollama.chat(
+                model=self.config.conversational_model,
+                messages=conv_messages,
+                options={"num_gpu": 1}
+            )
+            
+            response_text = final_response["message"]["content"]
+            logger.info(f"Conversational response [ID={processing_id}]: {response_text[:50]}...")
+            
+            return response_text
+            
+        except Exception as e:
+            logger.error(f"Error in conversational response: {e}", exc_info=True)
+            return reflex_text  # Fall back to reflex response
+    
+    def _get_final_response(self, text, reasoning, processing_id):
+        """Generate final response using reasoning context"""
+        try:
+            # Prepare messages with reasoning context
+            final_messages = [
+                {"role": "system", "content": f"Use this reasoning as context: {reasoning}"},
+                {"role": "user", "content": text}
+            ]
+            
+            # Check if request is still valid
+            with self.processing_lock:
+                if processing_id != self.current_text_id:
+                    logger.info(f"Abandoning outdated final processing [ID={processing_id}]")
+                    return None
+            
+            # Get response from model
+            final_response = ollama.chat(
+                model=self.config.complex_model,
+                messages=final_messages,
+                options={"num_gpu": 1}
+            )
+            
+            response_text = final_response["message"]["content"]
+            logger.info(f"Final reasoned response [ID={processing_id}]: {response_text[:50]}...")
+            
+            return response_text
+            
+        except Exception as e:
+            logger.error(f"Error in final response: {e}", exc_info=True)
+            return "I'm having trouble processing that. Could you try again?"
+    
+    def _generate_follow_up(self, original_text, primary_response, processing_id):
+        """Generate a follow-up response when appropriate"""
+        try:
+            # Check if still valid
+            with self.processing_lock:
+                if processing_id != self.current_text_id:
+                    return
+                    
+            # Construct follow-up prompt
+            follow_up_messages = [
+                {"role": "system", "content": "Determine if a follow-up is needed to add valuable information to the previous response. If yes, provide the follow-up. If not, respond with 'NO_FOLLOW_UP_NEEDED'."},
+                {"role": "user", "content": original_text},
+                {"role": "assistant", "content": primary_response},
+                {"role": "user", "content": "Is a follow-up needed? If yes, what would you add?"}
+            ]
+            
+            # Get follow-up decision
+            follow_up_response = ollama.chat(
+                model=self.config.reflex_model,
+                messages=follow_up_messages
+            )
+            
+            follow_up_text = follow_up_response["message"]["content"]
+            
+            # Check if follow-up is actually needed
+            if "NO_FOLLOW_UP_NEEDED" in follow_up_text:
+                logger.info("No follow-up needed")
+                return
+                
+            # Clean up the follow-up text
+            follow_up_text = follow_up_text.replace("NO_FOLLOW_UP_NEEDED", "").strip()
+            
+            # Check if still valid
+            with self.processing_lock:
+                if processing_id != self.current_text_id:
+                    return
+                    
+            # Only send if meaningful content exists
+            if len(follow_up_text) > 20:
+                logger.info(f"Sending follow-up: {follow_up_text[:50]}...")
+                
+                follow_up_response = {
+                    "text": follow_up_text,
+                    "timestamp": time.time(),
+                    "complete": True,
+                    "is_follow_up": True
+                }
+                
+                try:
+                    self.response_queue.put(follow_up_response)
+                    # Add to memory
+                    self.memory_system.add_memory(follow_up_text, "assistant", importance=0.4)
+                except queue.Full:
+                    logger.warning("Response queue full, dropping follow-up")
+        except Exception as e:
+            logger.error(f"Error generating follow-up: {e}")
 
 class TTSWorkerPool:
     """Manages a pool of TTS workers for parallel processing"""
@@ -1235,23 +1392,20 @@ class TTSWorkerPool:
         except Exception as e:
             logger.error(f"TTS worker failed: {e}")
     
-    def generate_speech(self, text: str, cache_key: Optional[str] = None) -> Optional[str]:
-        """Generate speech with optional caching"""
+    def generate_speech(self, text: str) -> Optional[str]:
+        """Generate speech for text, returns filename or None on failure"""
         try:
             # Create unique temp file
             temp_file = f"temp_speech_{time.time_ns()}.wav"
             
-            # If cache_key provided, this will be cached
-            final_path = os.path.join(self.config.cache_dir, f"{cache_key}.wav") if cache_key else temp_file
-            
             # Add to queue with timeout
             try:
-                self.tts_queue.put((text, final_path), timeout=self.config.response_timeout)
+                self.tts_queue.put((text, temp_file), timeout=self.config.response_timeout)
             except queue.Full:
                 logger.warning("TTS queue full, dropping request")
                 return None
             
-            # Wait for result
+            # Wait for result with timeout
             try:
                 success, result = self.result_queue.get(timeout=self.config.response_timeout)
                 if success:
@@ -1321,6 +1475,14 @@ def parse_args():
                        help="Path to memory storage file")
     parser.add_argument("--max-memories", type=int, default=100,
                        help="Maximum number of memories to retain")
+    parser.add_argument("--multi-input", action="store_true", default=False,
+                       help="Enable multi-input (ggwave + speech)")
+    parser.add_argument("--max-msg-length", type=int, default=200,
+                       help="Maximum message length for processing")
+    parser.add_argument("--filler-response", action="store_true", default=False,
+                       help="Enable filler responses")
+    parser.add_argument("--multi-response", action="store_true", default=False,
+                       help="Enable multi-response generation")
     return parser.parse_args()
 
 def main():
@@ -1338,6 +1500,10 @@ def main():
         max_processing_time=args.timeout,
         memory_file=args.memory_file,
         max_memory_entries=args.max_memories,
+        multi_input=args.multi_input,
+        max_msg_length=args.max_msg_length,
+        filler_response=args.filler_response,
+        multi_response=args.multi_response
     )
     
     system = UnifiedAudioSystem(config)

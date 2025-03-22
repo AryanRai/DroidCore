@@ -1178,3 +1178,369 @@ Do you ...
 2025-03-23 04:00:44,005 - CombinedSystem - INFO - Reflex response [ID=130]: Okay! 😊 Is there anything you’d like to talk about...
 2025-03-23 04:00:44,006 - CombinedSystem - INFO - Final response [ID=130]: Okay! 😊 Is there anything you’d like to talk about...
 2025-03-23 04:00:44,574 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 04:16:47,501 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 04:16:47,503 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:16:47,504 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 04:16:48,228 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 04:16:49,874 - CombinedSystem - INFO - Loaded 83 episodic and 9 semantic memories
+2025-03-23 04:16:49,874 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 04:16:51,241 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'llama3.2', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300, 'max_msg_length': 200, 'interrupt_threshold': 0.3, 'filler_response': True, 'multi_response': True, 'multi_input': True}
+2025-03-23 04:16:51,241 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 04:16:51,246 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 04:16:51,247 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:16:51,247 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 04:16:51,249 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 04:16:51,249 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 04:16:51,250 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 04:16:51,250 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 04:16:51,251 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 04:16:51,251 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 04:16:52,367 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:16:52,392 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:16:52,422 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:16:52,452 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:16:52,486 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:16:52,515 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:16:52,545 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:16:52,576 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:16:59,891 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:17:09,911 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:17:19,936 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:17:29,955 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:17:32,115 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,146 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,175 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,205 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,231 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,262 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,291 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,325 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,355 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:32,385 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,515 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,545 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,575 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,605 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,632 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,661 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,691 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,725 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:34,755 - CombinedSystem - ERROR - Error in audio capture: 
+2025-03-23 04:17:39,971 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:17:49,991 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:17:57,571 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 04:17:57,571 - CombinedSystem - INFO - Shutting down...
+2025-03-23 04:17:57,572 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 04:17:58,703 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 04:19:26,326 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 04:19:26,328 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:19:26,328 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 04:19:27,019 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 04:19:28,542 - CombinedSystem - INFO - Loaded 83 episodic and 9 semantic memories
+2025-03-23 04:19:28,543 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 04:19:29,803 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'llama3.2', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300, 'max_msg_length': 200, 'interrupt_threshold': 0.3, 'filler_response': True, 'multi_response': True, 'multi_input': True}
+2025-03-23 04:19:29,804 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 04:19:29,808 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 04:19:29,809 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:19:29,809 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 04:19:29,810 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 04:19:29,810 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 04:19:29,811 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 04:19:29,811 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 04:19:29,811 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 04:19:29,812 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 04:19:30,130 - CombinedSystem - INFO - Audio input stream started successfully
+2025-03-23 04:19:30,836 - CombinedSystem - ERROR - VAD processing error: 
+2025-03-23 04:19:30,862 - CombinedSystem - ERROR - VAD processing error: 
+2025-03-23 04:19:30,891 - CombinedSystem - ERROR - VAD processing error: 
+2025-03-23 04:19:30,922 - CombinedSystem - ERROR - VAD processing error: 
+2025-03-23 04:19:30,957 - CombinedSystem - ERROR - VAD processing error: 
+2025-03-23 04:19:30,985 - CombinedSystem - ERROR - VAD processing error: 
+2025-03-23 04:19:31,015 - CombinedSystem - ERROR - VAD processing error: 
+2025-03-23 04:19:31,045 - CombinedSystem - ERROR - VAD processing error: 
+2025-03-23 04:19:38,571 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:19:48,595 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:19:58,163 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 04:19:58,163 - CombinedSystem - INFO - Shutting down...
+2025-03-23 04:19:58,165 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 04:19:58,261 - CombinedSystem - INFO - Audio capture thread stopped
+2025-03-23 04:19:59,286 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 04:29:11,153 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 04:29:11,155 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:29:11,155 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 04:29:11,858 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 04:29:13,384 - CombinedSystem - INFO - Loaded 83 episodic and 9 semantic memories
+2025-03-23 04:29:13,385 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 04:29:14,655 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'llama3.2', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300, 'max_msg_length': 200, 'interrupt_threshold': 0.3, 'filler_response': True, 'multi_response': True, 'multi_input': True}
+2025-03-23 04:29:14,655 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 04:29:14,660 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 04:29:14,660 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:29:14,660 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 04:29:14,662 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 04:29:14,662 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 04:29:14,663 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 04:29:14,663 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 04:29:14,664 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 04:29:14,664 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 04:29:14,983 - CombinedSystem - INFO - Audio input stream started successfully
+2025-03-23 04:29:15,683 - CombinedSystem - ERROR - VAD processing error: 
+Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 547, in audio_capture_thread
+    self.interrupt_queue.put_nowait(True)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 191, in put_nowait
+    return self.put(item, block=False)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 137, in put
+    raise Full
+queue.Full
+2025-03-23 04:29:15,710 - CombinedSystem - ERROR - VAD processing error: 
+Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 547, in audio_capture_thread
+    self.interrupt_queue.put_nowait(True)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 191, in put_nowait
+    return self.put(item, block=False)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 137, in put
+    raise Full
+queue.Full
+2025-03-23 04:29:15,740 - CombinedSystem - ERROR - VAD processing error: 
+Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 547, in audio_capture_thread
+    self.interrupt_queue.put_nowait(True)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 191, in put_nowait
+    return self.put(item, block=False)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 137, in put
+    raise Full
+queue.Full
+2025-03-23 04:29:15,770 - CombinedSystem - ERROR - VAD processing error: 
+Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 547, in audio_capture_thread
+    self.interrupt_queue.put_nowait(True)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 191, in put_nowait
+    return self.put(item, block=False)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 137, in put
+    raise Full
+queue.Full
+2025-03-23 04:29:15,803 - CombinedSystem - ERROR - VAD processing error: 
+Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 547, in audio_capture_thread
+    self.interrupt_queue.put_nowait(True)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 191, in put_nowait
+    return self.put(item, block=False)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 137, in put
+    raise Full
+queue.Full
+2025-03-23 04:29:15,834 - CombinedSystem - ERROR - VAD processing error: 
+Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 547, in audio_capture_thread
+    self.interrupt_queue.put_nowait(True)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 191, in put_nowait
+    return self.put(item, block=False)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 137, in put
+    raise Full
+queue.Full
+2025-03-23 04:29:15,864 - CombinedSystem - ERROR - VAD processing error: 
+Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 547, in audio_capture_thread
+    self.interrupt_queue.put_nowait(True)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 191, in put_nowait
+    return self.put(item, block=False)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 137, in put
+    raise Full
+queue.Full
+2025-03-23 04:29:15,893 - CombinedSystem - ERROR - VAD processing error: 
+Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 547, in audio_capture_thread
+    self.interrupt_queue.put_nowait(True)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 191, in put_nowait
+    return self.put(item, block=False)
+  File "C:\Users\buzza\.conda\envs\5D3\lib\queue.py", line 137, in put
+    raise Full
+queue.Full
+2025-03-23 04:29:23,390 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:29:33,414 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:29:43,434 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:29:46,386 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 04:29:46,386 - CombinedSystem - INFO - Shutting down...
+2025-03-23 04:29:46,387 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 04:29:46,507 - CombinedSystem - INFO - Audio capture thread stopped
+2025-03-23 04:29:47,502 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 04:29:56,886 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 04:29:56,887 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:29:56,887 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 04:29:57,586 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 04:29:59,106 - CombinedSystem - INFO - Loaded 83 episodic and 9 semantic memories
+2025-03-23 04:29:59,107 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 04:30:00,352 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:7b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 04:30:00,353 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 04:30:00,357 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 04:30:00,357 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:30:00,357 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 04:30:00,358 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 04:30:00,358 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 04:30:00,359 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 04:30:00,360 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 04:30:00,360 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 04:30:00,360 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 04:30:06,478 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 04:30:06,479 - CombinedSystem - INFO - Shutting down...
+2025-03-23 04:30:06,480 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 04:30:07,603 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 04:35:39,772 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 04:35:39,773 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:35:39,773 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 04:35:40,516 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 04:35:42,099 - CombinedSystem - INFO - Loaded 83 episodic and 9 semantic memories
+2025-03-23 04:35:42,099 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 04:35:43,424 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:7b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300, 'multi_input': False, 'max_msg_length': 200, 'filler_response': False, 'multi_response': False}
+2025-03-23 04:35:43,425 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 04:35:43,429 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 04:35:43,429 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:35:43,429 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 04:35:43,431 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 04:35:43,431 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 04:35:43,432 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 04:35:43,432 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 04:35:43,433 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 04:35:43,433 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 04:35:52,129 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:36:02,149 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:36:12,165 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:36:22,185 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:36:30,578 - CombinedSystem - INFO - Recognized: You know.
+2025-03-23 04:36:30,579 - CombinedSystem - INFO - Processing text [ID=1]: You know.
+2025-03-23 04:36:30,583 - CombinedSystem - INFO - Query classified as: simple
+2025-03-23 04:36:30,583 - CombinedSystem - ERROR - Error in language processing: 'UnifiedAudioSystem' object has no attribute '_get_reflex_response'
+2025-03-23 04:36:30,584 - CombinedSystem - ERROR - Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 711, in language_processing_thread
+    reflex_text = self._get_reflex_response(text, processing_id)
+AttributeError: 'UnifiedAudioSystem' object has no attribute '_get_reflex_response'
+
+2025-03-23 04:36:32,209 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:36:42,230 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:36:52,245 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:37:02,265 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:37:12,289 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:37:22,309 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:37:32,325 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:37:42,345 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:37:52,369 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:38:02,389 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:38:12,405 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:38:20,419 - CombinedSystem - INFO - Recognized: No.
+2025-03-23 04:38:20,420 - CombinedSystem - INFO - Processing text [ID=2]: No.
+2025-03-23 04:38:20,420 - CombinedSystem - INFO - Query classified as: simple
+2025-03-23 04:38:20,420 - CombinedSystem - ERROR - Error in language processing: 'UnifiedAudioSystem' object has no attribute '_get_reflex_response'
+2025-03-23 04:38:20,421 - CombinedSystem - ERROR - Traceback (most recent call last):
+  File "c:\Users\buzza\Desktop\Projects\Active\5D3\HighLvl\Speech\Main\Main_Combine.py", line 711, in language_processing_thread
+    reflex_text = self._get_reflex_response(text, processing_id)
+AttributeError: 'UnifiedAudioSystem' object has no attribute '_get_reflex_response'
+
+2025-03-23 04:38:22,425 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:38:26,247 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 04:38:26,247 - CombinedSystem - INFO - Shutting down...
+2025-03-23 04:38:26,249 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 04:38:27,366 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 04:43:38,123 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 04:43:38,125 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:43:38,126 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 04:43:38,819 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 04:43:40,450 - CombinedSystem - INFO - Loaded 85 episodic and 9 semantic memories
+2025-03-23 04:43:40,451 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 04:43:41,738 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:7b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300, 'multi_input': False, 'max_msg_length': 200, 'filler_response': False, 'multi_response': False}
+2025-03-23 04:43:41,738 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 04:43:41,742 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 04:43:41,743 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:43:41,743 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 04:43:41,744 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 04:43:41,744 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 04:43:41,745 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 04:43:41,746 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 04:43:41,746 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 04:43:41,746 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 04:43:50,484 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:43:50,854 - CombinedSystem - INFO - Recognized: I think
+2025-03-23 04:43:50,857 - CombinedSystem - INFO - Processing text [ID=1]: I think
+2025-03-23 04:43:50,857 - CombinedSystem - INFO - Query classified as: simple
+2025-03-23 04:43:56,489 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:43:56,490 - CombinedSystem - INFO - Reflex response [ID=1]: Okay! It’s perfectly fine to think. 😊 
+
+To help me...
+2025-03-23 04:43:56,490 - CombinedSystem - INFO - Final response [ID=1]: Okay! It’s perfectly fine to think. 😊 
+
+To help me...
+2025-03-23 04:43:56,744 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 04:43:56,746 - CombinedSystem - INFO - Processing text [ID=2]: Hello.
+2025-03-23 04:43:56,746 - CombinedSystem - INFO - Query classified as: simple
+2025-03-23 04:43:57,912 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:43:57,913 - CombinedSystem - INFO - Reflex response [ID=2]: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 04:43:57,913 - CombinedSystem - INFO - Final response [ID=2]: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 04:44:00,500 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 04:44:10,524 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 04:44:20,531 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 04:44:25,618 - CombinedSystem - INFO - Recognized: I don't mean I'll just...
+2025-03-23 04:44:25,621 - CombinedSystem - INFO - Processing text [ID=5]: I don't mean I'll just...
+2025-03-23 04:44:25,621 - CombinedSystem - INFO - Query classified as: conversational
+2025-03-23 04:44:29,726 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:44:29,727 - CombinedSystem - INFO - Reflex response [ID=5]: Please clarify! You said “I don’t mean I’ll just…”...
+2025-03-23 04:44:29,727 - CombinedSystem - INFO - Abandoning outdated reflex processing [ID=5]
+2025-03-23 04:44:30,550 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 1, tts_queue: 0
+2025-03-23 04:44:36,877 - CombinedSystem - INFO - Recognized: em occupational.
+2025-03-23 04:44:36,881 - CombinedSystem - INFO - Processing text [ID=7]: em occupational.
+2025-03-23 04:44:36,882 - CombinedSystem - INFO - Query classified as: simple
+2025-03-23 04:44:40,568 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:44:50,596 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:45:00,610 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:45:10,295 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:45:10,296 - CombinedSystem - INFO - Reflex response [ID=7]: Okay, let's dive into occupational therapy! I can ...
+2025-03-23 04:45:10,296 - CombinedSystem - INFO - Abandoning outdated reflex processing [ID=7]
+2025-03-23 04:45:10,630 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:45:20,655 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:45:30,676 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:45:40,690 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:45:50,710 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:46:00,735 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:46:10,755 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:46:20,771 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:46:30,790 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:46:40,497 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 04:46:40,497 - CombinedSystem - INFO - Shutting down...
+2025-03-23 04:46:40,499 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 04:46:41,614 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 04:47:49,583 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 04:47:49,585 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:47:49,585 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 04:47:50,266 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 04:47:51,801 - CombinedSystem - ERROR - Failed to load memories: Expecting value: line 1 column 1 (char 0)
+2025-03-23 04:47:51,801 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 04:47:53,070 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:7b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300, 'multi_input': False, 'max_msg_length': 200, 'filler_response': False, 'multi_response': False}
+2025-03-23 04:47:53,070 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 04:47:53,075 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 04:47:53,075 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 04:47:53,075 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 04:47:53,076 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 04:47:53,077 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 04:47:53,078 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 04:47:53,078 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 04:47:53,079 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 04:47:53,079 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 04:47:57,959 - CombinedSystem - INFO - Recognized: Hello, what is up?
+2025-03-23 04:47:57,959 - CombinedSystem - INFO - Processing text [ID=1]: Hello, what is up?
+2025-03-23 04:47:57,959 - CombinedSystem - INFO - Query classified as: simple
+2025-03-23 04:47:59,902 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:47:59,903 - CombinedSystem - INFO - Reflex response [ID=1]: Hey there! Not much, just hanging out here, ready ...
+2025-03-23 04:47:59,903 - CombinedSystem - INFO - Final response [ID=1]: Hey there! Not much, just hanging out here, ready ...
+2025-03-23 04:48:01,826 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:48:11,830 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:48:21,861 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:48:31,895 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:48:41,911 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:48:43,442 - CombinedSystem - INFO - Recognized: in line.
+2025-03-23 04:48:43,445 - CombinedSystem - INFO - Processing text [ID=9]: in line.
+2025-03-23 04:48:43,446 - CombinedSystem - INFO - Query classified as: simple
+2025-03-23 04:48:43,635 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 04:48:43,636 - CombinedSystem - INFO - Shutting down...
+2025-03-23 04:48:43,637 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 04:48:44,758 - CombinedSystem - INFO - Shutdown complete

@@ -48,13 +48,30 @@ speech:
 
 # Audio Processing
 audio:
-  sample_width: 2  # 16-bit audio = 2 bytes
-  channels: 1
-  rate: 16000
-  sample_rate: 48000
-  chunk_size: 1024
-  input_format: "int16"
+  # Input device settings
+  sample_width: 2              # 16-bit audio = 2 bytes
+  channels: 1                  # Mono required for VAD
+  rate: 16000                 # 16kHz required for VAD
+  sample_rate: 48000          # Keep higher rate for TTS output
+  chunk_duration_ms: 30       # Must be 10, 20, or 30ms for VAD
+  input_format: "int16"       # Required format for VAD
   normalize: true
+  
+  # VAD settings
+  vad_mode: 1                 # 0 to 3, higher = more aggressive
+  vad_frame_ms: 30           # Frame duration (10, 20, or 30ms)
+  min_speech_duration_ms: 100  # Minimum speech duration
+  max_speech_duration_ms: 3000 # Maximum speech duration
+  
+  # Buffer settings
+  input_buffer_size: 4096     # Larger buffer for stability
+  output_buffer_size: 4096
+  read_timeout_ms: 100        # Read timeout in milliseconds
+  
+  # Error handling
+  max_retries: 3              # Maximum retries on audio errors
+  retry_delay_ms: 1000        # Delay between retries
+  overflow_handling: "ignore"  # How to handle buffer overflow
 
 # Debug Settings
 debug:
