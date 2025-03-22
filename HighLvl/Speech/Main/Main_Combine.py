@@ -884,24 +884,26 @@ class UnifiedAudioSystem:
                 logger.error(f"Error in output processing: {e}")
     
     def _process_complete_response(self, response_obj, output_stream):
-        """Process a complete response (both TTS and droid) in a synchronized way"""
+        """Process a complete response with parallel TTS and ggwave"""
         try:
             response = response_obj["text"]
             
-            # First, send the entire text via droid for immediate feedback
+            # Start TTS generation in parallel thread
+            if self.config.output_mode in ["tts", "both"]:
+                tts_text = response_obj.get("tts_text", response)
+                tts_thread = threading.Thread(
+                    target=self._process_tts_response,
+                    args=(tts_text,),
+                    daemon=True
+                )
+                tts_thread.start()
+            
+            # Send droid response immediately without waiting for TTS
             if self.config.output_mode in ["droid", "both"]:
                 try:
                     self._send_droid_response(response, output_stream)
                 except Exception as e:
                     logger.error(f"Error in droid output: {e}")
-            
-            # Then generate TTS (will be played when ready)
-            if self.config.output_mode in ["tts", "both"]:
-                tts_text = response_obj.get("tts_text", response)
-                try:
-                    self._process_tts_response(tts_text)
-                except Exception as e:
-                    logger.error(f"Error in TTS processing: {e}")
                     
         except Exception as e:
             logger.error(f"Error in complete response processing: {e}")
@@ -975,45 +977,92 @@ class UnifiedAudioSystem:
         return processed
 
     def _process_tts_response(self, text: str):
-        """Process complete TTS response with proper sentence handling"""
+        """Process TTS with caching and faster generation"""
         try:
-            # Split into sentences
-            sentences = self._split_into_sentences(text)
-            if not sentences:
-                logger.warning("No valid sentences to process for TTS")
+            # Check TTS cache first
+            cache_key = f"tts_{hash(text)}"
+            cached_file = os.path.join(self.config.cache_dir, f"{cache_key}.wav")
+            
+            if os.path.exists(cached_file):
+                logger.debug("Using cached TTS audio")
+                self.tts_queue.put(cached_file)
                 return
             
-            # Group sentences into chunks
-            chunks = []
-            current_chunk = []
-            current_length = 0
+            # Split and batch process sentences
+            sentences = self._split_into_sentences(text)
+            if not sentences:
+                return
+                
+            # Group into optimal chunks
+            chunks = self._optimize_tts_chunks(sentences)
             
-            for sentence in sentences:
-                sentence_length = len(sentence)
-                if current_length + sentence_length > self.config.max_sentence_length and current_chunk:
-                    chunks.append(" ".join(current_chunk))
-                    current_chunk = [sentence]
-                    current_length = sentence_length
-                else:
-                    current_chunk.append(sentence)
-                    current_length += sentence_length
-            
-            # Add remaining chunk
-            if current_chunk:
-                chunks.append(" ".join(current_chunk))
-            
-            # Process each chunk with TTS
+            # Process chunks with worker pool
             for chunk in chunks:
                 if chunk.strip():
-                    wav_file = self.tts_pool.generate_speech(chunk)
-                    if wav_file:
-                        self.tts_queue.put(wav_file)
-                        logger.debug(f"TTS chunk queued: {chunk[:50]}...")
+                    temp_file = self.tts_pool.generate_speech(
+                        chunk,
+                        cache_key=cache_key if len(chunks) == 1 else None
+                    )
+                    if temp_file:
+                        self.tts_queue.put(temp_file)
                         
         except Exception as e:
             logger.error(f"Error in TTS processing: {e}")
-            import traceback
-            logger.error(traceback.format_exc())
+            
+    def _optimize_tts_chunks(self, sentences: List[str]) -> List[str]:
+        """Optimize sentence grouping for TTS performance"""
+        chunks = []
+        current_chunk = []
+        current_length = 0
+        optimal_length = self.config.max_sentence_length // 2  # Target shorter chunks
+        
+        for sentence in sentences:
+            sentence_length = len(sentence)
+            
+            # Start new chunk if current would be too long
+            if current_length + sentence_length > self.config.max_sentence_length:
+                if current_chunk:
+                    chunks.append(" ".join(current_chunk))
+                current_chunk = [sentence]
+                current_length = sentence_length
+            # Split long sentences
+            elif sentence_length > optimal_length:
+                parts = self._split_long_sentence(sentence)
+                for part in parts:
+                    chunks.append(part)
+            # Add to current chunk
+            else:
+                current_chunk.append(sentence)
+                current_length += sentence_length
+        
+        if current_chunk:
+            chunks.append(" ".join(current_chunk))
+        
+        return chunks
+    
+    def _split_long_sentence(self, sentence: str) -> List[str]:
+        """Split long sentences at logical points"""
+        parts = []
+        words = sentence.split()
+        current_part = []
+        current_length = 0
+        optimal_length = self.config.max_sentence_length // 2
+        
+        for word in words:
+            word_len = len(word) + 1  # Add 1 for space
+            if current_length + word_len > optimal_length:
+                if current_part:
+                    parts.append(" ".join(current_part))
+                current_part = [word]
+                current_length = word_len
+            else:
+                current_part.append(word)
+                current_length += word_len
+        
+        if current_part:
+            parts.append(" ".join(current_part))
+            
+        return parts
 
     def tts_playback_thread(self):
         """Play TTS audio files"""
@@ -1186,20 +1235,23 @@ class TTSWorkerPool:
         except Exception as e:
             logger.error(f"TTS worker failed: {e}")
     
-    def generate_speech(self, text: str) -> Optional[str]:
-        """Generate speech for text, returns filename or None on failure"""
+    def generate_speech(self, text: str, cache_key: Optional[str] = None) -> Optional[str]:
+        """Generate speech with optional caching"""
         try:
             # Create unique temp file
             temp_file = f"temp_speech_{time.time_ns()}.wav"
             
+            # If cache_key provided, this will be cached
+            final_path = os.path.join(self.config.cache_dir, f"{cache_key}.wav") if cache_key else temp_file
+            
             # Add to queue with timeout
             try:
-                self.tts_queue.put((text, temp_file), timeout=self.config.response_timeout)
+                self.tts_queue.put((text, final_path), timeout=self.config.response_timeout)
             except queue.Full:
                 logger.warning("TTS queue full, dropping request")
                 return None
             
-            # Wait for result with timeout
+            # Wait for result
             try:
                 success, result = self.result_queue.get(timeout=self.config.response_timeout)
                 if success:

@@ -622,3 +622,559 @@ Do you ...
 2025-03-23 03:39:09,942 - CombinedSystem - INFO - Shutting down...
 2025-03-23 03:39:09,943 - CombinedSystem - INFO - Memories saved successfully
 2025-03-23 03:39:10,975 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:44:39,571 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:44:39,572 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:44:39,572 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:44:40,261 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:44:41,760 - CombinedSystem - INFO - Loaded 41 episodic and 5 semantic memories
+2025-03-23 03:44:41,761 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:44:43,045 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:44:43,046 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:44:43,050 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:44:43,050 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:44:43,050 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:44:43,051 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:44:43,053 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:44:43,053 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:44:43,054 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:44:43,054 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:44:43,054 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:44:48,436 - CombinedSystem - INFO - Recognized: What is our
+2025-03-23 03:44:48,437 - CombinedSystem - INFO - Processing text [ID=1]: What is our
+2025-03-23 03:44:48,437 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:44:51,786 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:44:55,366 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:44:55,366 - CombinedSystem - INFO - Reflex response [ID=1]: Please provide me with the context! “What is our” ...
+2025-03-23 03:44:55,366 - CombinedSystem - INFO - Final response [ID=1]: Please provide me with the context! “What is our” ...
+2025-03-23 03:45:01,803 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:45:11,823 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:45:19,018 - CombinedSystem - INFO - Recognized: for example
+2025-03-23 03:45:19,019 - CombinedSystem - INFO - Processing text [ID=5]: for example
+2025-03-23 03:45:19,019 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:45:21,824 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:45:25,504 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:45:25,505 - CombinedSystem - INFO - Reflex response [ID=5]: Please provide me with the context! “For example” ...
+2025-03-23 03:45:25,505 - CombinedSystem - INFO - Abandoning outdated processing [ID=5]
+2025-03-23 03:45:31,835 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:45:41,737 - CombinedSystem - INFO - Recognized: Help me a bit about...
+2025-03-23 03:45:41,738 - CombinedSystem - INFO - Processing text [ID=9]: Help me a bit about...
+2025-03-23 03:45:41,738 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:45:41,854 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:45:43,307 - CombinedSystem - INFO - Recognized: history of Google.
+2025-03-23 03:45:46,501 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:45:46,502 - CombinedSystem - INFO - Reflex response [ID=9]: Please tell me what you’d like help with! I need a...
+2025-03-23 03:45:46,503 - CombinedSystem - INFO - Abandoning outdated processing [ID=9]
+2025-03-23 03:45:46,503 - CombinedSystem - INFO - Processing text [ID=10]: history of Google.
+2025-03-23 03:45:46,503 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:45:51,870 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:46:01,890 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:46:09,771 - CombinedSystem - INFO - Recognized: There we go.
+2025-03-23 03:46:11,066 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 03:46:11,916 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:46:15,696 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:46:17,290 - CombinedSystem - INFO - Recognized: Because he also gave a Dzhujang anymore, it needs help.
+2025-03-23 03:46:20,244 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:46:20,245 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:46:20,247 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:46:21,390 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:50:22,665 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:50:22,667 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:50:22,667 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:50:23,371 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:50:24,929 - CombinedSystem - INFO - Loaded 46 episodic and 5 semantic memories
+2025-03-23 03:50:24,929 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:50:26,223 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:50:26,224 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:50:26,229 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:50:26,229 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:50:26,229 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:50:26,231 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:50:26,231 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:50:26,231 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:50:26,232 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:50:26,234 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:50:26,234 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:50:30,027 - CombinedSystem - INFO - Recognized: Hello.
+2025-03-23 03:50:30,029 - CombinedSystem - INFO - Processing text [ID=1]: Hello.
+2025-03-23 03:50:30,029 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:50:31,337 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:50:31,338 - CombinedSystem - INFO - Reflex response [ID=1]: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 03:50:31,338 - CombinedSystem - INFO - Final response [ID=1]: Hello there! How can I help you today? 😊 
+
+Do you ...
+2025-03-23 03:50:34,956 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:50:39,371 - CombinedSystem - INFO - Recognized: Sorry.
+2025-03-23 03:50:39,374 - CombinedSystem - INFO - Processing text [ID=2]: Sorry.
+2025-03-23 03:50:39,376 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:50:43,959 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:50:45,052 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:50:45,099 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:50:45,099 - CombinedSystem - INFO - Reflex response [ID=2]: It’s okay if you’re feeling a little down. Is ther...
+2025-03-23 03:50:45,099 - CombinedSystem - INFO - Abandoning outdated processing [ID=2]
+2025-03-23 03:50:45,163 - CombinedSystem - INFO - Recognized: There was a guy who would see you there, I didn't know it. I like...
+2025-03-23 03:50:45,167 - CombinedSystem - INFO - Processing text [ID=5]: There was a guy who would see you there, I didn't know it. I like...
+2025-03-23 03:50:45,167 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:50:46,786 - CombinedSystem - INFO - Recognized: You are responding as well.
+2025-03-23 03:50:48,057 - CombinedSystem - INFO - Recognized: Any questions for me?
+2025-03-23 03:50:52,028 - CombinedSystem - INFO - Recognized: Make sure I stand up.
+2025-03-23 03:50:55,063 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:50:55,489 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:50:56,066 - CombinedSystem - INFO - Recognized: I don't think that you can type it, I probably have a problem
+2025-03-23 03:50:56,835 - CombinedSystem - INFO - Recognized: Good Good
+2025-03-23 03:51:02,562 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:51:03,316 - CombinedSystem - INFO - Recognized: That's why it's not a keyboard. It's very hard to make it. It's a keyboard. You can use it on your phone.
+2025-03-23 03:51:05,088 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:51:07,940 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:51:08,395 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:51:08,396 - CombinedSystem - INFO - Reflex response [ID=5]: I understand you're feeling a bit vulnerable and w...
+2025-03-23 03:51:08,396 - CombinedSystem - INFO - Abandoning outdated processing [ID=5]
+2025-03-23 03:51:08,417 - CombinedSystem - INFO - Recognized: It's a very cool answer. Sound get through data.
+2025-03-23 03:51:08,418 - CombinedSystem - INFO - Processing text [ID=13]: It's a very cool answer. Sound get through data.
+2025-03-23 03:51:08,418 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:51:10,162 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:51:10,164 - CombinedSystem - INFO - Reflex response [ID=13]: Thank you so much! I'm glad you found it helpful. ...
+2025-03-23 03:51:11,032 - CombinedSystem - INFO - Recognized: It has different colors with the eye
+2025-03-23 03:51:11,517 - CombinedSystem - INFO - Recognized: side.
+2025-03-23 03:51:15,109 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:51:15,919 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:51:16,337 - CombinedSystem - INFO - Recognized: Because the paper comes with an embroidered, I hope it's feeling better.
+2025-03-23 03:51:17,730 - CombinedSystem - INFO - Recognized: Is that a tube?
+2025-03-23 03:51:24,823 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:51:25,123 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:51:25,738 - CombinedSystem - INFO - Recognized: Sort of, there is a physical in it. It looks very cute. And the camera is on. I don't know if it's a proper slam.
+2025-03-23 03:51:27,928 - CombinedSystem - INFO - Recognized: They said, for a while, I don't know how to say anything at all.
+2025-03-23 03:51:29,974 - CombinedSystem - INFO - Recognized: perseveres
+2025-03-23 03:51:30,071 - CombinedSystem - INFO - Recognized: Yeah.
+2025-03-23 03:51:30,072 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:51:30,620 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:51:30,620 - CombinedSystem - INFO - Abandoning outdated processing after reasoning [ID=13]
+2025-03-23 03:51:30,621 - CombinedSystem - INFO - Processing text [ID=21]: perseveres
+2025-03-23 03:51:30,621 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:51:34,401 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:51:35,057 - CombinedSystem - INFO - Recognized: Meera computer is at a problem. I can check out your screen.
+2025-03-23 03:51:35,143 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:51:35,954 - CombinedSystem - INFO - Recognized: I'm gonna let it open.
+2025-03-23 03:51:40,399 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:51:42,730 - CombinedSystem - INFO - Recognized: She made my petorship card for thedd 😨
+2025-03-23 03:51:45,169 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:51:49,685 - CombinedSystem - INFO - Recognized: Yeah two times at a while.
+2025-03-23 03:51:51,293 - CombinedSystem - INFO - Recognized: since I keep the contact head... Texting message, do it!
+2025-03-23 03:51:52,358 - CombinedSystem - INFO - Recognized: I think
+2025-03-23 03:51:52,723 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 03:51:52,723 - CombinedSystem - INFO - Shutting down...
+2025-03-23 03:51:52,725 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:51:53,864 - CombinedSystem - INFO - Shutdown complete
+2025-03-23 03:52:04,672 - CombinedSystem - INFO - Using device: cuda
+2025-03-23 03:52:04,674 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:52:04,675 - CombinedSystem - INFO - Loading Whisper model: base
+2025-03-23 03:52:05,390 - CombinedSystem - INFO - Loading TTS model: tts_models/en/jenny/jenny
+2025-03-23 03:52:06,934 - CombinedSystem - INFO - Loaded 52 episodic and 5 semantic memories
+2025-03-23 03:52:06,935 - CombinedSystem - INFO - Initializing shared TTS model...
+2025-03-23 03:52:08,211 - CombinedSystem - INFO - Starting system with configuration: {'vad_mode': 1, 'whisper_model': 'base', 'chunk_duration_ms': 30, 'silence_threshold': 2, 'max_speech_chunks': 100, 'min_speech_chunks': 10, 'channels': 1, 'rate': 16000, 'sample_rate': 48000, 'chunk_size': 1024, 'max_payload_size': 140, 'protocol_id': 2, 'volume': 20, 'reflex_model': 'gemma3:1b', 'reasoning_model': 'deepseek-r1:1.5b', 'conversational_model': 'phi3:mini', 'complex_model': 'llama3.2', 'skip_reasoning': True, 'parallel_inference': True, 'max_processing_time': 30, 'max_queue_size': 3, 'drop_older_messages': True, 'tts_model': 'tts_models/en/jenny/jenny', 'use_gpu': True, 'max_tts_length': 200, 'max_sentence_length': 50, 'tts_batch_size': 3, 'tts_worker_threads': 2, 'max_concurrent_tts': 2, 'tts_queue_size': 5, 'response_timeout': 15, 'batch_size': 1, 'use_8bit': True, 'output_mode': 'both', 'history_file': 'conversation_history.json', 'max_history': 10, 'log_performance': False, 'perf_interval': 10, 'use_cache': True, 'cache_dir': 'model_cache', 'memory_file': 'conversation_memory.json', 'max_memory_entries': 100, 'memory_context_window': 5, 'episodic_memory': True, 'semantic_memory': True, 'memory_refresh_interval': 300}
+2025-03-23 03:52:08,211 - CombinedSystem - INFO - CPU: 16 logical cores
+2025-03-23 03:52:08,216 - CombinedSystem - INFO - Memory: 23.7GB total
+2025-03-23 03:52:08,216 - CombinedSystem - INFO - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-03-23 03:52:08,216 - CombinedSystem - INFO - CUDA Version: 12.1
+2025-03-23 03:52:08,217 - CombinedSystem - INFO - Starting audio capture thread...
+2025-03-23 03:52:08,217 - CombinedSystem - INFO - Starting speech recognition thread...
+2025-03-23 03:52:08,218 - CombinedSystem - INFO - Starting language processing thread...
+2025-03-23 03:52:08,218 - CombinedSystem - INFO - Starting output thread...
+2025-03-23 03:52:08,219 - CombinedSystem - INFO - Starting TTS playback thread...
+2025-03-23 03:52:08,219 - CombinedSystem - INFO - System started. Press Ctrl+C to stop.
+2025-03-23 03:52:16,938 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:52:18,742 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:52:20,912 - CombinedSystem - INFO - Recognized: where did I get this, go ahead, even a little a little bit
+2025-03-23 03:52:20,912 - CombinedSystem - INFO - Processing text [ID=1]: where did I get this, go ahead, even a little a little bit
+2025-03-23 03:52:20,912 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:52:23,274 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:52:25,512 - CombinedSystem - INFO - Recognized: Basically I agree with this chats some completely
+2025-03-23 03:52:26,707 - CombinedSystem - INFO - Recognized: But those get the thing making more of those, I think.
+2025-03-23 03:52:26,964 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:52:33,768 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:52:35,709 - CombinedSystem - INFO - Recognized: indeed.
+2025-03-23 03:52:35,885 - CombinedSystem - INFO - Recognized: Thank you.
+2025-03-23 03:52:35,886 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:52:36,962 - CombinedSystem - INFO - Recognized: thatspray.
+2025-03-23 03:52:36,984 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:52:38,098 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:52:38,099 - CombinedSystem - INFO - Reflex response [ID=1]: I understand you're curious about where the image ...
+2025-03-23 03:52:38,099 - CombinedSystem - INFO - Abandoning outdated processing [ID=1]
+2025-03-23 03:52:38,099 - CombinedSystem - INFO - Processing text [ID=6]: thatspray.
+2025-03-23 03:52:38,099 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:52:40,217 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:52:40,864 - CombinedSystem - INFO - Recognized: I am in the very terrible mode, I feel like more simple as a film
+2025-03-23 03:52:45,925 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:52:46,998 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:52:47,569 - CombinedSystem - INFO - Recognized: but that's exactly the way we live it.
+2025-03-23 03:52:50,485 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:52:52,251 - CombinedSystem - INFO - Recognized: one I hear they all die as Food Kirkman and Dol want.]
+2025-03-23 03:52:53,464 - CombinedSystem - INFO - Recognized: I don't know what I'm doing.
+2025-03-23 03:52:57,018 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:52:58,259 - CombinedSystem - INFO - Recognized: forting
+2025-03-23 03:53:01,237 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:53:01,238 - CombinedSystem - INFO - Reflex response [ID=6]: I understand you're asking about "thatspray." It’s...
+2025-03-23 03:53:01,239 - CombinedSystem - INFO - Abandoning outdated processing [ID=6]
+2025-03-23 03:53:01,239 - CombinedSystem - INFO - Processing text [ID=11]: forting
+2025-03-23 03:53:01,239 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:53:07,043 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:53:07,092 - CombinedSystem - INFO - Recognized: What's wrong with you? You're liking that one, don't you?
+2025-03-23 03:53:09,954 - CombinedSystem - INFO - Recognized: can't help you. Ali Khan.
+2025-03-23 03:53:10,544 - CombinedSystem - INFO - Recognized: I'm injured.
+2025-03-23 03:53:12,345 - CombinedSystem - INFO - Recognized: out there. No.
+2025-03-23 03:53:17,064 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:53:22,525 - CombinedSystem - INFO - Recognized: breathing
+2025-03-23 03:53:26,503 - CombinedSystem - INFO - Recognized: They say funny victim our dearest toast.
+2025-03-23 03:53:26,610 - CombinedSystem - INFO - Recognized: Yeah.
+2025-03-23 03:53:26,611 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:53:27,078 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:53:29,458 - CombinedSystem - INFO - Recognized: I mean die with a chance.
+2025-03-23 03:53:33,498 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:53:33,822 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:53:33,822 - CombinedSystem - INFO - Reflex response [ID=11]: Okay, let's break down "Forting." It's a relativel...
+2025-03-23 03:53:33,823 - CombinedSystem - INFO - Abandoning outdated processing [ID=11]
+2025-03-23 03:53:34,509 - CombinedSystem - INFO - Recognized: o you
+2025-03-23 03:53:34,510 - CombinedSystem - INFO - Processing text [ID=21]: o you
+2025-03-23 03:53:34,510 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:53:37,098 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:53:38,714 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:53:38,714 - CombinedSystem - INFO - Reflex response [ID=21]: Yes, I am! I'm a large language model, and I'm her...
+2025-03-23 03:53:38,715 - CombinedSystem - INFO - Final response [ID=21]: Yes, I am! I'm a large language model, and I'm her...
+2025-03-23 03:53:42,552 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:53:45,709 - CombinedSystem - INFO - Recognized: but I pursue education.
+2025-03-23 03:53:45,713 - CombinedSystem - INFO - Processing text [ID=24]: but I pursue education.
+2025-03-23 03:53:45,714 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:53:46,358 - CombinedSystem - INFO - Recognized: they are.
+2025-03-23 03:53:47,113 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 1, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:53:49,909 - CombinedSystem - INFO - Recognized: B海ale programs
+2025-03-23 03:53:52,023 - CombinedSystem - INFO - Recognized: Il this is unsequently down human memory
+2025-03-23 03:53:53,767 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:53:55,704 - CombinedSystem - INFO - Recognized: It's been a long time we've been here, it's been a long time.
+2025-03-23 03:53:56,090 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:53:56,091 - CombinedSystem - INFO - Reflex response [ID=24]: Okay, that’s a really important and valid point! P...
+2025-03-23 03:53:56,091 - CombinedSystem - INFO - Abandoning outdated processing [ID=24]
+2025-03-23 03:53:56,091 - CombinedSystem - INFO - Processing text [ID=28]: It's been a long time we've been here, it's been a long time.
+2025-03-23 03:53:56,092 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:53:57,123 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:54:02,373 - CombinedSystem - INFO - Recognized: And that's not funny.
+2025-03-23 03:54:04,954 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:54:07,124 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:54:07,306 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:54:07,307 - CombinedSystem - INFO - Reflex response [ID=28]: I understand. It sounds like you're feeling a sens...
+2025-03-23 03:54:07,307 - CombinedSystem - INFO - Abandoning outdated processing [ID=28]
+2025-03-23 03:54:07,589 - CombinedSystem - INFO - Recognized: Mom, Santa am mache Fujiya Finnish pe but with us we can open it....
+2025-03-23 03:54:07,595 - CombinedSystem - INFO - Processing text [ID=31]: Mom, Santa am mache Fujiya Finnish pe but with us we can open it....
+2025-03-23 03:54:07,595 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:54:08,757 - CombinedSystem - INFO - Recognized: Thank you very much.
+2025-03-23 03:54:12,168 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:54:13,266 - CombinedSystem - INFO - Recognized: So what you have to do is to become Chinese. You are the only second there.
+2025-03-23 03:54:15,646 - CombinedSystem - INFO - Recognized: I will be that guy.
+2025-03-23 03:54:17,146 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:54:17,983 - CombinedSystem - INFO - Recognized: do it lo celebrating
+2025-03-23 03:54:23,484 - CombinedSystem - INFO - Recognized: oh
+2025-03-23 03:54:27,159 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:54:27,245 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:54:27,246 - CombinedSystem - INFO - Reflex response [ID=31]: I understand you're expressing a really big and he...
+2025-03-23 03:54:27,246 - CombinedSystem - INFO - Abandoning outdated processing [ID=31]
+2025-03-23 03:54:27,246 - CombinedSystem - INFO - Processing text [ID=36]: oh
+2025-03-23 03:54:27,246 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:54:29,233 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:54:29,861 - CombinedSystem - INFO - Recognized: but it's a deep-seek me as I just select it's a proper
+2025-03-23 03:54:31,303 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:54:31,304 - CombinedSystem - INFO - Reflex response [ID=36]: Okay! Is there anything you’d like to talk about? ...
+2025-03-23 03:54:31,304 - CombinedSystem - INFO - Abandoning outdated processing [ID=36]
+2025-03-23 03:54:31,304 - CombinedSystem - INFO - Processing text [ID=37]: but it's a deep-seek me as I just select it's a proper
+2025-03-23 03:54:31,305 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:54:33,339 - CombinedSystem - INFO - Recognized: He's already moving, but let's take his ear
+2025-03-23 03:54:34,156 - CombinedSystem - INFO - Recognized: Do you want to report?
+2025-03-23 03:54:34,157 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:54:34,694 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:54:34,694 - CombinedSystem - INFO - Reflex response [ID=37]: You're right to point that out! It’s a bit awkward...
+2025-03-23 03:54:34,695 - CombinedSystem - INFO - Abandoning outdated processing [ID=37]
+2025-03-23 03:54:34,695 - CombinedSystem - INFO - Processing text [ID=39]: He's already moving, but let's take his ear
+2025-03-23 03:54:34,695 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:54:37,178 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:54:39,465 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:54:42,020 - CombinedSystem - INFO - Recognized: This is the normal breathing exercise
+2025-03-23 03:54:44,408 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:54:46,831 - CombinedSystem - INFO - Recognized: 7th made cast leader of the praises
+2025-03-23 03:54:47,203 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:54:48,488 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:54:50,465 - CombinedSystem - INFO - Recognized: Sil 해서 RMUSIC
+2025-03-23 03:54:52,035 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:54:53,823 - CombinedSystem - INFO - Recognized: 50,000 during speeches, almost to the contract
+2025-03-23 03:54:56,377 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:54:57,224 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:54:58,368 - CombinedSystem - INFO - Recognized: And like while someone is like a Monitor
+2025-03-23 03:54:59,372 - CombinedSystem - INFO - Recognized: Take More Order
+2025-03-23 03:55:03,917 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:55:03,918 - CombinedSystem - INFO - Reflex response [ID=39]: I understand you're going through a difficult and ...
+2025-03-23 03:55:03,918 - CombinedSystem - INFO - Abandoning outdated processing [ID=39]
+2025-03-23 03:55:03,918 - CombinedSystem - INFO - Processing text [ID=45]: Take More Order
+2025-03-23 03:55:03,918 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:55:05,114 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:55:05,632 - CombinedSystem - INFO - Recognized: Jokes last 5 or 10, reflexive modulus, body core memory allocation model
+2025-03-23 03:55:07,237 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:55:08,324 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:55:08,594 - CombinedSystem - INFO - Recognized: Memories.
+2025-03-23 03:55:16,514 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:55:17,258 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:55:19,155 - CombinedSystem - INFO - Recognized: Then they answer Mona locks town on the march, OK
+2025-03-23 03:55:26,325 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:55:27,281 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:55:27,447 - CombinedSystem - INFO - Recognized: So if you take a whole conversation, it will start with a whole conversation which will be related to this. Yes, it will be related to that kind of rock. Yes. But in this, like...
+2025-03-23 03:55:29,818 - CombinedSystem - INFO - Recognized: To get a limited storage I guess if he didn't hold that up.
+2025-03-23 03:55:29,920 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:55:29,920 - CombinedSystem - INFO - Reflex response [ID=45]: I understand you might be feeling overwhelmed or n...
+2025-03-23 03:55:29,921 - CombinedSystem - INFO - Abandoning outdated processing [ID=45]
+2025-03-23 03:55:29,921 - CombinedSystem - INFO - Processing text [ID=50]: To get a limited storage I guess if he didn't hold that up.
+2025-03-23 03:55:29,921 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:55:33,252 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:55:33,804 - CombinedSystem - INFO - Recognized: with the organic, that's the coolest I've ever heard of in so much.
+2025-03-23 03:55:35,134 - CombinedSystem - INFO - Recognized: Feeling good after this.
+2025-03-23 03:55:37,304 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:55:39,465 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:55:41,257 - CombinedSystem - INFO - Recognized: Then if you are getting the fish and the fish... It's up to you
+2025-03-23 03:55:42,218 - CombinedSystem - INFO - Recognized: I'll see you in the next video. Bye!
+2025-03-23 03:55:47,318 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:55:48,135 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:55:49,521 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:55:49,522 - CombinedSystem - INFO - Reflex response [ID=50]: I understand you're expressing frustration and a d...
+2025-03-23 03:55:49,522 - CombinedSystem - INFO - Abandoning outdated processing [ID=50]
+2025-03-23 03:55:49,930 - CombinedSystem - INFO - Recognized: at least that.
+2025-03-23 03:55:49,931 - CombinedSystem - INFO - Processing text [ID=55]: at least that.
+2025-03-23 03:55:49,931 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:55:51,915 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:55:54,246 - CombinedSystem - INFO - Recognized: Who liked you, did 10 and then confused us words that like that, had irgendwas.
+2025-03-23 03:55:56,547 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:55:56,548 - CombinedSystem - INFO - Reflex response [ID=55]: Please provide me with more context! I need to kno...
+2025-03-23 03:55:56,548 - CombinedSystem - INFO - Abandoning outdated processing [ID=55]
+2025-03-23 03:55:56,549 - CombinedSystem - INFO - Processing text [ID=56]: Who liked you, did 10 and then confused us words that like that, had irgendwas.
+2025-03-23 03:55:56,549 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:55:57,337 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:56:00,104 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:56:02,536 - CombinedSystem - INFO - Recognized: But if that's going to poop more, that's too much poop it's going to be cold the water and it's going to be as good as it is
+2025-03-23 03:56:06,458 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:56:07,362 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:56:07,967 - CombinedSystem - INFO - Recognized: I'm the only one to hit on the verge that matches theación... The future... It can't happen.
+2025-03-23 03:56:08,449 - CombinedSystem - INFO - Recognized: but it's in this article.
+2025-03-23 03:56:08,902 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:56:08,902 - CombinedSystem - INFO - Reflex response [ID=56]: I'm sorry, but this message appears to be a refere...
+2025-03-23 03:56:08,903 - CombinedSystem - INFO - Abandoning outdated processing [ID=56]
+2025-03-23 03:56:08,903 - CombinedSystem - INFO - Processing text [ID=59]: but it's in this article.
+2025-03-23 03:56:08,903 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:56:11,163 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:56:11,164 - CombinedSystem - INFO - Reflex response [ID=59]: Please provide me with the article! I need the tex...
+2025-03-23 03:56:12,792 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:56:13,934 - CombinedSystem - INFO - Recognized: Well by any value? Me?ck увидеть See you.cakes?? C'mon it. Now I better go.
+2025-03-23 03:56:14,305 - CombinedSystem - INFO - Recognized: So, man.
+2025-03-23 03:56:15,288 - CombinedSystem - INFO - Recognized: So, it's round.
+2025-03-23 03:56:16,850 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:56:16,851 - CombinedSystem - INFO - Abandoning final response for outdated processing [ID=59]
+2025-03-23 03:56:17,055 - CombinedSystem - INFO - Recognized: is cool.
+2025-03-23 03:56:17,056 - CombinedSystem - INFO - Processing text [ID=64]: is cool.
+2025-03-23 03:56:17,056 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:56:17,385 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:56:21,061 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:56:21,061 - CombinedSystem - INFO - Reflex response [ID=64]: I appreciate the sentiment! It’s a really positive...
+2025-03-23 03:56:21,062 - CombinedSystem - INFO - Abandoning outdated processing [ID=64]
+2025-03-23 03:56:21,349 - CombinedSystem - INFO - Recognized: if you have the masks... it's time for a call out
+2025-03-23 03:56:21,349 - CombinedSystem - INFO - Processing text [ID=65]: if you have the masks... it's time for a call out
+2025-03-23 03:56:21,349 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:56:21,856 - CombinedSystem - INFO - Recognized: So this whole multi will be created.
+2025-03-23 03:56:26,167 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:56:27,398 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:56:28,424 - CombinedSystem - INFO - Recognized: We need to tell the audience what said we'll do this all when work Take.
+2025-03-23 03:56:33,703 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:56:34,280 - CombinedSystem - INFO - Recognized: Oh, animation. How do you say animation?
+2025-03-23 03:56:37,417 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:56:38,377 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:56:38,935 - CombinedSystem - INFO - Recognized: I am going to put it in the middle of the pot.
+2025-03-23 03:56:46,724 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:56:47,442 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:56:47,622 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:56:47,622 - CombinedSystem - INFO - Reflex response [ID=65]: I understand you're feeling frustrated and want to...
+2025-03-23 03:56:47,623 - CombinedSystem - INFO - Abandoning outdated processing [ID=65]
+2025-03-23 03:56:47,757 - CombinedSystem - INFO - Recognized: the movement gateway Facebook
+2025-03-23 03:56:47,757 - CombinedSystem - INFO - Processing text [ID=70]: the movement gateway Facebook
+2025-03-23 03:56:47,758 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:56:55,636 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:56:57,231 - CombinedSystem - INFO - Recognized: So both of these are hard to learn from and what I mean is the very main roles
+2025-03-23 03:56:57,464 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:56:59,287 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:57:00,596 - CombinedSystem - INFO - Recognized: It should have a very beautiful cabin and 4 Tough bike but it's not as long as you can get a wheel willing...
+2025-03-23 03:57:01,889 - CombinedSystem - INFO - Recognized: Pull.
+2025-03-23 03:57:07,477 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:57:09,915 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:57:12,728 - CombinedSystem - INFO - Recognized: It turns into a whole pack. This boxing building is found.
+2025-03-23 03:57:14,325 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:57:16,279 - CombinedSystem - INFO - Recognized: We'll start for three and five, three. We're starting up again.
+2025-03-23 03:57:17,498 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:57:20,647 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:57:25,503 - CombinedSystem - INFO - Recognized: actually my camera our other performances how far from the bike go
+2025-03-23 03:57:25,761 - CombinedSystem - INFO - Recognized: Oh, his sort of base station is here.
+2025-03-23 03:57:25,761 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:57:27,044 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:57:27,525 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:57:28,552 - CombinedSystem - INFO - Recognized: ooh the bestosooo is Ryan Kirk who was here� 정도로 기대äter
+2025-03-23 03:57:31,146 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:57:31,147 - CombinedSystem - INFO - Reflex response [ID=70]: Okay, let's dive into the movement gateway Faceboo...
+2025-03-23 03:57:31,148 - CombinedSystem - INFO - Abandoning outdated processing [ID=70]
+2025-03-23 03:57:31,148 - CombinedSystem - INFO - Processing text [ID=78]: ooh the bestosooo is Ryan Kirk who was here� 정도로 기대äter
+2025-03-23 03:57:36,719 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:57:36,720 - CombinedSystem - INFO - Memory consolidation complete. 9 concepts stored
+2025-03-23 03:57:36,721 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 03:57:36,722 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:57:37,545 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:57:44,993 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:57:44,993 - CombinedSystem - INFO - Reflex response [ID=78]: I understand you're expressing a feeling of admira...
+2025-03-23 03:57:47,558 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:57:48,038 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:57:57,577 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 1, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:57:58,003 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:57:58,309 - CombinedSystem - INFO - Recognized: Thats what I think is what happens like Aladdin, he falls out
+2025-03-23 03:57:58,759 - CombinedSystem - INFO - Recognized: Like
+2025-03-23 03:57:58,759 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:58:02,362 - CombinedSystem - INFO - Recognized: He then will beedaachable and if you take it and roll it like a sort of roll it's true withforth and That's where the wahs goes.
+2025-03-23 03:58:02,610 - CombinedSystem - INFO - Recognized: I guess they're touching the window. Yeah.
+2025-03-23 03:58:02,611 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:58:06,402 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:58:07,604 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:58:08,390 - CombinedSystem - INFO - Recognized: for taking a very far away tour of my place yet thatlocal bath?
+2025-03-23 03:58:12,586 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:58:14,085 - CombinedSystem - INFO - Recognized: said all of my bad
+2025-03-23 03:58:16,155 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:58:17,623 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 1, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:58:17,747 - CombinedSystem - INFO - Recognized: at Leda in preremontions and in NoAAs
+2025-03-23 03:58:18,301 - CombinedSystem - INFO - Recognized: You better top.
+2025-03-23 03:58:18,302 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:58:20,408 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:58:20,952 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:58:20,953 - CombinedSystem - INFO - Abandoning outdated processing after reasoning [ID=78]
+2025-03-23 03:58:21,532 - CombinedSystem - INFO - Recognized: In Yatto, Roundlove-Dzil Amitivian's Always
+2025-03-23 03:58:21,533 - CombinedSystem - INFO - Processing text [ID=87]: In Yatto, Roundlove-Dzil Amitivian's Always
+2025-03-23 03:58:21,534 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:58:23,895 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:58:25,163 - CombinedSystem - INFO - Recognized: We just ate easliens
+2025-03-23 03:58:25,763 - CombinedSystem - INFO - Recognized: bye bye...
+2025-03-23 03:58:25,763 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:58:27,638 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:58:30,218 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:58:32,224 - CombinedSystem - INFO - Recognized: ESS
+2025-03-23 03:58:33,749 - CombinedSystem - INFO - Recognized: Actually, it sounds bad with silence.
+2025-03-23 03:58:35,416 - CombinedSystem - INFO - Recognized: I think use the reverse punch as well
+2025-03-23 03:58:37,657 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:58:38,846 - CombinedSystem - INFO - Recognized: so hard as I was trying to tell you could be
+2025-03-23 03:58:41,957 - CombinedSystem - INFO - Recognized: when you get a step back and...
+2025-03-23 03:58:42,882 - CombinedSystem - INFO - Recognized: Bye.
+2025-03-23 03:58:45,607 - CombinedSystem - INFO - Recognized: Now you can see the main mirror here.
+2025-03-23 03:58:45,919 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:58:45,920 - CombinedSystem - INFO - Reflex response [ID=87]: I understand you're asking me to provide a respons...
+2025-03-23 03:58:45,920 - CombinedSystem - INFO - Abandoning outdated processing [ID=87]
+2025-03-23 03:58:45,920 - CombinedSystem - INFO - Processing text [ID=96]: Now you can see the main mirror here.
+2025-03-23 03:58:45,921 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:58:47,681 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:58:49,071 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:58:49,072 - CombinedSystem - INFO - Reflex response [ID=96]: Okay, I understand. You’re indicating that you’re ...
+2025-03-23 03:58:49,207 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:58:49,799 - CombinedSystem - INFO - Recognized: Nothing like the usual slam and let's just allow him to get a life with it all.
+2025-03-23 03:58:51,632 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:58:51,632 - CombinedSystem - INFO - Abandoning outdated processing after reasoning [ID=96]
+2025-03-23 03:58:51,633 - CombinedSystem - INFO - Processing text [ID=97]: Nothing like the usual slam and let's just allow him to get a life with it all.
+2025-03-23 03:58:51,633 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:58:53,923 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:58:55,050 - CombinedSystem - INFO - Recognized: fire
+2025-03-23 03:58:57,705 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:58:59,347 - CombinedSystem - INFO - Recognized: You've never seen IlGinactroLia honey photos of her Nico.
+2025-03-23 03:58:59,435 - CombinedSystem - INFO - Recognized: Burning.
+2025-03-23 03:58:59,436 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:59:01,229 - CombinedSystem - INFO - Recognized: Honour the others.
+2025-03-23 03:59:03,755 - CombinedSystem - INFO - Recognized: Keep our one foot in my computer.
+2025-03-23 03:59:04,279 - CombinedSystem - INFO - Recognized: Sorry about that.
+2025-03-23 03:59:07,718 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:59:09,877 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:59:10,637 - CombinedSystem - INFO - Recognized: and bless unfortunately this allowed us with the body and the body and the body. You must have it.
+2025-03-23 03:59:14,198 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:59:14,199 - CombinedSystem - INFO - Reflex response [ID=97]: I understand you're grappling with some difficult ...
+2025-03-23 03:59:14,199 - CombinedSystem - INFO - Abandoning outdated processing [ID=97]
+2025-03-23 03:59:14,199 - CombinedSystem - INFO - Processing text [ID=104]: and bless unfortunately this allowed us with the body and the body and the body. You must have it.
+2025-03-23 03:59:14,200 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 03:59:15,555 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:59:17,617 - CombinedSystem - INFO - Recognized: So Do
+2025-03-23 03:59:17,737 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:59:19,687 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:59:20,240 - CombinedSystem - INFO - Recognized: So, generally, I'm talking to the investor in the house now. Thank you, bye.
+2025-03-23 03:59:27,764 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:59:29,017 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:59:29,644 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 03:59:29,644 - CombinedSystem - INFO - Reflex response [ID=104]: This is a beautiful and evocative line from the fi...
+2025-03-23 03:59:29,645 - CombinedSystem - INFO - Abandoning outdated processing [ID=104]
+2025-03-23 03:59:32,617 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:59:34,356 - CombinedSystem - INFO - Recognized: So actually, you never should ever do it. You never just... Yeah. So if you're a lighter, you're at the bottom of a G Hanım folder, it's an organ complex outside.
+2025-03-23 03:59:34,356 - CombinedSystem - INFO - Processing text [ID=109]: So actually, you never should ever do it. You never just... Yeah. So if you're a lighter, you're at the bottom of a G Hanım folder, it's an organ complex outside.
+2025-03-23 03:59:34,357 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 03:59:37,127 - CombinedSystem - INFO - Recognized: Like I prayed at this point at the very beginning that when I was getting impatient to någonting I was getting 1ğu.... 10.  bathroom water THIS 10. hr
+2025-03-23 03:59:37,302 - CombinedSystem - INFO - Recognized: I love loving you.
+2025-03-23 03:59:37,303 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:59:37,455 - CombinedSystem - INFO - Recognized: Thank you very much.
+2025-03-23 03:59:37,455 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:59:37,784 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 03:59:40,040 - CombinedSystem - INFO - Recognized: 看起來
+2025-03-23 03:59:47,797 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 2, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 03:59:48,301 - CombinedSystem - INFO - Recognized: May come air smoke is not with me
+2025-03-23 03:59:48,411 - CombinedSystem - INFO - Recognized: Come on.
+2025-03-23 03:59:48,412 - CombinedSystem - WARNING - Text queue full, dropping recognized text
+2025-03-23 03:59:50,225 - CombinedSystem - INFO - Recognized: Bored under Da Mari 그게
+2025-03-23 03:59:54,404 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 03:59:55,878 - CombinedSystem - INFO - Recognized: for
+2025-03-23 03:59:57,817 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 1, response_queue: 0, tts_queue: 0
+2025-03-23 04:00:01,036 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:00:01,037 - CombinedSystem - INFO - Reflex response [ID=109]: I understand you're expressing a lot of distress a...
+2025-03-23 04:00:01,037 - CombinedSystem - INFO - Abandoning outdated processing [ID=109]
+2025-03-23 04:00:01,037 - CombinedSystem - INFO - Processing text [ID=116]: for
+2025-03-23 04:00:01,037 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 04:00:06,287 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:00:06,288 - CombinedSystem - INFO - Reflex response [ID=116]: Please provide me with more context! “For” is a ve...
+2025-03-23 04:00:06,288 - CombinedSystem - INFO - Final response [ID=116]: Please provide me with more context! “For” is a ve...
+2025-03-23 04:00:06,950 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 04:00:07,817 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:00:08,755 - CombinedSystem - INFO - Recognized: I don't want to talk about it. I don't want to talk about it. I don't want to talk about it.
+2025-03-23 04:00:08,762 - CombinedSystem - INFO - Processing text [ID=117]: I don't want to talk about it. I don't want to talk about it. I don't want to talk about it.
+2025-03-23 04:00:08,762 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 04:00:10,671 - CombinedSystem - INFO - Recognized: Loot on
+2025-03-23 04:00:13,875 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 04:00:17,833 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 1, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:00:22,277 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 04:00:24,593 - CombinedSystem - WARNING - Audio queue full, skipping speech processing
+2025-03-23 04:00:26,578 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:00:26,578 - CombinedSystem - INFO - Reflex response [ID=117]: Okay. I understand. It sounds like you need some s...
+2025-03-23 04:00:26,578 - CombinedSystem - INFO - Abandoning outdated processing [ID=117]
+2025-03-23 04:00:27,391 - CombinedSystem - WARNING - Audio queue full, skipping speech processing
+2025-03-23 04:00:27,841 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 3, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:00:28,603 - CombinedSystem - INFO - Recognized: I have to talk a little more in the video. I quote a little lower put the mic at the top. that's one after another takes it off
+2025-03-23 04:00:28,605 - CombinedSystem - INFO - Processing text [ID=124]: I have to talk a little more in the video. I quote a little lower put the mic at the top. that's one after another takes it off
+2025-03-23 04:00:28,605 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 04:00:29,353 - CombinedSystem - INFO - Recognized: Let's see if it's done or done, it's almost done.
+2025-03-23 04:00:31,552 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:00:31,552 - CombinedSystem - INFO - Reflex response [ID=124]: Please provide me with the text you want me to quo...
+2025-03-23 04:00:31,553 - CombinedSystem - INFO - Abandoning outdated processing [ID=124]
+2025-03-23 04:00:32,273 - CombinedSystem - INFO - Recognized: Yep, I can now go look in the air where the lights are at.
+2025-03-23 04:00:32,273 - CombinedSystem - INFO - Processing text [ID=125]: Yep, I can now go look in the air where the lights are at.
+2025-03-23 04:00:32,273 - CombinedSystem - INFO - Query classified as complex
+2025-03-23 04:00:34,674 - CombinedSystem - INFO - Cleared in-progress responses due to new speech
+2025-03-23 04:00:35,812 - CombinedSystem - INFO - Recognized: It's a little difficult to talk about.
+2025-03-23 04:00:37,501 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:00:37,502 - CombinedSystem - INFO - Reflex response [ID=125]: That’s fantastic! It’s a really cool and thoughtfu...
+2025-03-23 04:00:37,503 - CombinedSystem - INFO - Abandoning outdated processing [ID=125]
+2025-03-23 04:00:37,847 - PerformanceMetrics - INFO - QUEUE_SIZES: audio_queue: 0, text_queue: 0, response_queue: 0, tts_queue: 0
+2025-03-23 04:00:41,093 - CombinedSystem - INFO - Recognized: Mm.
+2025-03-23 04:00:41,095 - CombinedSystem - INFO - Processing text [ID=130]: Mm.
+2025-03-23 04:00:41,095 - CombinedSystem - INFO - Query classified as simple
+2025-03-23 04:00:43,537 - CombinedSystem - INFO - Shutdown initiated...
+2025-03-23 04:00:43,537 - CombinedSystem - INFO - Shutting down...
+2025-03-23 04:00:43,546 - CombinedSystem - INFO - Memories saved successfully
+2025-03-23 04:00:44,004 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-03-23 04:00:44,005 - CombinedSystem - INFO - Reflex response [ID=130]: Okay! 😊 Is there anything you’d like to talk about...
+2025-03-23 04:00:44,006 - CombinedSystem - INFO - Final response [ID=130]: Okay! 😊 Is there anything you’d like to talk about...
+2025-03-23 04:00:44,574 - CombinedSystem - INFO - Shutdown complete
