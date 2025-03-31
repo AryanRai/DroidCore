@@ -2,8 +2,12 @@ import cv2
 import numpy as np
 import subprocess
 
-# Start Protonect (libfreenect2 viewer) in the background
-proc = subprocess.Popen(["~/libfreenect2/bin/Protonect", "cpu"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+protonect_path = "/home/aryan/libfreenect2/bin/Protonect"  # Update if needed
+proc = subprocess.Popen([protonect_path, "cpu"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+stdout, stderr = proc.communicate()
+print(stdout.decode(), stderr.decode())
+
 
 # Wait for Protonect to initialize, then capture frames
 while True:
