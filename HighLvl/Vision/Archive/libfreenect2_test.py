@@ -8,9 +8,16 @@ from pylibfreenect2 import FrameType, Registration, Frame
 from pylibfreenect2 import createConsoleLogger, setGlobalLogger
 from pylibfreenect2 import LoggerLevel
 
-from pylibfreenect2 import CpuPacketPipeline
-pipeline = CpuPacketPipeline()
-
+try:
+    from pylibfreenect2 import OpenGLPacketPipeline
+    pipeline = OpenGLPacketPipeline()
+except:
+    try:
+        from pylibfreenect2 import OpenCLPacketPipeline
+        pipeline = OpenCLPacketPipeline()
+    except:
+        from pylibfreenect2 import CpuPacketPipeline
+        pipeline = CpuPacketPipeline()
 
 
 # Create and set logger
