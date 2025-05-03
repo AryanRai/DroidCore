@@ -13,9 +13,9 @@ A project focused on building an advanced robotic platform incorporating multimo
 
 ### Low-Level Hardware Control & Sensing
 *   **Motor Control:** Implements advanced motor control strategies like Field-Oriented Control (FOC).
-*   **Sensing:** Incorporates various sensors, including Radar.
+*   **Sensing:** Incorporates various sensors, including Ultrasound.
 *   **Communication:** Utilizes communication protocols like Bluetooth.
-*   **Actuation:** Controls hardware components like fans.
+*   **Actuation:** Controls hardware components like Relays, fans.
 
 ## Architecture Overview
 
@@ -51,7 +51,7 @@ The system follows a layered architecture:
 *   **Vision:** libfreenect2 (Kinect v2)
 *   **Middleware:** ROS (planned)
 *   **Hardware Control:** Field-Oriented Control (FOC)
-*   **Communication:** ggwave, Bluetooth
+*   **Communication:** ggwave, Bluetooth, Lora
 
 ## Roadmap & TODOs
 
