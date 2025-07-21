@@ -1,32 +1,27 @@
-const int pin = 2;           // Pin 2
-const unsigned long interval = 30000; // 2 minutes in milliseconds
+#include <HardwareSerial.h>
 
-unsigned long previousMillis = 0;
-bool pinState = LOW;
+HardwareSerial mySerial(2);  // Use UART2
+
+// TX and RX pins (match these with your receiver)
+#define RXD2 16  // Not used in transmitter, but must still be declared
+#define TXD2 17  // TX pin to send data
 
 void setup() {
-  pinMode(pin, OUTPUT);
-  digitalWrite(pin, pinState); // Start with pin OFF
-
-  Serial.begin(9600);          // Start Serial Monitor
-  Serial.println("Starting...");
+  Serial.begin(115200);       // USB Serial for debugging
+  mySerial.begin(9600, SERIAL_8N1, RXD2, TXD2);  // Initialize UART2
+  Serial.println("UART2 Transmitter Initialized");
 }
 
 void loop() {
-  unsigned long currentMillis = millis();
+  // Generate a random ASCII character (printable range)
+  char randomChar = random(32, 127);  // ASCII from space to ~
 
-  if (currentMillis - previousMillis >= interval) {
-    previousMillis = currentMillis;
+  // Send via UART2
+  mySerial.print(randomChar);
 
-    // Toggle the pin state
-    pinState = !pinState;
-    digitalWrite(pin, pinState);
+  // Debug output
+  Serial.print("Sent: ");
+  Serial.println(randomChar);
 
-    // Print to Serial Monitor
-    if (pinState == HIGH) {
-      Serial.println("Pin 2 turned ON");
-    } else {
-      Serial.println("Pin 2 turned OFF");
-    }
-  }
+  delay(1000);  // Send one byte per second
 }
