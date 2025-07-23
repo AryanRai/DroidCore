@@ -1,6 +1,17 @@
 # DroidCore
 ## Iterations
-5D2: BD-2-X5 - Current 
+Astro_x1: 5D2: BD-2-X5 - Current 
+
+<img width="710" height="766" alt="Screenshot 2025-07-24 040153" src="https://github.com/user-attachments/assets/27426ae9-7c8d-4718-aa87-52fca45cd918" />
+
+<img width="653" height="756" alt="Screenshot 2025-07-24 040221" src="https://github.com/user-attachments/assets/4d4fc9b7-c9c3-4adf-9258-799f639f8a47" />
+
+<img width="841" height="629" alt="Screenshot 2025-07-24 040207" src="https://github.com/user-attachments/assets/ea842abf-b2cb-496f-805b-30931b442fcf" />
+
+
+## Concept
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/ceee8bcf-c80d-4f1a-91e9-343fe5df77cd" />
+
 
 A project focused on building an advanced robotic platform incorporating multimodal AI capabilities (Vision, Speech, Language) and low-level hardware control.
 
