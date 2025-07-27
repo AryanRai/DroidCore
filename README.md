@@ -2,11 +2,10 @@
 ## Iterations
 Astro_x1: 5D2: BD-2-X5 - Current 
 
-<img width="710" height="766" alt="Screenshot 2025-07-24 040153" src="https://github.com/user-attachments/assets/27426ae9-7c8d-4718-aa87-52fca45cd918" />
 
-<img width="653" height="756" alt="Screenshot 2025-07-24 040221" src="https://github.com/user-attachments/assets/4d4fc9b7-c9c3-4adf-9258-799f639f8a47" />
-
-<img width="841" height="629" alt="Screenshot 2025-07-24 040207" src="https://github.com/user-attachments/assets/ea842abf-b2cb-496f-805b-30931b442fcf" />
+<img width="1007" height="809" alt="Screenshot 2025-07-27 131934" src="https://github.com/user-attachments/assets/94c8076f-001c-422e-be90-e081c3d5f513" />
+<img width="873" height="781" alt="Screenshot 2025-07-27 131946" src="https://github.com/user-attachments/assets/bb4de529-28dc-46ef-9cca-74b725fca561" />
+<img width="839" height="724" alt="Screenshot 2025-07-27 131958" src="https://github.com/user-attachments/assets/5f149801-9d8e-4ba2-8bd3-dadccc7a1883" />
 
 
 ## Concept
