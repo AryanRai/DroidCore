@@ -1,1 +1,39 @@
 HighLvl/Speech/tts/huggingfacetoken.txt
+
+# CAD Output Files
+CAD/Output/
+CAD-Backup/Output/
+
+# Common CAD generated files
+*.STL
+*.stl
+*.STEP
+*.step
+*.stp
+*.SLDDRW
+*.slddrw
+*.pdf
+
+# SolidWorks temp files
+~$*.SLDASM
+~$*.SLDPRT
+~$*.SLDDRW
+*.SLDASM.bak
+*.SLDPRT.bak
+*.SLDDRW.bak
+
+# Other CAD cache/temp files
+*.blend1
+*.blend2
+*.blend~
+
+*.zip
+*.rar
+*.7z
+
+# CAD backup files
+*.bak
+*.backup
+
+CAD-Backup/
+CAD/**/Unowned/
