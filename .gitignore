@@ -35,5 +35,6 @@ CAD-Backup/Output/
 *.bak
 *.backup
 
+Archive/
 CAD-Backup/
 CAD/**/Unowned/
