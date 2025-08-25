@@ -1,0 +1,3 @@
+[submodule "Integration/Ally"]
+	path = Integration/Ally
+	url = https://github.com/AryanRai/Ally.git
